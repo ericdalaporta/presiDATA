@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresiData BR - Dados dos Presidentes Brasileiros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/presidata.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/4.4.0/chart.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="icon-container">
+                <img src="assets/icons/brasil.png" alt="Brasil" class="brasil-logo">
+            </div>
+            <h1 class="main-title">PresiData BR</h1>
+            <p class="description">Explore dados detalhados dos presidentes brasileiros, biografias, indicadores e compare mandatos históricos.</p>
+            
+            <div class="search-wrapper">
+                <div class="search-container">
+                    <div class="search-input-container">
+                    <input type="text" id="busca-candidato" placeholder="" autocomplete="off">
+                    <div class="suggestions-dropdown" id="suggestions-dropdown"></div>
+                </div>
+                    <button class="search-button" id="btn-buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="area-resultados" class="results-area" style="display: none;">
+        </div>
+
+        <div class="instructions-section" id="tutorial-cards">
+            <h2 class="instructions-title" data-aos="fade-up">Como usar o PresiData BR</h2>
+            <div class="instructions-grid">
+                <div class="instruction-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instruction-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Pesquise</h3>
+                    <p>Digite o nome de qualquer presidente brasileiro da história.</p>
+                </div>
+                <div class="instruction-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instruction-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>2. Explore</h3>
+                    <p>Veja biografia, mandatos, realizações e dados históricos completos.</p>
+                </div>
+                <div class="instruction-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instruction-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>3. Compare</h3>
+                    <p>Compare indicadores econômicos e sociais entre diferentes presidentes.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/typewriter.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/president-card.js"></script>
+    <script src="js/presimain.js"></script>
+</body>
+</html>

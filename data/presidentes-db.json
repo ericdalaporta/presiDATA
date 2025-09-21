@@ -1,0 +1,1192 @@
+{
+  "presidentes": [
+    {
+      "id": "deodoro_da_fonseca",
+      "nome": "Deodoro da Fonseca",
+      "nomeCompleto": "Manuel Deodoro da Fonseca",
+      "mandato": "1889-1891",
+      "nascimento": "5 de agosto de 1827",
+      "morte": "23 de agosto de 1892",
+      "local": "Marechal Deodoro, Alagoas",
+      "periodo": "República Velha",
+      "partido": "Militar",
+      "biografia": "Primeiro presidente do Brasil, foi um militar e político que proclamou a República em 15 de novembro de 1889. Deodoro da Fonseca liderou o movimento republicano que derrubou a monarquia brasileira.",
+      "realizacoes": [
+        "Proclamação da República",
+        "Primeira Constituição Republicana",
+        "Organização do Estado Republicano",
+        "Separação entre Igreja e Estado"
+      ],
+      "foto": "./assets/images/presidentes/Deodoro.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "N/A",
+        "inflacaoMedia": "N/A",
+        "desemprego": "N/A",
+        "divida": "Baixa"
+      },
+      "aprovacao": {
+        "inicial": 85,
+        "final": 35,
+        "media": 60
+      },
+      "polemicas": [
+        "Dissolução do Congresso Nacional",
+        "Conflitos com o Legislativo",
+        "Renúncia precipitada em 1891",
+        "Resistência de grupos monarquistas"
+      ],
+      "coisasBoas": [
+        "Estabelecimento da República",
+        "Fim da escravidão definitivamente consolidado",
+        "Modernização inicial das instituições",
+        "Separação entre Igreja e Estado"
+      ],
+      "indicadores": {
+        "educacao": 15,
+        "saude": 20,
+        "economia": 40,
+        "corrupcao": 30,
+        "social": 35
+      }
+    },
+    {
+      "id": "floriano_peixoto",
+      "nome": "Floriano Peixoto",
+      "nomeCompleto": "Floriano Vieira Peixoto",
+      "mandato": "1891-1894",
+      "nascimento": "30 de abril de 1839",
+      "morte": "29 de junho de 1895",
+      "local": "Maceió, Alagoas",
+      "periodo": "República Velha",
+      "partido": "Militar",
+      "biografia": "Segundo presidente do Brasil, conhecido como 'Marechal de Ferro' pela firmeza com que governou. Consolidou a República brasileira enfrentando diversas revoltas.",
+      "realizacoes": [
+        "Consolidação da República",
+        "Enfrentamento da Revolta da Armada",
+        "Repressão à Revolução Federalista",
+        "Fortalecimento do poder central"
+      ],
+      "foto": "./assets/images/presidentes/Floriano.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "N/A",
+        "inflacaoMedia": "N/A",
+        "desemprego": "N/A",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 70,
+        "final": 80,
+        "media": 75
+      },
+      "polemicas": [
+        "Governo autoritário",
+        "Repressão a revoltas populares",
+        "Estado de sítio constante",
+        "Perseguição política"
+      ],
+      "coisasBoas": [
+        "Consolidação da República",
+        "Modernização militar",
+        "Fortalecimento das instituições",
+        "Defesa da ordem constitucional"
+      ],
+      "indicadores": {
+        "educacao": 25,
+        "saude": 30,
+        "economia": 50,
+        "corrupcao": 40,
+        "social": 45
+      }
+    },
+    {
+      "id": "prudente_de_morais",
+      "nome": "Prudente de Morais",
+      "nomeCompleto": "Prudente José de Morais Barros",
+      "mandato": "1894-1898",
+      "nascimento": "4 de outubro de 1841",
+      "morte": "3 de dezembro de 1902",
+      "local": "Itu, São Paulo",
+      "periodo": "República Velha",
+      "partido": "PRP (Partido Republicano Paulista)",
+      "biografia": "Primeiro presidente civil do Brasil, consolidou as instituições republicanas e estabeleceu precedentes importantes para a democracia brasileira.",
+      "realizacoes": [
+        "Primeiro presidente civil",
+        "Pacificação da Guerra de Canudos",
+        "Consolidação das instituições republicanas",
+        "Fortalecimento do federalismo"
+      ],
+      "foto": "./assets/images/presidentes/Prudente.png",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "N/A",
+        "inflacaoMedia": "N/A",
+        "desemprego": "N/A",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 75,
+        "final": 70,
+        "media": 72
+      },
+      "polemicas": [
+        "Guerra de Canudos",
+        "Conflitos políticos regionais",
+        "Tentativa de assassinato",
+        "Crise econômica"
+      ],
+      "coisasBoas": [
+        "Primeiro governo civil",
+        "Pacificação nacional",
+        "Consolidação democrática",
+        "Respeito à Constituição"
+      ],
+      "indicadores": {
+        "educacao": 30,
+        "saude": 35,
+        "economia": 55,
+        "corrupcao": 50,
+        "social": 50
+      }
+    },
+    {
+      "id": "campos_sales",
+      "nome": "Campos Sales",
+      "nomeCompleto": "Manuel Ferraz de Campos Sales",
+      "mandato": "1898-1902",
+      "nascimento": "15 de fevereiro de 1841",
+      "morte": "28 de junho de 1913",
+      "local": "Campinas, São Paulo",
+      "periodo": "República Velha",
+      "partido": "PRP (Partido Republicano Paulista)",
+      "biografia": "Responsável pelo saneamento das finanças públicas e pela criação da 'política dos governadores', que marcou a República Velha.",
+      "realizacoes": [
+        "Funding Loan - renegociação da dívida externa",
+        "Política dos Governadores",
+        "Saneamento financeiro do país",
+        "Estabilização da moeda"
+      ],
+      "foto": "./assets/images/presidentes/Campos.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "+15%",
+        "inflacaoMedia": "5%",
+        "desemprego": "N/A",
+        "divida": "Renegociada"
+      },
+      "aprovacao": {
+        "inicial": 65,
+        "final": 75,
+        "media": 70
+      },
+      "polemicas": [
+        "Política dos Governadores",
+        "Coronelismo institucionalizado",
+        "Exclusão política das camadas populares",
+        "Concentração de poder"
+      ],
+      "coisasBoas": [
+        "Saneamento financeiro",
+        "Estabilidade monetária",
+        "Renegociação da dívida",
+        "Modernização fiscal"
+      ],
+      "indicadores": {
+        "educacao": 35,
+        "saude": 40,
+        "economia": 75,
+        "corrupcao": 45,
+        "social": 40
+      }
+    },
+    {
+      "id": "rodrigues_alves",
+      "nome": "Rodrigues Alves",
+      "nomeCompleto": "Francisco de Paula Rodrigues Alves",
+      "mandato": "1902-1906",
+      "nascimento": "7 de julho de 1848",
+      "morte": "16 de janeiro de 1919",
+      "local": "Guaratinguetá, São Paulo",
+      "periodo": "República Velha",
+      "partido": "PRP (Partido Republicano Paulista)",
+      "biografia": "Promoveu grandes reformas urbanas no Rio de Janeiro e campanhas de saúde pública, modernizando o Brasil no início do século XX.",
+      "realizacoes": [
+        "Reforma urbana do Rio de Janeiro",
+        "Campanha de vacinação obrigatória",
+        "Erradicação da febre amarela",
+        "Modernização da capital federal"
+      ],
+      "foto": "./assets/images/presidentes/Rodrigues.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "+20%",
+        "inflacaoMedia": "4%",
+        "desemprego": "N/A",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 70,
+        "final": 85,
+        "media": 78
+      },
+      "polemicas": [
+        "Revolta da Vacina",
+        "Demolições forçadas no Rio",
+        "Remoção de população pobre",
+        "Autoritarismo sanitário"
+      ],
+      "coisasBoas": [
+        "Modernização urbana",
+        "Erradicação de doenças",
+        "Melhoria da saúde pública",
+        "Embelezamento da capital"
+      ],
+      "indicadores": {
+        "educacao": 40,
+        "saude": 80,
+        "economia": 70,
+        "corrupcao": 40,
+        "social": 55
+      }
+    },
+    {
+      "id": "afonso_pena",
+      "nome": "Afonso Pena",
+      "nomeCompleto": "Afonso Augusto Moreira Pena",
+      "mandato": "1906-1909",
+      "nascimento": "30 de novembro de 1847",
+      "morte": "14 de junho de 1909",
+      "local": "Santa Bárbara, Minas Gerais",
+      "periodo": "República Velha",
+      "partido": "PRM (Partido Republicano Mineiro)",
+      "biografia": "Primeiro presidente mineiro, promoveu o desenvolvimento econômico e a imigração europeia para o Brasil.",
+      "realizacoes": [
+        "Política de valorização do café",
+        "Incentivo à imigração europeia",
+        "Desenvolvimento da infraestrutura ferroviária",
+        "Criação do Porto de Santos"
+      ],
+      "foto": "./assets/images/presidentes/Afonso.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "N/A",
+        "pibFim": "N/A",
+        "crescimentoPIB": "+25%",
+        "inflacaoMedia": "3%",
+        "desemprego": "N/A",
+        "divida": "Baixa"
+      },
+      "aprovacao": {
+        "inicial": 75,
+        "final": 80,
+        "media": 77
+      },
+      "polemicas": [
+        "Política do café com leite",
+        "Favorecimento das elites cafeeiras",
+        "Morte prematura no cargo",
+        "Crise sucessória"
+      ],
+      "coisasBoas": [
+        "Desenvolvimento econômico",
+        "Modernização da infraestrutura",
+        "Incentivo à imigração",
+        "Estabilidade política"
+      ],
+      "indicadores": {
+        "educacao": 45,
+        "saude": 50,
+        "economia": 80,
+        "corrupcao": 35,
+        "social": 60
+      }
+    },
+    {
+      "id": "getulio_vargas",
+      "nome": "Getúlio Vargas",
+      "nomeCompleto": "Getúlio Dornelles Vargas",
+      "mandato": "1930-1945, 1951-1954",
+      "nascimento": "19 de abril de 1882",
+      "morte": "24 de agosto de 1954",
+      "local": "São Borja, Rio Grande do Sul",
+      "periodo": "Era Vargas",
+      "partido": "PTB (Partido Trabalhista Brasileiro)",
+      "biografia": "Um dos mais importantes líderes políticos brasileiros, governou por 18 anos e transformou profundamente o país com suas políticas trabalhistas e de desenvolvimento nacional.",
+      "realizacoes": [
+        "Criação da CLT (Consolidação das Leis do Trabalho)",
+        "Fundação da Petrobras",
+        "Criação da CSN (Companhia Siderúrgica Nacional)",
+        "Lei do salário mínimo",
+        "Voto feminino"
+      ],
+      "foto": "./assets/images/presidentes/Getulio.webp",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 156 bi (1930)",
+        "pibFim": "R$ 287 bi (1954)",
+        "crescimentoPIB": "+84%",
+        "inflacaoMedia": "8.2%",
+        "desemprego": "4.1%",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 78,
+        "final": 82,
+        "media": 75
+      },
+      "polemicas": [
+        "Estado Novo - Ditadura (1937-1945)",
+        "Censura e repressão política",
+        "Aproximação com regimes fascistas",
+        "Suicídio em 1954",
+        "Carta testamento controversa"
+      ],
+      "coisasBoas": [
+        "Criação das leis trabalhistas (CLT)",
+        "Desenvolvimento industrial nacional",
+        "Fundação da Petrobras",
+        "Direitos trabalhistas consolidados",
+        "Modernização do Estado brasileiro",
+        "Criação do salário mínimo"
+      ],
+      "indicadores": {
+        "educacao": 65,
+        "saude": 70,
+        "economia": 85,
+        "corrupcao": 45,
+        "social": 80
+      }
+    },
+    {
+      "id": "eurico_gaspar_dutra",
+      "nome": "Eurico Gaspar Dutra",
+      "nomeCompleto": "Eurico Gaspar Dutra",
+      "mandato": "1946-1951",
+      "nascimento": "18 de maio de 1883",
+      "morte": "11 de junho de 1974",
+      "local": "Cuiabá, Mato Grosso",
+      "periodo": "Democratização",
+      "partido": "PSD (Partido Social Democrático)",
+      "biografia": "Militar e político que presidiu a redemocratização do Brasil após a Era Vargas, promulgando a Constituição de 1946.",
+      "realizacoes": [
+        "Constituição de 1946",
+        "Redemocratização do país",
+        "Plano SALTE (Saúde, Alimentação, Transporte, Energia)",
+        "Criação da Escola Superior de Guerra"
+      ],
+      "foto": "./assets/images/presidentes/Eurico.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 287 bi (1946)",
+        "pibFim": "R$ 345 bi (1951)",
+        "crescimentoPIB": "+20%",
+        "inflacaoMedia": "12%",
+        "desemprego": "5.2%",
+        "divida": "Moderada"
+      },
+      "aprovacao": {
+        "inicial": 65,
+        "final": 55,
+        "media": 60
+      },
+      "polemicas": [
+        "Cassação do PCB",
+        "Alinhamento com EUA na Guerra Fria",
+        "Rompimento com URSS",
+        "Política econômica liberal"
+      ],
+      "coisasBoas": [
+        "Nova Constituição democrática",
+        "Redemocratização",
+        "Plano de desenvolvimento",
+        "Estabilidade institucional"
+      ],
+      "indicadores": {
+        "educacao": 50,
+        "saude": 55,
+        "economia": 60,
+        "corrupcao": 55,
+        "social": 65
+      }
+    },
+    {
+      "id": "juscelino_kubitschek",
+      "nome": "Juscelino Kubitschek",
+      "nomeCompleto": "Juscelino Kubitschek de Oliveira",
+      "mandato": "1956-1961",
+      "nascimento": "12 de setembro de 1902",
+      "morte": "22 de agosto de 1976",
+      "local": "Diamantina, Minas Gerais",
+      "periodo": "Anos Dourados",
+      "partido": "PSD (Partido Social Democrático)",
+      "biografia": "Conhecido pelo lema '50 anos em 5', JK promoveu um extraordinário período de crescimento econômico e modernização do país.",
+      "realizacoes": [
+        "Construção de Brasília",
+        "Plano de Metas",
+        "Desenvolvimento da indústria automobilística",
+        "Criação da nova capital federal",
+        "Rodovia Belém-Brasília"
+      ],
+      "foto": "./assets/images/presidentes/JK.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 345 bi (1956)",
+        "pibFim": "R$ 520 bi (1961)",
+        "crescimentoPIB": "+51%",
+        "inflacaoMedia": "18%",
+        "desemprego": "3.8%",
+        "divida": "Aumentada"
+      },
+      "aprovacao": {
+        "inicial": 75,
+        "final": 85,
+        "media": 80
+      },
+      "polemicas": [
+        "Alto endividamento público",
+        "Inflação crescente",
+        "Concentração de renda",
+        "Dependência externa"
+      ],
+      "coisasBoas": [
+        "Construção de Brasília",
+        "Modernização industrial",
+        "Crescimento econômico",
+        "Infraestrutura rodoviária",
+        "Desenvolvimento nacional"
+      ],
+      "indicadores": {
+        "educacao": 70,
+        "saude": 65,
+        "economia": 90,
+        "corrupcao": 35,
+        "social": 75
+      }
+    },
+    {
+      "id": "janio_quadros",
+      "nome": "Jânio Quadros",
+      "nomeCompleto": "Jânio da Silva Quadros",
+      "mandato": "1961",
+      "nascimento": "25 de janeiro de 1917",
+      "morte": "16 de fevereiro de 1992",
+      "local": "Campo Grande, Mato Grosso do Sul",
+      "periodo": "Crise Política",
+      "partido": "PTN (Partido Trabalhista Nacional)",
+      "biografia": "Presidente que renunciou após apenas 7 meses no cargo, deixando o país em grave crise política que levou ao regime militar.",
+      "realizacoes": [
+        "Campanha contra a corrupção",
+        "Política externa independente",
+        "Condecoração de Che Guevara (controversa)",
+        "Moralização da administração pública"
+      ],
+      "foto": "./assets/images/presidentes/Janio.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 520 bi (1961)",
+        "pibFim": "R$ 525 bi (1961)",
+        "crescimentoPIB": "+1%",
+        "inflacaoMedia": "25%",
+        "desemprego": "4.5%",
+        "divida": "Alta"
+      },
+      "aprovacao": {
+        "inicial": 85,
+        "final": 25,
+        "media": 55
+      },
+      "polemicas": [
+        "Renúncia após 7 meses",
+        "Condecoração de Che Guevara",
+        "Crise política institucional",
+        "Instabilidade governamental"
+      ],
+      "coisasBoas": [
+        "Campanha anticorrupção",
+        "Política externa independente",
+        "Tentativa de moralização",
+        "Apoio popular inicial"
+      ],
+      "indicadores": {
+        "educacao": 40,
+        "saude": 45,
+        "economia": 30,
+        "corrupcao": 70,
+        "social": 50
+      }
+    },
+    {
+      "id": "castelo_branco",
+      "nome": "Castelo Branco",
+      "nomeCompleto": "Humberto de Alencar Castelo Branco",
+      "mandato": "1964-1967",
+      "nascimento": "20 de setembro de 1897",
+      "morte": "18 de julho de 1967",
+      "local": "Messejana, Ceará",
+      "periodo": "Regime Militar",
+      "partido": "ARENA (Aliança Renovadora Nacional)",
+      "biografia": "Primeiro presidente do regime militar brasileiro, implementou reformas econômicas e o AI-5, marcando o início da ditadura.",
+      "realizacoes": [
+        "Plano de Ação Econômica do Governo (PAEG)",
+        "Criação do BNH (Banco Nacional de Habitação)",
+        "Lei do FGTS",
+        "Reforma do sistema financeiro"
+      ],
+      "foto": "./assets/images/presidentes/CastelloBranco.webp",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 525 bi (1964)",
+        "pibFim": "R$ 580 bi (1967)",
+        "crescimentoPIB": "+10%",
+        "inflacaoMedia": "40%",
+        "desemprego": "6%",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 60,
+        "final": 45,
+        "media": 52
+      },
+      "polemicas": [
+        "Golpe militar de 1964",
+        "Repressão política",
+        "Cassação de direitos políticos",
+        "Censura e autoritarismo"
+      ],
+      "coisasBoas": [
+        "Estabilização econômica",
+        "Criação do BNH",
+        "Sistema financeiro moderno",
+        "Controle da inflação"
+      ],
+      "indicadores": {
+        "educacao": 45,
+        "saude": 50,
+        "economia": 65,
+        "corrupcao": 50,
+        "social": 25
+      }
+    },
+    {
+      "id": "costa_e_silva",
+      "nome": "Costa e Silva",
+      "nomeCompleto": "Artur da Costa e Silva",
+      "mandato": "1967-1969",
+      "nascimento": "3 de outubro de 1899",
+      "morte": "17 de dezembro de 1969",
+      "local": "Taquari, Rio Grande do Sul",
+      "periodo": "Regime Militar",
+      "partido": "ARENA (Aliança Renovadora Nacional)",
+      "biografia": "Segundo presidente militar, seu governo foi marcado pelo endurecimento do regime e pela promulgação do AI-5.",
+      "realizacoes": [
+        "Constituição de 1967",
+        "Criação da EMBRAER",
+        "Programa de Integração Nacional",
+        "AI-5 (Ato Institucional nº 5)"
+      ],
+      "foto": "./assets/images/presidentes/Costa_e_Silva.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 580 bi (1967)",
+        "pibFim": "R$ 650 bi (1969)",
+        "crescimentoPIB": "+12%",
+        "inflacaoMedia": "22%",
+        "desemprego": "5.5%",
+        "divida": "Moderada"
+      },
+      "aprovacao": {
+        "inicial": 55,
+        "final": 35,
+        "media": 45
+      },
+      "polemicas": [
+        "AI-5 - endurecimento da ditadura",
+        "Fechamento do Congresso",
+        "Censura total",
+        "Repressão violenta"
+      ],
+      "coisasBoas": [
+        "Criação da EMBRAER",
+        "Desenvolvimento industrial",
+        "Programa rodoviário",
+        "Crescimento econômico"
+      ],
+      "indicadores": {
+        "educacao": 40,
+        "saude": 45,
+        "economia": 70,
+        "corrupcao": 45,
+        "social": 20
+      }
+    },
+    {
+      "id": "medici",
+      "nome": "Médici",
+      "nomeCompleto": "Emílio Garrastazu Médici",
+      "mandato": "1969-1974",
+      "nascimento": "4 de dezembro de 1905",
+      "morte": "9 de outubro de 1985",
+      "local": "Bagé, Rio Grande do Sul",
+      "periodo": "Regime Militar",
+      "partido": "ARENA (Aliança Renovadora Nacional)",
+      "biografia": "Terceiro presidente militar, seu governo coincidiu com o 'milagre econômico' brasileiro e o período mais repressivo da ditadura.",
+      "realizacoes": [
+        "Milagre econômico brasileiro",
+        "Construção da Transamazônica",
+        "Copa do Mundo de 1970",
+        "Programa de Integração Nacional (PIN)"
+      ],
+      "foto": "./assets/images/presidentes/medici.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 650 bi (1969)",
+        "pibFim": "R$ 1.1 tri (1974)",
+        "crescimentoPIB": "+69%",
+        "inflacaoMedia": "18%",
+        "desemprego": "3.2%",
+        "divida": "Aumentada"
+      },
+      "aprovacao": {
+        "inicial": 70,
+        "final": 75,
+        "media": 72
+      },
+      "polemicas": [
+        "Período mais repressivo da ditadura",
+        "Tortura sistemática",
+        "Desaparecimentos forçados",
+        "Censura total"
+      ],
+      "coisasBoas": [
+        "Milagre econômico",
+        "Copa do Mundo 1970",
+        "Desenvolvimento industrial",
+        "Grandes obras de infraestrutura"
+      ],
+      "indicadores": {
+        "educacao": 50,
+        "saude": 55,
+        "economia": 95,
+        "corrupcao": 40,
+        "social": 15
+      }
+    },
+    {
+      "id": "ernesto_geisel",
+      "nome": "Ernesto Geisel",
+      "nomeCompleto": "Ernesto Beckmann Geisel",
+      "mandato": "1974-1979",
+      "nascimento": "3 de agosto de 1907",
+      "morte": "12 de setembro de 1996",
+      "local": "Bento Gonçalves, Rio Grande do Sul",
+      "periodo": "Regime Militar",
+      "partido": "ARENA (Aliança Renovadora Nacional)",
+      "biografia": "Quarto presidente militar, iniciou o processo de abertura política 'lenta, gradual e segura' que levaria ao fim da ditadura.",
+      "realizacoes": [
+        "Início da abertura política",
+        "Criação da NUCLEBRÁS",
+        "II Plano Nacional de Desenvolvimento",
+        "Revogação do AI-5"
+      ],
+      "foto": "./assets/images/presidentes/geisel.png",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.1 tri (1974)",
+        "pibFim": "R$ 1.4 tri (1979)",
+        "crescimentoPIB": "+27%",
+        "inflacaoMedia": "35%",
+        "desemprego": "4.8%",
+        "divida": "Alta"
+      },
+      "aprovacao": {
+        "inicial": 65,
+        "final": 70,
+        "media": 67
+      },
+      "polemicas": [
+        "Crise do petróleo",
+        "Aumento da dívida externa",
+        "Inflação descontrolada",
+        "Demissão de ministros linha-dura"
+      ],
+      "coisasBoas": [
+        "Início da abertura política",
+        "Revogação do AI-5",
+        "Programa nuclear",
+        "Desenvolvimento de energia"
+      ],
+      "indicadores": {
+        "educacao": 55,
+        "saude": 60,
+        "economia": 60,
+        "corrupcao": 45,
+        "social": 35
+      }
+    },
+    {
+      "id": "joao_figueiredo",
+      "nome": "João Figueiredo",
+      "nomeCompleto": "João Baptista de Oliveira Figueiredo",
+      "mandato": "1979-1985",
+      "nascimento": "15 de janeiro de 1918",
+      "morte": "24 de dezembro de 1999",
+      "local": "Rio de Janeiro, RJ",
+      "periodo": "Regime Militar",
+      "partido": "PDS (Partido Democrático Social)",
+      "biografia": "Último presidente militar, completou o processo de abertura política e devolveu o poder aos civis.",
+      "realizacoes": [
+        "Lei da Anistia",
+        "Fim do bipartidarismo",
+        "Eleições diretas para governadores",
+        "Transição para a democracia"
+      ],
+      "foto": "./assets/images/presidentes/FIGUEIREDO.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.4 tri (1979)",
+        "pibFim": "R$ 1.3 tri (1985)",
+        "crescimentoPIB": "-7%",
+        "inflacaoMedia": "110%",
+        "desemprego": "7.8%",
+        "divida": "Crítica"
+      },
+      "aprovacao": {
+        "inicial": 60,
+        "final": 40,
+        "media": 50
+      },
+      "polemicas": [
+        "Crise econômica severa",
+        "Hiperinflação",
+        "Recessão prolongada",
+        "Atentados terroristas"
+      ],
+      "coisasBoas": [
+        "Lei da Anistia",
+        "Abertura democrática",
+        "Fim da censura",
+        "Transição pacífica"
+      ],
+      "indicadores": {
+        "educacao": 60,
+        "saude": 55,
+        "economia": 25,
+        "corrupcao": 50,
+        "social": 60
+      }
+    },
+    {
+      "id": "jose_sarney",
+      "nome": "José Sarney",
+      "nomeCompleto": "José Ribamar Ferreira de Araújo Costa",
+      "mandato": "1985-1990",
+      "nascimento": "24 de abril de 1930",
+      "morte": "Vivo",
+      "local": "Pinheiro, Maranhão",
+      "periodo": "Nova República",
+      "partido": "PMDB (Partido do Movimento Democrático Brasileiro)",
+      "biografia": "Primeiro presidente civil após a ditadura militar, promulgou a Constituição de 1988 mas enfrentou grave crise econômica com hiperinflação.",
+      "realizacoes": [
+        "Constituição de 1988",
+        "Consolidação da democracia",
+        "Criação do SUS",
+        "Planos econômicos (Plano Cruzado, Bresser, Verão)"
+      ],
+      "foto": "./assets/images/presidentes/SArney.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.3 tri (1985)",
+        "pibFim": "R$ 1.5 tri (1990)",
+        "crescimentoPIB": "+15%",
+        "inflacaoMedia": "550%",
+        "desemprego": "4.2%",
+        "divida": "Muito Alta"
+      },
+      "aprovacao": {
+        "inicial": 75,
+        "final": 35,
+        "media": 55
+      },
+      "polemicas": [
+        "Hiperinflação descontrolada",
+        "Múltiplos planos econômicos fracassados",
+        "Corrupção generalizada",
+        "Instabilidade monetária"
+      ],
+      "coisasBoas": [
+        "Constituição Cidadã de 1988",
+        "Consolidação democrática",
+        "Criação do SUS",
+        "Garantia de direitos sociais"
+      ],
+      "indicadores": {
+        "educacao": 65,
+        "saude": 70,
+        "economia": 20,
+        "corrupcao": 30,
+        "social": 80
+      }
+    },
+    {
+      "id": "fernando_collor",
+      "nome": "Fernando Collor de Mello",
+      "nomeCompleto": "Fernando Affonso Collor de Mello",
+      "mandato": "1990-1992",
+      "nascimento": "12 de agosto de 1949",
+      "morte": "Vivo",
+      "local": "Rio de Janeiro, RJ",
+      "periodo": "Nova República",
+      "partido": "PRN (Partido da Reconstrução Nacional)",
+      "biografia": "Primeiro presidente eleito por voto direto após a ditadura, foi impedido por corrupção. Implementou políticas neoliberais e o confisco das poupanças.",
+      "realizacoes": [
+        "Abertura da economia brasileira",
+        "Plano Collor (controle da inflação)",
+        "Modernização da indústria nacional",
+        "Criação do Código de Defesa do Consumidor"
+      ],
+      "foto": "./assets/images/presidentes/Collor.webp",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.5 tri (1990)",
+        "pibFim": "R$ 1.4 tri (1992)",
+        "crescimentoPIB": "-7%",
+        "inflacaoMedia": "440%",
+        "desemprego": "6.8%",
+        "divida": "Alta"
+      },
+      "aprovacao": {
+        "inicial": 70,
+        "final": 15,
+        "media": 42
+      },
+      "polemicas": [
+        "Confisco das poupanças (Plano Collor)",
+        "Esquema PC Farias",
+        "Impeachment por corrupção",
+        "Recessão econômica"
+      ],
+      "coisasBoas": [
+        "Abertura da economia",
+        "Modernização industrial",
+        "Código de Defesa do Consumidor",
+        "Combate inicial à inflação"
+      ],
+      "indicadores": {
+        "educacao": 55,
+        "saude": 50,
+        "economia": 35,
+        "corrupcao": 15,
+        "social": 45
+      }
+    },
+    {
+      "id": "itamar_franco",
+      "nome": "Itamar Franco",
+      "nomeCompleto": "Itamar Augusto Cautiero Franco",
+      "mandato": "1992-1995",
+      "nascimento": "28 de junho de 1930",
+      "morte": "2 de julho de 2011",
+      "local": "Mar de Espanha, Minas Gerais",
+      "periodo": "Nova República",
+      "partido": "PMDB (Partido do Movimento Democrático Brasileiro)",
+      "biografia": "Assumiu após o impeachment de Collor, estabilizou a democracia e criou o Plano Real que controlou definitivamente a hiperinflação.",
+      "realizacoes": [
+        "Criação do Plano Real",
+        "Estabilização da moeda",
+        "Controle definitivo da inflação",
+        "Fortalecimento das instituições democráticas"
+      ],
+      "foto": "./assets/images/presidentes/ItamarFranco.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.4 tri (1992)",
+        "pibFim": "R$ 1.8 tri (1995)",
+        "crescimentoPIB": "+29%",
+        "inflacaoMedia": "1100%",
+        "desemprego": "5.4%",
+        "divida": "Controlada"
+      },
+      "aprovacao": {
+        "inicial": 45,
+        "final": 80,
+        "media": 62
+      },
+      "polemicas": [
+        "Crise política pós-impeachment",
+        "Alta rotatividade ministerial",
+        "Instabilidade inicial",
+        "Pressões inflacionárias"
+      ],
+      "coisasBoas": [
+        "Criação do Plano Real",
+        "Estabilização democrática",
+        "Controle da inflação",
+        "Recuperação econômica"
+      ],
+      "indicadores": {
+        "educacao": 70,
+        "saude": 65,
+        "economia": 85,
+        "corrupcao": 65,
+        "social": 75
+      }
+    },
+    {
+      "id": "fernando_henrique_cardoso",
+      "nome": "Fernando Henrique Cardoso",
+      "nomeCompleto": "Fernando Henrique Cardoso",
+      "mandato": "1995-2003",
+      "nascimento": "18 de junho de 1931",
+      "morte": "Vivo",
+      "local": "Rio de Janeiro, RJ",
+      "periodo": "Nova República",
+      "partido": "PSDB (Partido da Social Democracia Brasileira)",
+      "biografia": "Sociólogo e político, foi reeleito e governou por 8 anos. Consolidou a estabilidade econômica e modernizou o Estado brasileiro.",
+      "realizacoes": [
+        "Consolidação do Plano Real",
+        "Criação de agências reguladoras",
+        "Lei de Responsabilidade Fiscal",
+        "Modernização do Estado",
+        "Criação do Auxílio Gás e Bolsa Escola"
+      ],
+      "foto": "./assets/images/presidentes/fhc.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.8 tri (1995)",
+        "pibFim": "R$ 1.99 tri (2003)",
+        "crescimentoPIB": "+11%",
+        "inflacaoMedia": "7.8%",
+        "desemprego": "9.3%",
+        "divida": "Alta"
+      },
+      "aprovacao": {
+        "inicial": 85,
+        "final": 45,
+        "media": 65
+      },
+      "polemicas": [
+        "Alto desemprego no final do mandato",
+        "Crise energética (apagão)",
+        "Baixo crescimento econômico",
+        "Crise do mensalão tucano"
+      ],
+      "coisasBoas": [
+        "Estabilidade monetária",
+        "Modernização do Estado",
+        "Criação de programas sociais",
+        "Lei de Responsabilidade Fiscal"
+      ],
+      "indicadores": {
+        "educacao": 75,
+        "saude": 70,
+        "economia": 70,
+        "corrupcao": 60,
+        "social": 70
+      }
+    },
+    {
+      "id": "lula",
+      "nome": "Luiz Inácio Lula da Silva",
+      "nomeCompleto": "Luiz Inácio Lula da Silva",
+      "mandato": "2003-2011, 2023-presente",
+      "nascimento": "27 de outubro de 1945",
+      "morte": "Vivo",
+      "local": "Caetés, Pernambuco",
+      "periodo": "Nova República",
+      "partido": "PT (Partido dos Trabalhadores)",
+      "biografia": "Ex-metalúrgico e sindicalista, foi o primeiro presidente operário do Brasil. Implementou programas sociais que tiraram milhões da pobreza.",
+      "realizacoes": [
+        "Programa Bolsa Família",
+        "Criação de universidades federais",
+        "ProUni (Programa Universidade para Todos)",
+        "Programa Mais Médicos",
+        "PAC (Programa de Aceleração do Crescimento)",
+        "Criação do ENEM"
+      ],
+      "foto": "./assets/images/presidentes/Lula.webp",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 1.99 tri (2003)",
+        "pibFim": "R$ 4.14 tri (2010)",
+        "crescimentoPIB": "+108%",
+        "inflacaoMedia": "5.1%",
+        "desemprego": "6.2%",
+        "divida": "Reduzida"
+      },
+      "aprovacao": {
+        "inicial": 68,
+        "final": 87,
+        "media": 78
+      },
+      "polemicas": [
+        "Escândalo do Mensalão",
+        "Início das investigações da Lava Jato",
+        "Prisão em 2018",
+        "Polarização política",
+        "Corrupção na Petrobras"
+      ],
+      "coisasBoas": [
+        "Criação de 36 universidades federais",
+        "Bolsa Família - 14 milhões de famílias",
+        "ProUni - 2 milhões de bolsas",
+        "Mais Médicos - 18 mil médicos",
+        "PAC - R$ 1.59 trilhão em investimentos",
+        "Redução da pobreza extrema",
+        "Brasil sai do mapa da fome da ONU"
+      ],
+      "indicadores": {
+        "educacao": 85,
+        "saude": 80,
+        "economia": 88,
+        "corrupcao": 25,
+        "social": 92
+      }
+    },
+    {
+      "id": "dilma_rousseff",
+      "nome": "Dilma Rousseff",
+      "nomeCompleto": "Dilma Vana Rousseff",
+      "mandato": "2011-2016",
+      "nascimento": "14 de dezembro de 1947",
+      "morte": "Viva",
+      "local": "Belo Horizonte, Minas Gerais",
+      "periodo": "Nova República",
+      "partido": "PT (Partido dos Trabalhistas)",
+      "biografia": "Primeira mulher presidente do Brasil, economista e ex-guerrilheira. Sofreu impeachment em 2016 em meio à crise econômica e política.",
+      "realizacoes": [
+        "Programa Mais Médicos",
+        "Expansão de universidades federais",
+        "Lei de Cotas nas universidades",
+        "Programa Ciência sem Fronteiras",
+        "Marco Civil da Internet"
+      ],
+      "foto": "./assets/images/presidentes/Dilma.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 4.14 tri (2011)",
+        "pibFim": "R$ 3.89 tri (2016)",
+        "crescimentoPIB": "-6%",
+        "inflacaoMedia": "7.2%",
+        "desemprego": "11.5%",
+        "divida": "Muito Alta"
+      },
+      "aprovacao": {
+        "inicial": 75,
+        "final": 10,
+        "media": 42
+      },
+      "polemicas": [
+        "Impeachment por pedaladas fiscais",
+        "Grave crise econômica",
+        "Operação Lava Jato",
+        "Alta polarização política"
+      ],
+      "coisasBoas": [
+        "Programa Mais Médicos",
+        "Lei de Cotas universitárias",
+        "Marco Civil da Internet",
+        "Expansão universitária"
+      ],
+      "indicadores": {
+        "educacao": 80,
+        "saude": 75,
+        "economia": 30,
+        "corrupcao": 20,
+        "social": 75
+      }
+    },
+    {
+      "id": "michel_temer",
+      "nome": "Michel Temer",
+      "nomeCompleto": "Michel Miguel Elias Temer Lulia",
+      "mandato": "2016-2018",
+      "nascimento": "23 de setembro de 1940",
+      "morte": "Vivo",
+      "local": "Tietê, São Paulo",
+      "periodo": "Nova República",
+      "partido": "MDB (Movimento Democrático Brasileiro)",
+      "biografia": "Assumiu a presidência após o impeachment de Dilma Rousseff. Implementou reformas estruturais em meio à grave crise econômica.",
+      "realizacoes": [
+        "PEC do Teto de Gastos Públicos",
+        "Lei das Terceirizações",
+        "Marco Legal do Saneamento",
+        "Criação do Ensino Médio em Tempo Integral"
+      ],
+      "foto": "./assets/images/presidentes/Temer.jpg",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 3.89 tri (2016)",
+        "pibFim": "R$ 4.05 tri (2018)",
+        "crescimentoPIB": "+4%",
+        "inflacaoMedia": "4.2%",
+        "desemprego": "12.8%",
+        "divida": "Alta"
+      },
+      "aprovacao": {
+        "inicial": 30,
+        "final": 15,
+        "media": 22
+      },
+      "polemicas": [
+        "Legitimidade questionada",
+        "Alto desemprego",
+        "Gravação da JBS",
+        "Greve dos caminhoneiros"
+      ],
+      "coisasBoas": [
+        "Controle da inflação",
+        "Reformas estruturais",
+        "Marco do saneamento",
+        "Estabilização inicial"
+      ],
+      "indicadores": {
+        "educacao": 70,
+        "saude": 60,
+        "economia": 50,
+        "corrupcao": 35,
+        "social": 45
+      }
+    },
+    {
+      "id": "jair_bolsonaro",
+      "nome": "Jair Bolsonaro",
+      "nomeCompleto": "Jair Messias Bolsonaro",
+      "mandato": "2019-2022",
+      "nascimento": "21 de março de 1955",
+      "morte": "Vivo",
+      "local": "Glicério, São Paulo",
+      "periodo": "Nova República",
+      "partido": "PL (Partido Liberal)",
+      "biografia": "Ex-militar e deputado federal por 28 anos. Governou durante a pandemia de COVID-19 e foi conhecido por posições conservadoras.",
+      "realizacoes": [
+        "Marco do Saneamento Básico",
+        "Criação do PIX",
+        "Auxílio Emergencial durante a pandemia",
+        "Lei de Liberdade Econômica",
+        "Marco Legal das Startups"
+      ],
+      "foto": "./assets/images/presidentes/Bolsonaro.webp",
+      "dadosEconomicos": {
+        "pibInicio": "R$ 4.05 tri (2019)",
+        "pibFim": "R$ 4.61 tri (2022)",
+        "crescimentoPIB": "+14%",
+        "inflacaoMedia": "6.8%",
+        "desemprego": "9.3%",
+        "divida": "Muito Alta"
+      },
+      "aprovacao": {
+        "inicial": 55,
+        "final": 35,
+        "media": 45
+      },
+      "polemicas": [
+        "Gestão controversa da pandemia",
+        "Ataques ao STF e TSE",
+        "Desmatamento da Amazônia",
+        "Questionamento das urnas eletrônicas"
+      ],
+      "coisasBoas": [
+        "Criação do PIX",
+        "Auxílio emergencial",
+        "Marco do saneamento",
+        "Digitalização de serviços"
+      ],
+      "indicadores": {
+        "educacao": 50,
+        "saude": 45,
+        "economia": 55,
+        "corrupcao": 40,
+        "social": 40
+      }
+    }
+  ]
+}

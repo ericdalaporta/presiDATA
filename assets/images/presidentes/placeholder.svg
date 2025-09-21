@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular com gradiente -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Círculo de fundo -->
+  <circle cx="100" cy="100" r="95" fill="url(#bg-gradient)" filter="url(#shadow)"/>
+  
+  <!-- Brasão estilizado -->
+  <g transform="translate(100, 85)">
+    <!-- Círculo central -->
+    <circle cx="0" cy="0" r="35" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Estrelas representando o Brasil -->
+    <g fill="#667eea">
+      <polygon points="0,-15 2,-5 12,-5 4,1 6,11 0,5 -6,11 -4,1 -12,-5 -2,-5" transform="scale(0.8)"/>
+      <circle cx="15" cy="-8" r="1.5"/>
+      <circle cx="-15" cy="-8" r="1.5"/>
+      <circle cx="12" cy="12" r="1.5"/>
+      <circle cx="-12" cy="12" r="1.5"/>
+      <circle cx="0" cy="18" r="1"/>
+    </g>
+  </g>
+  
+  <!-- Texto placeholder -->
+  <text x="100" y="160" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" 
+        text-anchor="middle" fill="#ffffff">PRESIDENTE</text>
+  <text x="100" y="180" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" 
+        text-anchor="middle" fill="#ffffff" opacity="0.8">DO BRASIL</text>
+</svg>
