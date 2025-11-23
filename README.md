@@ -1,70 +1,41 @@
 # PresiData BR
 
-Plataforma web para visualização e comparação de dados dos presidentes do Brasil, desde o início da República (1889) até os dias atuais. O projeto oferece uma interface interativa para explorar a história política do Brasil através de seus líderes.
+Plataforma web para explorar e comparar dados dos presidentes brasileiros desde o início da República. A aplicação entrega uma experiência moderna com busca inteligente, cartões animados e indicadores econômicos interativos.
 
-## 📋 Sumário
+![Visão geral do Presidômetro](assets/presidometro.png)
 
-- [Visão Geral](#visão-geral)
-- [Funcionalidades](#funcionalidades)
-- [Como Executar](#como-executar)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Como Contribuir](#como-contribuir)
-- [Contato](#contato)
+## ✨ Recursos
+- **Busca instantânea** por nome do presidente com sugestões e cartões dinâmicos.
+- **Perfil completo**: foto, partido, período de mandato, assinatura e indicadores econômicos.
+- **Comparador interativo** para colocar dois presidentes lado a lado e analisar mandatos, sucessos e polêmicas.
+- **Layout responsivo** com animações sutis, tema claro e grid de fundo personalizado.
 
-## ✨ Visão Geral
+## 🛠️ Tecnologias
+- HTML5 + CSS3 (Playfair Display / Inter)
+- JavaScript (GSAP, ScrollTrigger, AOS)
+- Dados estáticos em JSON (`data/presidentes-db.json` e `data/presidentes-atualizado.json`)
 
-O projeto foi desenvolvido com o objetivo de facilitar o acesso e a compreensão de dados históricos e políticos do Brasil. Através de uma interface moderna e responsiva, os usuários podem pesquisar, visualizar e comparar informações detalhadas sobre cada mandato presidencial.
+## 🚀 Como executar
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/ericdalaporta/presidometro.git
+   cd presidometro
+   ```
+2. Abra `index.html` diretamente no navegador **ou** utilize a extensão Live Server / Vite para recarregar automaticamente.
+3. Pesquise um presidente e explore os dados. Abra `presidente.html?id=<slug>` para acessar a página detalhada.
 
-## 🚀 Funcionalidades
+## 📁 Estrutura
+```
+.
+├── assets/            # Ícones e imagens
+├── css/               # Estilos (home, páginas internas, responsivo)
+├── data/              # Bases em JSON com informações dos presidentes
+├── js/                # Scripts de busca, animações e comparação
+├── index.html         # Página inicial com busca
+└── presidente.html    # Página detalhada de cada presidente
+```
 
--   **Busca Inteligente:** Pesquisa com sugestões automáticas para encontrar presidentes facilmente.
--   **Cards Interativos:** Visualização rápida de informações essenciais de cada presidente.
--   **Gráficos Detalhados:** Análise de indicadores com gráficos interativos.
--   **Notificações Dinâmicas:** Alertas animados e customizados para interações do usuário.
--   **Interface Responsiva:** Experiência de uso otimizada para desktops, tablets e smartphones.
--   **Animações Modernas:** Transições suaves e animações de entrada para uma experiência mais fluida.
+## 📄 Licença
+Projeto distribuído sob a licença [MIT](LICENSE).
 
-## ▶️ Como Executar
-
-O projeto é uma aplicação web estática e não necessita de um processo de build ou instalação de dependências.
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/ericdalaporta/PresiData-BR.git](https://github.com/ericdalaporta/PresiData-BR.git)
-    ```
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd PresiData-BR
-    ```
-3.  **Abra o arquivo `index.html` em seu navegador.**
-
-### Pré-requisitos
-
-| Configuração | Requisito Mínimo |
-| :--- | :--- |
-| **Sistema Operacional** | Windows, macOS ou Linux |
-| **Navegador** | Versões recentes de Chrome, Firefox, Safari ou Edge |
-| **Conexão com a Internet**| Necessária para carregar fontes e ícones externos |
-
-## ⚙️ Tecnologias Utilizadas
-
--   **Base:** HTML5, CSS3, JavaScript (ES6+)
--   **Gráficos:** Chart.js
--   **Animações:** GSAP (GreenSock) e [AOS Animate On Scroll
--   **Ícones:** Font Awesome
-
-## 🤝 Como Contribuir
-
-Contribuições são bem-vindas! Se você tem alguma ideia para melhorar o projeto, por favor, siga estes passos:
-
-1.  Faça um **Fork** do projeto.
-2.  Crie uma nova **Branch** (`git checkout -b feature/sua-feature`).
-3.  **Comite** suas mudanças (`git commit -m 'Adiciona nova feature'`).
-4.  Faça o **Push** para a Branch (`git push origin feature/sua-feature`).
-5.  Abra um **Pull Request**.
-
-## 📫 Contato
-
-Desenvolvido por **Eric Dala Porta**.
-
--   **Email:** ericdasilvadalaporta@gmail.com
+Sinta-se à vontade para abrir issues ou pull requests com melhorias. 🇧🇷

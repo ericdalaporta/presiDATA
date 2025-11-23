@@ -1,1192 +1,1568 @@
 {
   "presidentes": [
     {
-      "id": "deodoro_da_fonseca",
-      "nome": "Deodoro da Fonseca",
-      "nomeCompleto": "Manuel Deodoro da Fonseca",
-      "mandato": "1889-1891",
-      "nascimento": "5 de agosto de 1827",
-      "morte": "23 de agosto de 1892",
-      "local": "Marechal Deodoro, Alagoas",
-      "periodo": "República Velha",
-      "partido": "Militar",
-      "biografia": "Primeiro presidente do Brasil, foi um militar e político que proclamou a República em 15 de novembro de 1889. Deodoro da Fonseca liderou o movimento republicano que derrubou a monarquia brasileira.",
-      "realizacoes": [
-        "Proclamação da República",
-        "Primeira Constituição Republicana",
-        "Organização do Estado Republicano",
-        "Separação entre Igreja e Estado"
-      ],
-      "foto": "./assets/images/presidentes/Deodoro.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "N/A",
-        "inflacaoMedia": "N/A",
-        "desemprego": "N/A",
-        "divida": "Baixa"
-      },
-      "aprovacao": {
-        "inicial": 85,
-        "final": 35,
-        "media": 60
-      },
-      "polemicas": [
-        "Dissolução do Congresso Nacional",
-        "Conflitos com o Legislativo",
-        "Renúncia precipitada em 1891",
-        "Resistência de grupos monarquistas"
-      ],
-      "coisasBoas": [
-        "Estabelecimento da República",
-        "Fim da escravidão definitivamente consolidado",
-        "Modernização inicial das instituições",
-        "Separação entre Igreja e Estado"
-      ],
-      "indicadores": {
-        "educacao": 15,
-        "saude": 20,
-        "economia": 40,
-        "corrupcao": 30,
-        "social": 35
-      }
+  "id": "deodoro_da_fonseca",
+  "numero": 1,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Deodoro_da_Fonseca_%281889%29.jpg",
+  "nome": "Manuel Deodoro da Fonseca",
+  "inicio_mandato": "15/11/1889",
+  "final_mandato": "23/11/1891",
+  "partido": "Nenhum (governo militar provisório, sem partidos)",
+  "vice_presidente": ["Floriano Vieira Peixoto"],
+  "nascimento": "05/08/1827",
+  "morte": "23/10/1892",
+  "nacionalidade": "Brasileiro",
+  "estado": "Alagoas",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Deodoro_da_Fonseca-signature.svg",
+  "pib_mandato": "Não disponível (não existem séries anuais confiáveis para 1890–1891)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível (Brasil não operava câmbio moderno/mercado financeiro como hoje)",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Proclamou a República",
+    "Organizou o Governo Provisório",
+    "Criou os primeiros ministérios republicanos",
+    "Convocou a Assembleia Constituinte de 1890",
+    "Promulgou a Constituição de 1891"
+  ],
+  "polemicas": [
+    "Fechamento do Congresso em 1891",
+    "Crise econômica do Encilhamento",
+    "Conflitos entre militares e civis",
+    "Aumento da instabilidade política",
+    "Renúncia sob pressão militar"
+  ]
+}
+,
+    {
+  "id": "floriano_peixoto",
+  "numero": 2,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/18/Floriano_Peixoto_%281891%29.jpg",
+  "nome": "Floriano Vieira Peixoto",
+  "inicio_mandato": "23/11/1891",
+  "final_mandato": "15/11/1894",
+  "partido": "Nenhum (governo militar, República Velha)",
+  "vice_presidente": [],
+  "nascimento": "30/10/1839",
+  "morte": "29/06/1895",
+  "nacionalidade": "Brasileiro",
+  "estado": "Alagoas",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Presidente_Floriano_Peixoto_assinatura.jpg",
+  "pib_mandato": "Contração econômica significativa (sem dados numéricos confiáveis)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Consolidou a República após a crise do início do regime",
+    "Derrotou a Revolução da Armada",
+    "Derrotou a Revolução Federalista no Sul",
+    "Manteve a estabilidade institucional após a renúncia de Deodoro"
+  ],
+  "polemicas": [
+    "Governo marcado por forte autoritarismo",
+    "Repressão dura a rebeliões (apelido 'Marechal de Ferro')",
+    "Conflitos com o Congresso",
+    "Medidas centralizadoras e resistência a eleições"
+  ]
+}
+,
+   {
+  "id": "prudente_de_morais",
+  "numero": 3,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Prudentedemorais.jpg",
+  "nome": "Prudente José de Morais Barros",
+  "inicio_mandato": "15/11/1894",
+  "final_mandato": "15/11/1898",
+  "partido": "Partido Republicano Federal",
+  "vice_presidente": ["Manuel Vitorino Pereira"],
+  "nascimento": "04/10/1841",
+  "morte": "03/12/1902",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/2/22/Assinatura_de_Prudente_de_Morais.jpg",
+  "pib_mandato": "Crescimento modesto (estimativas históricas divergentes)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Primeiro presidente civil do Brasil",
+    "Pacificação da Revolta Federalista",
+    "Assinatura do Tratado de Paz com o Paraguai (resolvendo pendências da Guerra do Paraguai)",
+    "Reorganização administrativa após governos militares"
+  ],
+  "polemicas": [
+    "Atentado no Arsenal de Guerra (1897)",
+    "Conflitos com militares florianistas",
+    "Crise fiscal e dificuldades econômicas",
+    "Intervenções federais em estados conflitantes"
+  ]
+}
+,
+   {
+  "id": "campos_sales",
+  "numero": 4,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Campos_Sales.jpg",
+  "nome": "Manoel Ferraz de Campos Salles",
+  "inicio_mandato": "15/11/1898",
+  "final_mandato": "15/11/1902",
+  "partido": "Partido Republicano Paulista",
+  "vice_presidente": ["Francisco de Assis Rosa e Silva"],
+  "nascimento": "15/02/1841",
+  "morte": "28/06/1913",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Campos_Sales_signature.svg",
+  "pib_mandato": "Crescimento baixo/modesto (recuperação após crise do Encilhamento)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Implementou o Funding Loan, renegociando a dívida externa",
+    "Estabeleceu políticas de austeridade que estabilizaram as contas públicas",
+    "Consolidou a 'política dos governadores' para garantir governabilidade",
+    "Reduziu a inflação herdada de décadas anteriores"
+  ],
+  "polemicas": [
+    "Austeridade severa que afetou salários e investimentos",
+    "Dependência de empréstimos externos",
+    "Centralização do poder político",
+    "Críticas à política dos governadores e ao coronelismo"
+  ]
+},
+{
+  "id": "rodrigues_alves",
+  "numero": 5,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rodrigues_Alves_3.jpg",
+  "nome": "Francisco de Paula Rodrigues Alves",
+  "inicio_mandato": "15/11/1902",
+  "final_mandato": "15/11/1906",
+  "partido": "Partido Republicano Paulista",
+  "vice_presidente": ["Afonso Augusto Moreira Pena"],
+  "nascimento": "07/07/1848",
+  "morte": "16/01/1919",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Rodrigues_Alves_signature.jpg",
+  "pib_mandato": "Crescimento moderado (expansão cafeeira e recuperação pós-austeridade)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Reformas urbanas e modernização do Rio de Janeiro (Pereira Passos)",
+    "Campanhas de saneamento conduzidas por Oswaldo Cruz",
+    "Redução de epidemias como febre amarela e varíola",
+    "Fortalecimento da economia cafeeira",
+    "Melhorias em infraestrutura urbana e portuária"
+  ],
+  "polemicas": [
+    "Revolta da Vacina (1904) devido à reação da população às medidas sanitárias",
+    "Desapropriações forçadas e remoções para obras urbanas",
+    "Críticas à priorização de interesses da elite cafeeira"
+  ]
+},
+
+    {
+  "id": "afonso_pena",
+  "numero": 6,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Afonso_Pena.jpg",
+  "nome": "Afonso Augusto Moreira Pena",
+  "inicio_mandato": "15/11/1906",
+  "final_mandato": "14/06/1909",
+  "partido": "Partido Republicano Mineiro",
+  "vice_presidente": ["Nilo Procópio Peçanha"],
+  "nascimento": "30/11/1847",
+  "morte": "14/06/1909",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Advogado", "Jurista", "Professor", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/9/95/Assinatura_do_presidente_Afonso_Pena.jpg",
+  "pib_mandato": "Crescimento ligado à agroexportação e expansão da malha ferroviária",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Expansão econômica estimulada pelo café",
+    "Fortalecimento das ferrovias e infraestrutura",
+    "Políticas de incentivo à imigração europeia",
+    "Valorização do café por meio de políticas de sustentação de preços",
+    "Administração estável e considerada eficiente"
+  ],
+  "polemicas": [
+    "Críticas de oligarquias rivais por favorecer Minas e São Paulo",
+    "Conflitos internos sobre a sucessão presidencial (caso Hermes vs. Rui Barbosa)",
+    "Intervenções em estados com disputas políticas"
+  ]
+}
+,
+   {
+  "id": "nilo_pecanha",
+  "numero": 7,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Nilo_Peçanha_02.jpg",
+  "nome": "Nilo Procópio Peçanha",
+  "inicio_mandato": "14/06/1909",
+  "final_mandato": "15/11/1910",
+  "partido": "Partido Republicano Fluminense",
+  "vice_presidente": [],
+  "nascimento": "02/10/1867",
+  "morte": "31/03/1924",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio de Janeiro",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Assinatura_de_Nilo_Peçanha.jpg",
+  "pib_mandato": "+6,4% a.a. (estimativa histórica, sem série oficial confiável)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Criou o Serviço de Proteção aos Índios (precursor da FUNAI)",
+    "Promoveu reformas administrativas",
+    "Defendeu o voto secreto",
+    "Incentivou a educação técnica e profissionalizante (Escolas de Aprendizes Artífices)",
+    "Estabilidade política após morte de Afonso Pena"
+  ],
+  "polemicas": [
+    "Mandato muito curto para implementar programas duradouros",
+    "Críticas por conflitos entre oligarquias estaduais",
+    "Disputas envolvendo sua tentativa de influenciar a sucessão presidencial"
+  ]
+}
+,
+   {
+  "id": "hermes_fonseca",
+  "numero": 8,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Hermes_da_Fonseca_%281910%29.jpg",
+  "nome": "Hermes Rodrigues da Fonseca",
+  "inicio_mandato": "15/11/1910",
+  "final_mandato": "15/11/1914",
+  "partido": "Partido Republicano Conservador",
+  "vice_presidente": ["Venceslau Brás Pereira Gomes"],
+  "nascimento": "12/05/1855",
+  "morte": "09/09/1923",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hermes_Rodrigues_da_Fonseca_signature.png",
+  "pib_mandato": "Crescimento variável (impactado por crises políticas e início da Primeira Guerra Mundial)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Criação do Ministério da Agricultura, Indústria e Comércio",
+    "Tentativas de modernização do Exército",
+    "Revogação de algumas políticas de valorização do café (esforço de ajuste econômico)",
+    "Reformas no sistema prisional"
+  ],
+  "polemicas": [
+    "Política das Salvações (intervenções militares em estados para substituir governadores)",
+    "Conflitos intensos com oligarquias regionais",
+    "Repressão a movimentos civis e políticos",
+    "Divisão nacional entre civilistas e militaristas",
+    "Críticas ao uso político das Forças Armadas"
+  ]
+}
+,
+    {
+  "id": "venceslau_bras",
+  "numero": 9,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Venceslau_Brás.jpg",
+  "nome": "Venceslau Brás Pereira Gomes",
+  "inicio_mandato": "15/11/1914",
+  "final_mandato": "15/11/1918",
+  "partido": "Partido Republicano Mineiro",
+  "vice_presidente": ["Urbano Santos da Costa Araújo"],
+  "nascimento": "26/02/1868",
+  "morte": "15/05/1966",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/52/Venceslau_Brás_signature.svg",
+  "pib_mandato": "Crescimento com turbulência (fortemente influenciado pela Primeira Guerra Mundial)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Manteve o Brasil neutro durante boa parte da Primeira Guerra Mundial",
+    "Declarou guerra às Potências Centrais em 1917 após ataques alemães a navios brasileiros",
+    "Fundou a Caixa de Mobilização Bancária para lidar com impactos financeiros",
+    "Promoveu expansão da indústria nacional devido ao bloqueio de importações",
+    "Criou medidas de proteção ao trabalhador (regulamentação do trabalho infantil e feminino)"
+  ],
+  "polemicas": [
+    "Críticas por demora em reagir a ataques alemães",
+    "Pressões internacionais e interna disputa entre pró-Aliados e neutros",
+    "Crises econômicas ligadas ao comércio exterior",
+    "Eclosão da gripe espanhola no final do mandato"
+  ]
+}
+,
+    {
+  "id": "delfim_moreira",
+  "numero": 10,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Delfim_Moreira_%281918%29.jpg",
+  "nome": "Delfim Moreira da Costa Ribeiro",
+  "inicio_mandato": "15/11/1918",
+  "final_mandato": "28/07/1919",
+  "partido": "Partido Republicano Mineiro",
+  "vice_presidente": [],
+  "nascimento": "07/11/1868",
+  "morte": "01/07/1920",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/1/10/Delfim_Moreira_assinatura_presidencial.jpg",
+  "pib_mandato": "Crescimento oscilante (período pós-guerra e crise internacional)",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (não existiam pesquisas de opinião)",
+  "sucessos": [
+    "Administração de transição durante inflação e instabilidade pós-Primeira Guerra Mundial",
+    "Organizou a sucessão presidencial após a morte de Rodrigues Alves",
+    "Manteve funcionamento institucional apesar de grave crise política"
+  ],
+  "polemicas": [
+    "Assumiu presidência devido à incapacidade de Rodrigues Alves (doente), gerando debate legal",
+    "Considerável instabilidade política em seu curto governo",
+    "Crises econômicas e inflacionárias herdadas do período pós-guerra"
+  ]
+}
+,
+   {
+  "id": "epitacio_pessoa",
+  "numero": 11,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/19/Epitacio_Pessoa_%281919%29.jpg",
+  "nome": "Epitácio Lindolfo da Silva Pessoa",
+  "inicio_mandato": "28/07/1919",
+  "final_mandato": "15/11/1922",
+  "partido": "Partido Republicano Mineiro",
+  "vice_presidente": ["Delfim Moreira da Costa Ribeiro", "Francisco Álvaro Bueno de Paiva"],
+  "nascimento": "23/05/1865",
+  "morte": "13/02/1942",
+  "nacionalidade": "Brasileiro",
+  "estado": "Paraíba",
+  "profissao": ["Professor de Direito", "Jurista"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/3/33/Epitácio_Pessoa_assinatura.jpg",
+  "pib_mandato": "Crescimento moderado após a Primeira Guerra, seguido de forte crise do café no último ano",
+  "inflacao": "Baixa a moderada (dados imprecisos para o período)",
+  "desemprego": "Não mensurado oficialmente na época",
+  "dolar": "Dados não registrados para esse período",
+  "aprovacao": "Considerada baixa no final do governo",
+  "sucessos": [
+    "Criação de grandes obras de infraestrutura no Nordeste, especialmente açudes para combater a seca",
+    "Reforma administrativa e reorganização financeira do país",
+    "Participação destacada na Conferência de Paz de Versalhes antes da eleição",
+    "Fortalecimento das Forças Armadas"
+  ],
+  "polemicas": [
+    "Repressão violenta ao movimento operário (greves de 1919–1920)",
+    "Tensão política crescente com militares, culminando na Revolta dos 18 do Forte (1922)",
+    "Crise do café com desvalorização e conflito com produtores",
+    "Acusações de autoritarismo e favorecimento político",
+    "Conflito direto com a imprensa e opositores"
+  ]
+}
+,
+    {
+  "id": "artur_bernardes",
+  "numero": 12,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/15/Artur_Bernardes_%281922%29.jpg",
+  "nome": "Artur da Silva Bernardes",
+  "inicio_mandato": "15/11/1922",
+  "final_mandato": "15/11/1926",
+  "partido": "Partido Republicano Mineiro",
+  "vice_presidente": ["Estácio de Albuquerque Coimbra"],
+  "nascimento": "08/08/1875",
+  "morte": "23/03/1955",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/56/Artur_Bernardes_signature.svg",
+
+  "pib_mandato": "Crescimento fraco e instável devido ao período de forte turbulência política e militar",
+  "inflacao": "Moderada (dados incompletos, mas houve pressão inflacionária com desvalorização do café)",
+  "desemprego": "Não mensurado oficialmente na época",
+  "dolar": "Não disponível",
+  "aprovacao": "Baixa durante todo o mandato",
+
+  "sucessos": [
+    "Reorganização financeira do governo federal após a crise do café",
+    "Criação da Caixa de Estabilização (precursora do Banco Central)",
+    "Expansão de ferrovias e obras de infraestrutura",
+    "Reforma do ensino militar e investimento em profissionalização do Exército",
+    "Redução parcial da dívida externa por meio de renegociações"
+  ],
+
+  "polemicas": [
+    "Governo inteiro sob estado de sítio quase permanente",
+    "Repressão violenta à Revolta Tenentista de 1924",
+    "Conflitos com militares desde antes da posse por causa das supostas 'cartas falsas'",
+    "Enfrentamento constante com oposição e imprensa",
+    "Aumento da instabilidade política que preparou terreno para a Revolução de 1930"
+  ]
+}
+,
+    {
+  "id": "washington_luis",
+  "numero": 13,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Washington_Luís_%28foto%29.jpg",
+  "nome": "Washington Luís Pereira de Sousa",
+  "inicio_mandato": "15/11/1926",
+  "final_mandato": "24/10/1930",
+  "partido": "Partido Republicano Paulista",
+  "vice_presidente": ["Fernando de Melo Viana"],
+  "nascimento": "26/10/1869",
+  "morte": "04/08/1957",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio de Janeiro",
+  "profissao": ["Advogado", "Historiador"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/4/49/Assinatura_de_Washington_Luís.png",
+
+  "pib_mandato": "Crescimento até 1929, seguido de forte contração após a Crise de 1929",
+  "inflacao": "Baixa até 1929; aumento súbito após a queda do preço do café",
+  "desemprego": "Crescimento elevado após 1929 (não mensurado oficialmente)",
+  "dolar": "Instável; forte desvalorização após a crise internacional",
+  "aprovacao": "Muito baixa no fim do mandato",
+
+  "sucessos": [
+    "Grande expansão rodoviária: 'governar é abrir estradas'",
+    "Construção e pavimentação de mais de 20 mil km de estradas",
+    "Criação da Polícia Rodoviária e início das políticas de transporte moderno",
+    "Reformas administrativas no governo federal",
+    "Modernização urbana em várias capitais",
+    "Apoio ao crescimento do setor industrial paulista antes de 1929"
+  ],
+
+  "polemicas": [
+    "Crise de 1929 devastou o café, base da economia brasileira",
+    "Recusa em socorrer imediatamente os cafeicultores — aumentou o caos econômico",
+    "Rompimento da Política do Café com Leite ao apoiar Júlio Prestes",
+    "Revolução de 1930 depôs Washington Luís",
+    "Conflitos com Minas Gerais, Paraíba e Rio Grande do Sul",
+    "Acusação de autoritarismo e de isolamento político",
+    "Desvalorização massiva das exportações e aumento da miséria"
+  ]
+}
+,
+    {
+  "id": "junta_governativa",
+  "numero": 0,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/5/56/Juntagovernativa1930.png",
+  "nome": "Junta Governativa Provisória",
+  "inicio_mandato": "24/10/1930",
+  "final_mandato": "03/11/1930",
+  "partido": "N/A",
+  "vice_presidente": [],
+  "nascimento": "N/A",
+  "morte": "N/A",
+  "nacionalidade": "Brasileira",
+  "estado": "Rio de Janeiro (capital federal na época)",
+  "profissao": ["Militar"],
+  "assinatura": "N/A",
+
+  "membros": [
+    {
+      "nome": "General Augusto Tasso Fragoso",
+      "cargo": "Chefe da Junta",
+      "profissao": "Militar (Exército)"
     },
     {
-      "id": "floriano_peixoto",
-      "nome": "Floriano Peixoto",
-      "nomeCompleto": "Floriano Vieira Peixoto",
-      "mandato": "1891-1894",
-      "nascimento": "30 de abril de 1839",
-      "morte": "29 de junho de 1895",
-      "local": "Maceió, Alagoas",
-      "periodo": "República Velha",
-      "partido": "Militar",
-      "biografia": "Segundo presidente do Brasil, conhecido como 'Marechal de Ferro' pela firmeza com que governou. Consolidou a República brasileira enfrentando diversas revoltas.",
-      "realizacoes": [
-        "Consolidação da República",
-        "Enfrentamento da Revolta da Armada",
-        "Repressão à Revolução Federalista",
-        "Fortalecimento do poder central"
-      ],
-      "foto": "./assets/images/presidentes/Floriano.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "N/A",
-        "inflacaoMedia": "N/A",
-        "desemprego": "N/A",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 70,
-        "final": 80,
-        "media": 75
-      },
-      "polemicas": [
-        "Governo autoritário",
-        "Repressão a revoltas populares",
-        "Estado de sítio constante",
-        "Perseguição política"
-      ],
-      "coisasBoas": [
-        "Consolidação da República",
-        "Modernização militar",
-        "Fortalecimento das instituições",
-        "Defesa da ordem constitucional"
-      ],
-      "indicadores": {
-        "educacao": 25,
-        "saude": 30,
-        "economia": 50,
-        "corrupcao": 40,
-        "social": 45
-      }
+      "nome": "General João de Deus Mena Barreto",
+      "cargo": "Membro",
+      "profissao": "Militar (Exército)"
     },
     {
-      "id": "prudente_de_morais",
-      "nome": "Prudente de Morais",
-      "nomeCompleto": "Prudente José de Morais Barros",
-      "mandato": "1894-1898",
-      "nascimento": "4 de outubro de 1841",
-      "morte": "3 de dezembro de 1902",
-      "local": "Itu, São Paulo",
-      "periodo": "República Velha",
-      "partido": "PRP (Partido Republicano Paulista)",
-      "biografia": "Primeiro presidente civil do Brasil, consolidou as instituições republicanas e estabeleceu precedentes importantes para a democracia brasileira.",
-      "realizacoes": [
-        "Primeiro presidente civil",
-        "Pacificação da Guerra de Canudos",
-        "Consolidação das instituições republicanas",
-        "Fortalecimento do federalismo"
-      ],
-      "foto": "./assets/images/presidentes/Prudente.png",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "N/A",
-        "inflacaoMedia": "N/A",
-        "desemprego": "N/A",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 75,
-        "final": 70,
-        "media": 72
-      },
-      "polemicas": [
-        "Guerra de Canudos",
-        "Conflitos políticos regionais",
-        "Tentativa de assassinato",
-        "Crise econômica"
-      ],
-      "coisasBoas": [
-        "Primeiro governo civil",
-        "Pacificação nacional",
-        "Consolidação democrática",
-        "Respeito à Constituição"
-      ],
-      "indicadores": {
-        "educacao": 30,
-        "saude": 35,
-        "economia": 55,
-        "corrupcao": 50,
-        "social": 50
-      }
-    },
-    {
-      "id": "campos_sales",
-      "nome": "Campos Sales",
-      "nomeCompleto": "Manuel Ferraz de Campos Sales",
-      "mandato": "1898-1902",
-      "nascimento": "15 de fevereiro de 1841",
-      "morte": "28 de junho de 1913",
-      "local": "Campinas, São Paulo",
-      "periodo": "República Velha",
-      "partido": "PRP (Partido Republicano Paulista)",
-      "biografia": "Responsável pelo saneamento das finanças públicas e pela criação da 'política dos governadores', que marcou a República Velha.",
-      "realizacoes": [
-        "Funding Loan - renegociação da dívida externa",
-        "Política dos Governadores",
-        "Saneamento financeiro do país",
-        "Estabilização da moeda"
-      ],
-      "foto": "./assets/images/presidentes/Campos.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "+15%",
-        "inflacaoMedia": "5%",
-        "desemprego": "N/A",
-        "divida": "Renegociada"
-      },
-      "aprovacao": {
-        "inicial": 65,
-        "final": 75,
-        "media": 70
-      },
-      "polemicas": [
-        "Política dos Governadores",
-        "Coronelismo institucionalizado",
-        "Exclusão política das camadas populares",
-        "Concentração de poder"
-      ],
-      "coisasBoas": [
-        "Saneamento financeiro",
-        "Estabilidade monetária",
-        "Renegociação da dívida",
-        "Modernização fiscal"
-      ],
-      "indicadores": {
-        "educacao": 35,
-        "saude": 40,
-        "economia": 75,
-        "corrupcao": 45,
-        "social": 40
-      }
-    },
-    {
-      "id": "rodrigues_alves",
-      "nome": "Rodrigues Alves",
-      "nomeCompleto": "Francisco de Paula Rodrigues Alves",
-      "mandato": "1902-1906",
-      "nascimento": "7 de julho de 1848",
-      "morte": "16 de janeiro de 1919",
-      "local": "Guaratinguetá, São Paulo",
-      "periodo": "República Velha",
-      "partido": "PRP (Partido Republicano Paulista)",
-      "biografia": "Promoveu grandes reformas urbanas no Rio de Janeiro e campanhas de saúde pública, modernizando o Brasil no início do século XX.",
-      "realizacoes": [
-        "Reforma urbana do Rio de Janeiro",
-        "Campanha de vacinação obrigatória",
-        "Erradicação da febre amarela",
-        "Modernização da capital federal"
-      ],
-      "foto": "./assets/images/presidentes/Rodrigues.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "+20%",
-        "inflacaoMedia": "4%",
-        "desemprego": "N/A",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 70,
-        "final": 85,
-        "media": 78
-      },
-      "polemicas": [
-        "Revolta da Vacina",
-        "Demolições forçadas no Rio",
-        "Remoção de população pobre",
-        "Autoritarismo sanitário"
-      ],
-      "coisasBoas": [
-        "Modernização urbana",
-        "Erradicação de doenças",
-        "Melhoria da saúde pública",
-        "Embelezamento da capital"
-      ],
-      "indicadores": {
-        "educacao": 40,
-        "saude": 80,
-        "economia": 70,
-        "corrupcao": 40,
-        "social": 55
-      }
-    },
-    {
-      "id": "afonso_pena",
-      "nome": "Afonso Pena",
-      "nomeCompleto": "Afonso Augusto Moreira Pena",
-      "mandato": "1906-1909",
-      "nascimento": "30 de novembro de 1847",
-      "morte": "14 de junho de 1909",
-      "local": "Santa Bárbara, Minas Gerais",
-      "periodo": "República Velha",
-      "partido": "PRM (Partido Republicano Mineiro)",
-      "biografia": "Primeiro presidente mineiro, promoveu o desenvolvimento econômico e a imigração europeia para o Brasil.",
-      "realizacoes": [
-        "Política de valorização do café",
-        "Incentivo à imigração europeia",
-        "Desenvolvimento da infraestrutura ferroviária",
-        "Criação do Porto de Santos"
-      ],
-      "foto": "./assets/images/presidentes/Afonso.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "N/A",
-        "pibFim": "N/A",
-        "crescimentoPIB": "+25%",
-        "inflacaoMedia": "3%",
-        "desemprego": "N/A",
-        "divida": "Baixa"
-      },
-      "aprovacao": {
-        "inicial": 75,
-        "final": 80,
-        "media": 77
-      },
-      "polemicas": [
-        "Política do café com leite",
-        "Favorecimento das elites cafeeiras",
-        "Morte prematura no cargo",
-        "Crise sucessória"
-      ],
-      "coisasBoas": [
-        "Desenvolvimento econômico",
-        "Modernização da infraestrutura",
-        "Incentivo à imigração",
-        "Estabilidade política"
-      ],
-      "indicadores": {
-        "educacao": 45,
-        "saude": 50,
-        "economia": 80,
-        "corrupcao": 35,
-        "social": 60
-      }
-    },
-    {
-      "id": "getulio_vargas",
-      "nome": "Getúlio Vargas",
-      "nomeCompleto": "Getúlio Dornelles Vargas",
-      "mandato": "1930-1945, 1951-1954",
-      "nascimento": "19 de abril de 1882",
-      "morte": "24 de agosto de 1954",
-      "local": "São Borja, Rio Grande do Sul",
-      "periodo": "Era Vargas",
-      "partido": "PTB (Partido Trabalhista Brasileiro)",
-      "biografia": "Um dos mais importantes líderes políticos brasileiros, governou por 18 anos e transformou profundamente o país com suas políticas trabalhistas e de desenvolvimento nacional.",
-      "realizacoes": [
-        "Criação da CLT (Consolidação das Leis do Trabalho)",
-        "Fundação da Petrobras",
-        "Criação da CSN (Companhia Siderúrgica Nacional)",
-        "Lei do salário mínimo",
-        "Voto feminino"
-      ],
-      "foto": "./assets/images/presidentes/Getulio.webp",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 156 bi (1930)",
-        "pibFim": "R$ 287 bi (1954)",
-        "crescimentoPIB": "+84%",
-        "inflacaoMedia": "8.2%",
-        "desemprego": "4.1%",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 78,
-        "final": 82,
-        "media": 75
-      },
-      "polemicas": [
-        "Estado Novo - Ditadura (1937-1945)",
-        "Censura e repressão política",
-        "Aproximação com regimes fascistas",
-        "Suicídio em 1954",
-        "Carta testamento controversa"
-      ],
-      "coisasBoas": [
-        "Criação das leis trabalhistas (CLT)",
-        "Desenvolvimento industrial nacional",
-        "Fundação da Petrobras",
-        "Direitos trabalhistas consolidados",
-        "Modernização do Estado brasileiro",
-        "Criação do salário mínimo"
-      ],
-      "indicadores": {
-        "educacao": 65,
-        "saude": 70,
-        "economia": 85,
-        "corrupcao": 45,
-        "social": 80
-      }
-    },
-    {
-      "id": "eurico_gaspar_dutra",
-      "nome": "Eurico Gaspar Dutra",
-      "nomeCompleto": "Eurico Gaspar Dutra",
-      "mandato": "1946-1951",
-      "nascimento": "18 de maio de 1883",
-      "morte": "11 de junho de 1974",
-      "local": "Cuiabá, Mato Grosso",
-      "periodo": "Democratização",
-      "partido": "PSD (Partido Social Democrático)",
-      "biografia": "Militar e político que presidiu a redemocratização do Brasil após a Era Vargas, promulgando a Constituição de 1946.",
-      "realizacoes": [
-        "Constituição de 1946",
-        "Redemocratização do país",
-        "Plano SALTE (Saúde, Alimentação, Transporte, Energia)",
-        "Criação da Escola Superior de Guerra"
-      ],
-      "foto": "./assets/images/presidentes/Eurico.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 287 bi (1946)",
-        "pibFim": "R$ 345 bi (1951)",
-        "crescimentoPIB": "+20%",
-        "inflacaoMedia": "12%",
-        "desemprego": "5.2%",
-        "divida": "Moderada"
-      },
-      "aprovacao": {
-        "inicial": 65,
-        "final": 55,
-        "media": 60
-      },
-      "polemicas": [
-        "Cassação do PCB",
-        "Alinhamento com EUA na Guerra Fria",
-        "Rompimento com URSS",
-        "Política econômica liberal"
-      ],
-      "coisasBoas": [
-        "Nova Constituição democrática",
-        "Redemocratização",
-        "Plano de desenvolvimento",
-        "Estabilidade institucional"
-      ],
-      "indicadores": {
-        "educacao": 50,
-        "saude": 55,
-        "economia": 60,
-        "corrupcao": 55,
-        "social": 65
-      }
-    },
-    {
-      "id": "juscelino_kubitschek",
-      "nome": "Juscelino Kubitschek",
-      "nomeCompleto": "Juscelino Kubitschek de Oliveira",
-      "mandato": "1956-1961",
-      "nascimento": "12 de setembro de 1902",
-      "morte": "22 de agosto de 1976",
-      "local": "Diamantina, Minas Gerais",
-      "periodo": "Anos Dourados",
-      "partido": "PSD (Partido Social Democrático)",
-      "biografia": "Conhecido pelo lema '50 anos em 5', JK promoveu um extraordinário período de crescimento econômico e modernização do país.",
-      "realizacoes": [
-        "Construção de Brasília",
-        "Plano de Metas",
-        "Desenvolvimento da indústria automobilística",
-        "Criação da nova capital federal",
-        "Rodovia Belém-Brasília"
-      ],
-      "foto": "./assets/images/presidentes/JK.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 345 bi (1956)",
-        "pibFim": "R$ 520 bi (1961)",
-        "crescimentoPIB": "+51%",
-        "inflacaoMedia": "18%",
-        "desemprego": "3.8%",
-        "divida": "Aumentada"
-      },
-      "aprovacao": {
-        "inicial": 75,
-        "final": 85,
-        "media": 80
-      },
-      "polemicas": [
-        "Alto endividamento público",
-        "Inflação crescente",
-        "Concentração de renda",
-        "Dependência externa"
-      ],
-      "coisasBoas": [
-        "Construção de Brasília",
-        "Modernização industrial",
-        "Crescimento econômico",
-        "Infraestrutura rodoviária",
-        "Desenvolvimento nacional"
-      ],
-      "indicadores": {
-        "educacao": 70,
-        "saude": 65,
-        "economia": 90,
-        "corrupcao": 35,
-        "social": 75
-      }
-    },
-    {
-      "id": "janio_quadros",
-      "nome": "Jânio Quadros",
-      "nomeCompleto": "Jânio da Silva Quadros",
-      "mandato": "1961",
-      "nascimento": "25 de janeiro de 1917",
-      "morte": "16 de fevereiro de 1992",
-      "local": "Campo Grande, Mato Grosso do Sul",
-      "periodo": "Crise Política",
-      "partido": "PTN (Partido Trabalhista Nacional)",
-      "biografia": "Presidente que renunciou após apenas 7 meses no cargo, deixando o país em grave crise política que levou ao regime militar.",
-      "realizacoes": [
-        "Campanha contra a corrupção",
-        "Política externa independente",
-        "Condecoração de Che Guevara (controversa)",
-        "Moralização da administração pública"
-      ],
-      "foto": "./assets/images/presidentes/Janio.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 520 bi (1961)",
-        "pibFim": "R$ 525 bi (1961)",
-        "crescimentoPIB": "+1%",
-        "inflacaoMedia": "25%",
-        "desemprego": "4.5%",
-        "divida": "Alta"
-      },
-      "aprovacao": {
-        "inicial": 85,
-        "final": 25,
-        "media": 55
-      },
-      "polemicas": [
-        "Renúncia após 7 meses",
-        "Condecoração de Che Guevara",
-        "Crise política institucional",
-        "Instabilidade governamental"
-      ],
-      "coisasBoas": [
-        "Campanha anticorrupção",
-        "Política externa independente",
-        "Tentativa de moralização",
-        "Apoio popular inicial"
-      ],
-      "indicadores": {
-        "educacao": 40,
-        "saude": 45,
-        "economia": 30,
-        "corrupcao": 70,
-        "social": 50
-      }
-    },
-    {
-      "id": "castelo_branco",
-      "nome": "Castelo Branco",
-      "nomeCompleto": "Humberto de Alencar Castelo Branco",
-      "mandato": "1964-1967",
-      "nascimento": "20 de setembro de 1897",
-      "morte": "18 de julho de 1967",
-      "local": "Messejana, Ceará",
-      "periodo": "Regime Militar",
-      "partido": "ARENA (Aliança Renovadora Nacional)",
-      "biografia": "Primeiro presidente do regime militar brasileiro, implementou reformas econômicas e o AI-5, marcando o início da ditadura.",
-      "realizacoes": [
-        "Plano de Ação Econômica do Governo (PAEG)",
-        "Criação do BNH (Banco Nacional de Habitação)",
-        "Lei do FGTS",
-        "Reforma do sistema financeiro"
-      ],
-      "foto": "./assets/images/presidentes/CastelloBranco.webp",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 525 bi (1964)",
-        "pibFim": "R$ 580 bi (1967)",
-        "crescimentoPIB": "+10%",
-        "inflacaoMedia": "40%",
-        "desemprego": "6%",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 60,
-        "final": 45,
-        "media": 52
-      },
-      "polemicas": [
-        "Golpe militar de 1964",
-        "Repressão política",
-        "Cassação de direitos políticos",
-        "Censura e autoritarismo"
-      ],
-      "coisasBoas": [
-        "Estabilização econômica",
-        "Criação do BNH",
-        "Sistema financeiro moderno",
-        "Controle da inflação"
-      ],
-      "indicadores": {
-        "educacao": 45,
-        "saude": 50,
-        "economia": 65,
-        "corrupcao": 50,
-        "social": 25
-      }
-    },
-    {
-      "id": "costa_e_silva",
-      "nome": "Costa e Silva",
-      "nomeCompleto": "Artur da Costa e Silva",
-      "mandato": "1967-1969",
-      "nascimento": "3 de outubro de 1899",
-      "morte": "17 de dezembro de 1969",
-      "local": "Taquari, Rio Grande do Sul",
-      "periodo": "Regime Militar",
-      "partido": "ARENA (Aliança Renovadora Nacional)",
-      "biografia": "Segundo presidente militar, seu governo foi marcado pelo endurecimento do regime e pela promulgação do AI-5.",
-      "realizacoes": [
-        "Constituição de 1967",
-        "Criação da EMBRAER",
-        "Programa de Integração Nacional",
-        "AI-5 (Ato Institucional nº 5)"
-      ],
-      "foto": "./assets/images/presidentes/Costa_e_Silva.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 580 bi (1967)",
-        "pibFim": "R$ 650 bi (1969)",
-        "crescimentoPIB": "+12%",
-        "inflacaoMedia": "22%",
-        "desemprego": "5.5%",
-        "divida": "Moderada"
-      },
-      "aprovacao": {
-        "inicial": 55,
-        "final": 35,
-        "media": 45
-      },
-      "polemicas": [
-        "AI-5 - endurecimento da ditadura",
-        "Fechamento do Congresso",
-        "Censura total",
-        "Repressão violenta"
-      ],
-      "coisasBoas": [
-        "Criação da EMBRAER",
-        "Desenvolvimento industrial",
-        "Programa rodoviário",
-        "Crescimento econômico"
-      ],
-      "indicadores": {
-        "educacao": 40,
-        "saude": 45,
-        "economia": 70,
-        "corrupcao": 45,
-        "social": 20
-      }
-    },
-    {
-      "id": "medici",
-      "nome": "Médici",
-      "nomeCompleto": "Emílio Garrastazu Médici",
-      "mandato": "1969-1974",
-      "nascimento": "4 de dezembro de 1905",
-      "morte": "9 de outubro de 1985",
-      "local": "Bagé, Rio Grande do Sul",
-      "periodo": "Regime Militar",
-      "partido": "ARENA (Aliança Renovadora Nacional)",
-      "biografia": "Terceiro presidente militar, seu governo coincidiu com o 'milagre econômico' brasileiro e o período mais repressivo da ditadura.",
-      "realizacoes": [
-        "Milagre econômico brasileiro",
-        "Construção da Transamazônica",
-        "Copa do Mundo de 1970",
-        "Programa de Integração Nacional (PIN)"
-      ],
-      "foto": "./assets/images/presidentes/medici.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 650 bi (1969)",
-        "pibFim": "R$ 1.1 tri (1974)",
-        "crescimentoPIB": "+69%",
-        "inflacaoMedia": "18%",
-        "desemprego": "3.2%",
-        "divida": "Aumentada"
-      },
-      "aprovacao": {
-        "inicial": 70,
-        "final": 75,
-        "media": 72
-      },
-      "polemicas": [
-        "Período mais repressivo da ditadura",
-        "Tortura sistemática",
-        "Desaparecimentos forçados",
-        "Censura total"
-      ],
-      "coisasBoas": [
-        "Milagre econômico",
-        "Copa do Mundo 1970",
-        "Desenvolvimento industrial",
-        "Grandes obras de infraestrutura"
-      ],
-      "indicadores": {
-        "educacao": 50,
-        "saude": 55,
-        "economia": 95,
-        "corrupcao": 40,
-        "social": 15
-      }
-    },
-    {
-      "id": "ernesto_geisel",
-      "nome": "Ernesto Geisel",
-      "nomeCompleto": "Ernesto Beckmann Geisel",
-      "mandato": "1974-1979",
-      "nascimento": "3 de agosto de 1907",
-      "morte": "12 de setembro de 1996",
-      "local": "Bento Gonçalves, Rio Grande do Sul",
-      "periodo": "Regime Militar",
-      "partido": "ARENA (Aliança Renovadora Nacional)",
-      "biografia": "Quarto presidente militar, iniciou o processo de abertura política 'lenta, gradual e segura' que levaria ao fim da ditadura.",
-      "realizacoes": [
-        "Início da abertura política",
-        "Criação da NUCLEBRÁS",
-        "II Plano Nacional de Desenvolvimento",
-        "Revogação do AI-5"
-      ],
-      "foto": "./assets/images/presidentes/geisel.png",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.1 tri (1974)",
-        "pibFim": "R$ 1.4 tri (1979)",
-        "crescimentoPIB": "+27%",
-        "inflacaoMedia": "35%",
-        "desemprego": "4.8%",
-        "divida": "Alta"
-      },
-      "aprovacao": {
-        "inicial": 65,
-        "final": 70,
-        "media": 67
-      },
-      "polemicas": [
-        "Crise do petróleo",
-        "Aumento da dívida externa",
-        "Inflação descontrolada",
-        "Demissão de ministros linha-dura"
-      ],
-      "coisasBoas": [
-        "Início da abertura política",
-        "Revogação do AI-5",
-        "Programa nuclear",
-        "Desenvolvimento de energia"
-      ],
-      "indicadores": {
-        "educacao": 55,
-        "saude": 60,
-        "economia": 60,
-        "corrupcao": 45,
-        "social": 35
-      }
-    },
-    {
-      "id": "joao_figueiredo",
-      "nome": "João Figueiredo",
-      "nomeCompleto": "João Baptista de Oliveira Figueiredo",
-      "mandato": "1979-1985",
-      "nascimento": "15 de janeiro de 1918",
-      "morte": "24 de dezembro de 1999",
-      "local": "Rio de Janeiro, RJ",
-      "periodo": "Regime Militar",
-      "partido": "PDS (Partido Democrático Social)",
-      "biografia": "Último presidente militar, completou o processo de abertura política e devolveu o poder aos civis.",
-      "realizacoes": [
-        "Lei da Anistia",
-        "Fim do bipartidarismo",
-        "Eleições diretas para governadores",
-        "Transição para a democracia"
-      ],
-      "foto": "./assets/images/presidentes/FIGUEIREDO.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.4 tri (1979)",
-        "pibFim": "R$ 1.3 tri (1985)",
-        "crescimentoPIB": "-7%",
-        "inflacaoMedia": "110%",
-        "desemprego": "7.8%",
-        "divida": "Crítica"
-      },
-      "aprovacao": {
-        "inicial": 60,
-        "final": 40,
-        "media": 50
-      },
-      "polemicas": [
-        "Crise econômica severa",
-        "Hiperinflação",
-        "Recessão prolongada",
-        "Atentados terroristas"
-      ],
-      "coisasBoas": [
-        "Lei da Anistia",
-        "Abertura democrática",
-        "Fim da censura",
-        "Transição pacífica"
-      ],
-      "indicadores": {
-        "educacao": 60,
-        "saude": 55,
-        "economia": 25,
-        "corrupcao": 50,
-        "social": 60
-      }
-    },
-    {
-      "id": "jose_sarney",
-      "nome": "José Sarney",
-      "nomeCompleto": "José Ribamar Ferreira de Araújo Costa",
-      "mandato": "1985-1990",
-      "nascimento": "24 de abril de 1930",
-      "morte": "Vivo",
-      "local": "Pinheiro, Maranhão",
-      "periodo": "Nova República",
-      "partido": "PMDB (Partido do Movimento Democrático Brasileiro)",
-      "biografia": "Primeiro presidente civil após a ditadura militar, promulgou a Constituição de 1988 mas enfrentou grave crise econômica com hiperinflação.",
-      "realizacoes": [
-        "Constituição de 1988",
-        "Consolidação da democracia",
-        "Criação do SUS",
-        "Planos econômicos (Plano Cruzado, Bresser, Verão)"
-      ],
-      "foto": "./assets/images/presidentes/SArney.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.3 tri (1985)",
-        "pibFim": "R$ 1.5 tri (1990)",
-        "crescimentoPIB": "+15%",
-        "inflacaoMedia": "550%",
-        "desemprego": "4.2%",
-        "divida": "Muito Alta"
-      },
-      "aprovacao": {
-        "inicial": 75,
-        "final": 35,
-        "media": 55
-      },
-      "polemicas": [
-        "Hiperinflação descontrolada",
-        "Múltiplos planos econômicos fracassados",
-        "Corrupção generalizada",
-        "Instabilidade monetária"
-      ],
-      "coisasBoas": [
-        "Constituição Cidadã de 1988",
-        "Consolidação democrática",
-        "Criação do SUS",
-        "Garantia de direitos sociais"
-      ],
-      "indicadores": {
-        "educacao": 65,
-        "saude": 70,
-        "economia": 20,
-        "corrupcao": 30,
-        "social": 80
-      }
-    },
-    {
-      "id": "fernando_collor",
-      "nome": "Fernando Collor de Mello",
-      "nomeCompleto": "Fernando Affonso Collor de Mello",
-      "mandato": "1990-1992",
-      "nascimento": "12 de agosto de 1949",
-      "morte": "Vivo",
-      "local": "Rio de Janeiro, RJ",
-      "periodo": "Nova República",
-      "partido": "PRN (Partido da Reconstrução Nacional)",
-      "biografia": "Primeiro presidente eleito por voto direto após a ditadura, foi impedido por corrupção. Implementou políticas neoliberais e o confisco das poupanças.",
-      "realizacoes": [
-        "Abertura da economia brasileira",
-        "Plano Collor (controle da inflação)",
-        "Modernização da indústria nacional",
-        "Criação do Código de Defesa do Consumidor"
-      ],
-      "foto": "./assets/images/presidentes/Collor.webp",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.5 tri (1990)",
-        "pibFim": "R$ 1.4 tri (1992)",
-        "crescimentoPIB": "-7%",
-        "inflacaoMedia": "440%",
-        "desemprego": "6.8%",
-        "divida": "Alta"
-      },
-      "aprovacao": {
-        "inicial": 70,
-        "final": 15,
-        "media": 42
-      },
-      "polemicas": [
-        "Confisco das poupanças (Plano Collor)",
-        "Esquema PC Farias",
-        "Impeachment por corrupção",
-        "Recessão econômica"
-      ],
-      "coisasBoas": [
-        "Abertura da economia",
-        "Modernização industrial",
-        "Código de Defesa do Consumidor",
-        "Combate inicial à inflação"
-      ],
-      "indicadores": {
-        "educacao": 55,
-        "saude": 50,
-        "economia": 35,
-        "corrupcao": 15,
-        "social": 45
-      }
-    },
-    {
-      "id": "itamar_franco",
-      "nome": "Itamar Franco",
-      "nomeCompleto": "Itamar Augusto Cautiero Franco",
-      "mandato": "1992-1995",
-      "nascimento": "28 de junho de 1930",
-      "morte": "2 de julho de 2011",
-      "local": "Mar de Espanha, Minas Gerais",
-      "periodo": "Nova República",
-      "partido": "PMDB (Partido do Movimento Democrático Brasileiro)",
-      "biografia": "Assumiu após o impeachment de Collor, estabilizou a democracia e criou o Plano Real que controlou definitivamente a hiperinflação.",
-      "realizacoes": [
-        "Criação do Plano Real",
-        "Estabilização da moeda",
-        "Controle definitivo da inflação",
-        "Fortalecimento das instituições democráticas"
-      ],
-      "foto": "./assets/images/presidentes/ItamarFranco.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.4 tri (1992)",
-        "pibFim": "R$ 1.8 tri (1995)",
-        "crescimentoPIB": "+29%",
-        "inflacaoMedia": "1100%",
-        "desemprego": "5.4%",
-        "divida": "Controlada"
-      },
-      "aprovacao": {
-        "inicial": 45,
-        "final": 80,
-        "media": 62
-      },
-      "polemicas": [
-        "Crise política pós-impeachment",
-        "Alta rotatividade ministerial",
-        "Instabilidade inicial",
-        "Pressões inflacionárias"
-      ],
-      "coisasBoas": [
-        "Criação do Plano Real",
-        "Estabilização democrática",
-        "Controle da inflação",
-        "Recuperação econômica"
-      ],
-      "indicadores": {
-        "educacao": 70,
-        "saude": 65,
-        "economia": 85,
-        "corrupcao": 65,
-        "social": 75
-      }
-    },
-    {
-      "id": "fernando_henrique_cardoso",
-      "nome": "Fernando Henrique Cardoso",
-      "nomeCompleto": "Fernando Henrique Cardoso",
-      "mandato": "1995-2003",
-      "nascimento": "18 de junho de 1931",
-      "morte": "Vivo",
-      "local": "Rio de Janeiro, RJ",
-      "periodo": "Nova República",
-      "partido": "PSDB (Partido da Social Democracia Brasileira)",
-      "biografia": "Sociólogo e político, foi reeleito e governou por 8 anos. Consolidou a estabilidade econômica e modernizou o Estado brasileiro.",
-      "realizacoes": [
-        "Consolidação do Plano Real",
-        "Criação de agências reguladoras",
-        "Lei de Responsabilidade Fiscal",
-        "Modernização do Estado",
-        "Criação do Auxílio Gás e Bolsa Escola"
-      ],
-      "foto": "./assets/images/presidentes/fhc.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.8 tri (1995)",
-        "pibFim": "R$ 1.99 tri (2003)",
-        "crescimentoPIB": "+11%",
-        "inflacaoMedia": "7.8%",
-        "desemprego": "9.3%",
-        "divida": "Alta"
-      },
-      "aprovacao": {
-        "inicial": 85,
-        "final": 45,
-        "media": 65
-      },
-      "polemicas": [
-        "Alto desemprego no final do mandato",
-        "Crise energética (apagão)",
-        "Baixo crescimento econômico",
-        "Crise do mensalão tucano"
-      ],
-      "coisasBoas": [
-        "Estabilidade monetária",
-        "Modernização do Estado",
-        "Criação de programas sociais",
-        "Lei de Responsabilidade Fiscal"
-      ],
-      "indicadores": {
-        "educacao": 75,
-        "saude": 70,
-        "economia": 70,
-        "corrupcao": 60,
-        "social": 70
-      }
-    },
-    {
-      "id": "lula",
-      "nome": "Luiz Inácio Lula da Silva",
-      "nomeCompleto": "Luiz Inácio Lula da Silva",
-      "mandato": "2003-2011, 2023-presente",
-      "nascimento": "27 de outubro de 1945",
-      "morte": "Vivo",
-      "local": "Caetés, Pernambuco",
-      "periodo": "Nova República",
-      "partido": "PT (Partido dos Trabalhadores)",
-      "biografia": "Ex-metalúrgico e sindicalista, foi o primeiro presidente operário do Brasil. Implementou programas sociais que tiraram milhões da pobreza.",
-      "realizacoes": [
-        "Programa Bolsa Família",
-        "Criação de universidades federais",
-        "ProUni (Programa Universidade para Todos)",
-        "Programa Mais Médicos",
-        "PAC (Programa de Aceleração do Crescimento)",
-        "Criação do ENEM"
-      ],
-      "foto": "./assets/images/presidentes/Lula.webp",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 1.99 tri (2003)",
-        "pibFim": "R$ 4.14 tri (2010)",
-        "crescimentoPIB": "+108%",
-        "inflacaoMedia": "5.1%",
-        "desemprego": "6.2%",
-        "divida": "Reduzida"
-      },
-      "aprovacao": {
-        "inicial": 68,
-        "final": 87,
-        "media": 78
-      },
-      "polemicas": [
-        "Escândalo do Mensalão",
-        "Início das investigações da Lava Jato",
-        "Prisão em 2018",
-        "Polarização política",
-        "Corrupção na Petrobras"
-      ],
-      "coisasBoas": [
-        "Criação de 36 universidades federais",
-        "Bolsa Família - 14 milhões de famílias",
-        "ProUni - 2 milhões de bolsas",
-        "Mais Médicos - 18 mil médicos",
-        "PAC - R$ 1.59 trilhão em investimentos",
-        "Redução da pobreza extrema",
-        "Brasil sai do mapa da fome da ONU"
-      ],
-      "indicadores": {
-        "educacao": 85,
-        "saude": 80,
-        "economia": 88,
-        "corrupcao": 25,
-        "social": 92
-      }
-    },
-    {
-      "id": "dilma_rousseff",
-      "nome": "Dilma Rousseff",
-      "nomeCompleto": "Dilma Vana Rousseff",
-      "mandato": "2011-2016",
-      "nascimento": "14 de dezembro de 1947",
-      "morte": "Viva",
-      "local": "Belo Horizonte, Minas Gerais",
-      "periodo": "Nova República",
-      "partido": "PT (Partido dos Trabalhistas)",
-      "biografia": "Primeira mulher presidente do Brasil, economista e ex-guerrilheira. Sofreu impeachment em 2016 em meio à crise econômica e política.",
-      "realizacoes": [
-        "Programa Mais Médicos",
-        "Expansão de universidades federais",
-        "Lei de Cotas nas universidades",
-        "Programa Ciência sem Fronteiras",
-        "Marco Civil da Internet"
-      ],
-      "foto": "./assets/images/presidentes/Dilma.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 4.14 tri (2011)",
-        "pibFim": "R$ 3.89 tri (2016)",
-        "crescimentoPIB": "-6%",
-        "inflacaoMedia": "7.2%",
-        "desemprego": "11.5%",
-        "divida": "Muito Alta"
-      },
-      "aprovacao": {
-        "inicial": 75,
-        "final": 10,
-        "media": 42
-      },
-      "polemicas": [
-        "Impeachment por pedaladas fiscais",
-        "Grave crise econômica",
-        "Operação Lava Jato",
-        "Alta polarização política"
-      ],
-      "coisasBoas": [
-        "Programa Mais Médicos",
-        "Lei de Cotas universitárias",
-        "Marco Civil da Internet",
-        "Expansão universitária"
-      ],
-      "indicadores": {
-        "educacao": 80,
-        "saude": 75,
-        "economia": 30,
-        "corrupcao": 20,
-        "social": 75
-      }
-    },
-    {
-      "id": "michel_temer",
-      "nome": "Michel Temer",
-      "nomeCompleto": "Michel Miguel Elias Temer Lulia",
-      "mandato": "2016-2018",
-      "nascimento": "23 de setembro de 1940",
-      "morte": "Vivo",
-      "local": "Tietê, São Paulo",
-      "periodo": "Nova República",
-      "partido": "MDB (Movimento Democrático Brasileiro)",
-      "biografia": "Assumiu a presidência após o impeachment de Dilma Rousseff. Implementou reformas estruturais em meio à grave crise econômica.",
-      "realizacoes": [
-        "PEC do Teto de Gastos Públicos",
-        "Lei das Terceirizações",
-        "Marco Legal do Saneamento",
-        "Criação do Ensino Médio em Tempo Integral"
-      ],
-      "foto": "./assets/images/presidentes/Temer.jpg",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 3.89 tri (2016)",
-        "pibFim": "R$ 4.05 tri (2018)",
-        "crescimentoPIB": "+4%",
-        "inflacaoMedia": "4.2%",
-        "desemprego": "12.8%",
-        "divida": "Alta"
-      },
-      "aprovacao": {
-        "inicial": 30,
-        "final": 15,
-        "media": 22
-      },
-      "polemicas": [
-        "Legitimidade questionada",
-        "Alto desemprego",
-        "Gravação da JBS",
-        "Greve dos caminhoneiros"
-      ],
-      "coisasBoas": [
-        "Controle da inflação",
-        "Reformas estruturais",
-        "Marco do saneamento",
-        "Estabilização inicial"
-      ],
-      "indicadores": {
-        "educacao": 70,
-        "saude": 60,
-        "economia": 50,
-        "corrupcao": 35,
-        "social": 45
-      }
-    },
-    {
-      "id": "jair_bolsonaro",
-      "nome": "Jair Bolsonaro",
-      "nomeCompleto": "Jair Messias Bolsonaro",
-      "mandato": "2019-2022",
-      "nascimento": "21 de março de 1955",
-      "morte": "Vivo",
-      "local": "Glicério, São Paulo",
-      "periodo": "Nova República",
-      "partido": "PL (Partido Liberal)",
-      "biografia": "Ex-militar e deputado federal por 28 anos. Governou durante a pandemia de COVID-19 e foi conhecido por posições conservadoras.",
-      "realizacoes": [
-        "Marco do Saneamento Básico",
-        "Criação do PIX",
-        "Auxílio Emergencial durante a pandemia",
-        "Lei de Liberdade Econômica",
-        "Marco Legal das Startups"
-      ],
-      "foto": "./assets/images/presidentes/Bolsonaro.webp",
-      "dadosEconomicos": {
-        "pibInicio": "R$ 4.05 tri (2019)",
-        "pibFim": "R$ 4.61 tri (2022)",
-        "crescimentoPIB": "+14%",
-        "inflacaoMedia": "6.8%",
-        "desemprego": "9.3%",
-        "divida": "Muito Alta"
-      },
-      "aprovacao": {
-        "inicial": 55,
-        "final": 35,
-        "media": 45
-      },
-      "polemicas": [
-        "Gestão controversa da pandemia",
-        "Ataques ao STF e TSE",
-        "Desmatamento da Amazônia",
-        "Questionamento das urnas eletrônicas"
-      ],
-      "coisasBoas": [
-        "Criação do PIX",
-        "Auxílio emergencial",
-        "Marco do saneamento",
-        "Digitalização de serviços"
-      ],
-      "indicadores": {
-        "educacao": 50,
-        "saude": 45,
-        "economia": 55,
-        "corrupcao": 40,
-        "social": 40
-      }
+      "nome": "Contra-Almirante Isaías de Noronha",
+      "cargo": "Membro",
+      "profissao": "Militar (Marinha)"
     }
+  ],
+
+  "pib_mandato": "N/A (mandato de apenas 10 dias)",
+  "inflacao": "N/A",
+  "desemprego": "N/A",
+  "dolar": "N/A",
+  "aprovacao": "N/A",
+
+  "sucessos": [
+    "Impediu derramamento maior de sangue durante a Revolução de 1930",
+    "Coordenou a transição pacífica após a deposição de Washington Luís",
+    "Restabeleceu parcialmente a ordem pública durante o caos político",
+    "Preparou a posse de Getúlio Vargas como chefe do Governo Provisório"
+  ],
+
+  "polemicas": [
+    "Foi vista como governo ilegítimo, pois não passou por processo eleitoral",
+    "Acusada de ser apenas um governo tampão controlado por militares",
+    "Pouco poder real diante da pressão das tropas revolucionárias de Vargas",
+    "Alguns setores acusaram a Junta de ter agido tardiamente para evitar a crise"
+  ]
+}
+,
+    {
+  "id": "getulio_vargas_1",
+  "numero": 14,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/5/50/Getulio_Vargas_%281930%29.jpg",
+  "nome": "Getúlio Dornelles Vargas",
+  "inicio_mandato": "03/11/1930",
+  "final_mandato": "29/10/1945",
+  "partido": "Sem partido (Governo Provisório e Estado Novo)",
+  "vice_presidente": [],
+  "nascimento": "19/04/1882",
+  "morte": "24/08/1954",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Getúlio_Vargas_Signature.svg",
+
+  "subperiodos": [
+    {
+      "nome": "Governo Provisório",
+      "inicio": "1930",
+      "fim": "1934",
+      "caracteristicas": [
+        "Centralização política",
+        "Intervenções nos estados",
+        "Reorganização institucional",
+        "Criação de ministérios e órgãos econômicos"
+      ]
+    },
+    {
+      "nome": "Governo Constitucional",
+      "inicio": "1934",
+      "fim": "1937",
+      "caracteristicas": [
+        "Nova constituição em 1934",
+        "Tentativas de equilibrar liberalismo e corporativismo"
+      ]
+    },
+    {
+      "nome": "Estado Novo",
+      "inicio": "1937",
+      "fim": "1945",
+      "caracteristicas": [
+        "Regime ditatorial",
+        "Fechamento do Congresso",
+        "Censura e repressão política",
+        "Planos de industrialização pesada"
+      ]
+    }
+  ],
+
+  "pib_mandato": "Crescimento estrutural e início da industrialização acelerada. Base do PIB industrial expandiu de ~20% para ~30% da economia.",
+  "inflacao": "Instável; não comparável ao padrão moderno; períodos de forte controle estatal.",
+  "desemprego": "Não disponível para séries históricas da época.",
+  "dolar": "Não disponível; sistema cambial não operava como atualmente.",
+  "aprovacao": "Não há dados sistemáticos; apoio popular amplo no início dos anos 1940.",
+
+  "sucessos": [
+    "Criação da Consolidação das Leis do Trabalho (CLT) em 1943",
+    "Início da era de industrialização pesada no Brasil",
+    "Criação da Justiça do Trabalho",
+    "Criação de empresas estatais estratégicas (CSN, Vale, Fábrica Nacional de Motores, Petrobras planejada)",
+    "Fortalecimento da infraestrutura (ferrovias, energia, siderurgia)",
+    "Expansão da educação técnica (SENAI e outros)",
+    "Criação de políticas trabalhistas: salário mínimo, carteira de trabalho, férias remuneradas",
+    "Reestruturação administrativa do Estado brasileiro",
+    "Participação brasileira na Segunda Guerra Mundial ao lado dos Aliados",
+    "Modernização das Forças Armadas",
+    "Ampliação do voto feminino em 1932"
+  ],
+
+  "polemicas": [
+    "Golpe de 1937 e implantação do Estado Novo",
+    "Fechamento do Congresso e suspensão de eleições",
+    "Censura através do DIP (Departamento de Imprensa e Propaganda)",
+    "Repressão a opositores, prisões políticas e tortura",
+    "Perseguição a comunistas (Intentona Comunista) e integralistas (1938)",
+    "Centralização autoritária e eliminação da autonomia dos estados",
+    "Controle sindical (sindicalismo atrelado ao Estado)",
+    "Propaganda estatal extensa para construção do culto à personalidade"
+  ]
+}
+,
+    {
+  "id": "jose_linhares",
+  "numero": 15,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/a/a8/José_Linhares_TSE.jpg",
+  "nome": "José Linhares",
+  "inicio_mandato": "29/10/1945",
+  "final_mandato": "31/01/1946",
+  "partido": "Sem partido (Presidente do STF)",
+  "vice_presidente": [],
+  "nascimento": "28/01/1886",
+  "morte": "26/01/1957",
+  "nacionalidade": "Brasileiro",
+  "estado": "Ceará",
+  "profissao": ["Advogado", "Juiz", "Presidente do STF"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/5a/José_Linhares_assinatura_Presidencial.jpg",
+
+  "pib_mandato": "Sem impacto relevante; governo curto e de transição.",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível",
+
+  "contexto": [
+    "Assumiu após a deposição de Getúlio Vargas em 1945",
+    "Presidente do STF que ocupou interinamente a presidência",
+    "Período de reorganização democrática pós-Estado Novo"
+  ],
+
+  "sucessos": [
+    "Garantiu a transição institucional para eleições diretas",
+    "Restabeleceu liberdades democráticas suspensas no Estado Novo",
+    "Organizou e manteve a estabilidade para a posse de Dutra",
+    "Reconstituiu parte das instituições republicanas"
+  ],
+
+  "polemicas": [
+    "Acusações de beneficiar interesses da UDN em nomeações administrativas",
+    "Demissões de varguistas e interventores do período anterior",
+    "Críticas por atuar politicamente mesmo sendo magistrado"
+  ]
+}
+,
+    {
+  "id": "eurico_gaspar_dutra",
+  "numero": 16,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/5/55/GASPARDUTRA.jpg",
+  "nome": "Eurico Gaspar Dutra",
+  "inicio_mandato": "31/01/1946",
+  "final_mandato": "31/01/1951",
+  "partido": "Partido Social Democrático (PSD)",
+  "vice_presidente": ["Nereu de Oliveira Ramos"],
+  "nascimento": "18/05/1883",
+  "morte": "11/06/1974",
+  "nacionalidade": "Brasileiro",
+  "estado": "Mato Grosso",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eurico_Gaspar_Dutra_Signature.svg",
+
+  "pib_mandato": "+7,6% a.a. (forte expansão pós-Segunda Guerra)",
+  "inflacao": "Inflação baixa no início, aumentando para patamares mais altos em 1950",
+  "desemprego": "Não disponível",
+  "dolar": "Câmbio valorizado artificialmente até 1948; posterior desvalorização",
+  "aprovacao": "Não disponível (pesquisas de opinião não padronizadas)",
+
+  "contexto": [
+    "Primeiro presidente do período democrático pós-Estado Novo",
+    "Governo marcado pela reconstrução institucional e alinhamento com EUA",
+    "Reorganização econômica no pós-guerra"
+  ],
+
+  "sucessos": [
+    "Promulgação da Constituição de 1946",
+    "Criação do Salário Mínimo nacional",
+    "Forte crescimento do PIB com industrialização e consumo interno",
+    "Plano SALTE (Saúde, Alimentação, Transporte e Energia) — primeira tentativa de planejamento nacional",
+    "Abertura das importações, trazendo modernização industrial",
+    "Reintegração do Brasil à ordem internacional do pós-guerra (ONU, OEA)"
+  ],
+
+  "polemicas": [
+    "Proibição dos jogos de azar (fechamento dos cassinos em 1946), extremamente impopular",
+    "Política econômica liberal inicial gerou esvaziamento das reservas cambiais",
+    "Plano SALTE fracassou parcialmente por falta de execução e verbas",
+    "Alinhamento excessivo com os EUA durante o início da Guerra Fria",
+    "Fechamento do Partido Comunista Brasileiro (PCB) em 1947",
+    " cassação de mandatos de parlamentares comunistas"
+  ]
+}
+,
+    {
+  "id": "getulio_vargas_2",
+  "numero": 17,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/5/50/Getulio_Vargas_%281930%29.jpg",
+  "nome": "Getúlio Dornelles Vargas",
+  "inicio_mandato": "31/01/1951",
+  "final_mandato": "24/08/1954",
+  "partido": "Partido Trabalhista Brasileiro",
+  "vice_presidente": ["João Fernandes Campos Café Filho"],
+  "nascimento": "19/04/1882",
+  "morte": "24/08/1954",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Getúlio_Vargas_Signature.svg",
+
+  "pib_mandato": "PIB cresceu de forma moderada; forte avanço industrial; criação da Petrobras impulsionou o setor energético.",
+  "inflacao": "Alta e crescente, com forte pressão inflacionária a partir de 1953.",
+  "desemprego": "Sem dados oficiais; descrito como baixo devido ao forte processo de urbanização e industrialização.",
+  "dolar": "Sem cotação comparável ao padrão moderno (regime cambial diferente).",
+
+  "aprovacao": "Alta entre trabalhadores e setores nacionalistas; baixa entre elites econômicas e imprensa; polarização intensa. Não há percentual oficial.",
+
+  "sucessos": [
+    "Criação da Petrobras (1953)",
+    "Fortalecimento do nacional-desenvolvimentismo",
+    "Aumento real do salário mínimo (100% em 1954)",
+    "Expansão industrial continuada",
+    "Reaproximação com sindicatos e trabalhadores"
+  ],
+
+  "polemicas": [
+    "Crise política do 'mar de lama'",
+    "Atentado da rua Tonelero envolvendo a guarda pessoal",
+    "Conflito intenso com a UDN e parte das Forças Armadas",
+    "Aumento da inflação",
+    "Suicídio em 24 de agosto de 1954, gerando ruptura institucional"
+  ],
+
+  "votacao_eleitoral": "48,7% dos votos na eleição presidencial de 1950 (eleito em turno único).",
+
+  "aprovacao_pos_mandato": "Após o suicídio, sua popularidade explodiu; multidões o trataram como mártir. Considerado por muitos o presidente mais influente da história do Brasil."
+}
+,
+    {
+  "id": "cafe_filho",
+  "numero": 18,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Café_Filho.jpg",
+  "nome": "João Fernandes Campos Café Filho",
+  "inicio_mandato": "24/08/1954",
+  "final_mandato": "08/11/1955",
+  "partido": "Partido Social Progressista",
+  "vice_presidente": [],
+  "nascimento": "03/02/1899",
+  "morte": "20/02/1970",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Norte",
+  "profissao": ["Jornalista", "Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/3/33/Café_Filho_signature.svg",
+
+  "pib_mandato": "Período curto de ajustes econômicos; contenção de gastos e tentativa de estabilização pós-crise Vargas.",
+  "inflacao": "Alta, mas tentando ser controlada por medidas de austeridade.",
+  "desemprego": "Não há dados oficiais; relatos indicam estabilidade moderada.",
+  "dolar": "Sem cotação padronizada comparável (Brasil utilizava sistema distinto).",
+
+  "aprovacao": "Sem pesquisas oficiais; inicialmente recebeu apoio por ser visto como figura de conciliação, mas perdeu respaldo com o aprofundamento da crise política.",
+
+  "sucessos": [
+    "Tentativas de estabilização econômica e controle inflacionário",
+    "Organização para a eleição de 1955",
+    "Início de abertura política após clima tenso do governo Vargas"
+  ],
+
+  "polemicas": [
+    "Crise política com setores militares",
+    "Interferência militar após a eleição de Juscelino Kubitschek",
+    "Afastamento por motivos de saúde contestados politicamente",
+    "Acusação de conspiração para impedir a posse de JK"
+  ],
+
+  "votacao_eleitoral": "Não eleito — assumiu como vice-presidente após o suicídio de Getúlio Vargas.",
+
+  "aprovacao_pos_mandato": "Baixa; lembrado como presidente fraco politicamente e marcado pela crise que culminou na intervenção militar de 1955."
+}
+,
+    {
+  "id": "carlos_luz",
+  "numero": 19,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/e/e3/CarlosLuz.jpg",
+  "nome": "Carlos Coimbra da Luz",
+  "inicio_mandato": "08/11/1955",
+  "final_mandato": "11/11/1955",
+  "partido": "Partido Social Democrático",
+  "vice_presidente": [],
+  "nascimento": "04/08/1894",
+  "morte": "09/02/1961",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Jornalista", "Advogado", "Professor"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/1/17/Carlos_Luz_presidente_do_Brasil_signature.jpg",
+
+  "pib_mandato": "Mandato extremamente curto, sem impacto econômico mensurável.",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+
+  "aprovacao": "Não disponível (governo durou apenas 3 dias).",
+
+  "sucessos": [
+    "Organização administrativa de transição (curto período)",
+    "Tentativa de manter estabilidade institucional após afastamento de Café Filho"
+  ],
+
+  "polemicas": [
+    "Mandato durou apenas 3 dias",
+    "Acusado pelos militares de conspirar para impedir a posse de Juscelino Kubitschek",
+    "Deposto pela 'novembrada' — ação militar liderada pelo general Lott",
+    "Fuga no navio Almirante Tamandaré durante a crise"
+  ],
+
+  "votacao_eleitoral": "Não eleito — assumiu a presidência por ser presidente da Câmara dos Deputados.",
+
+  "aprovacao_pos_mandato": "Pouco expressiva; lembrado quase exclusivamente pela crise que levou à sua deposição."
+}
+,
+    {
+  "id": "nereu_ramos",
+  "numero": 20,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Presidente_Nereu_Ramos.jpg",
+  "nome": "Nereu de Oliveira Ramos",
+  "inicio_mandato": "11/11/1955",
+  "final_mandato": "31/01/1956",
+  "partido": "Partido Social Democrático",
+  "vice_presidente": [],
+  "nascimento": "03/09/1888",
+  "morte": "16/06/1958",
+  "nacionalidade": "Brasileiro",
+  "estado": "Santa Catarina",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Assinatura_de_Nereu_Ramos.svg",
+
+  "pib_mandato": "Curto período de transição, sem impacto econômico mensurável.",
+  "inflacao": "Não disponível",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+
+  "aprovacao": "Não disponível (mandato de transição institucional).",
+
+  "sucessos": [
+    "Garantiu a posse de Juscelino Kubitschek após a crise político-militar de 1955",
+    "Restabeleceu ordem institucional após a queda de Carlos Luz",
+    "Governo de estabilidade e pacificação política"
+  ],
+
+  "polemicas": [
+    "Assumiu após deposições sucessivas durante a 'novembrada'",
+    "Governo não eleito, sustentado por intervenção militar do general Lott"
+  ],
+
+  "votacao_eleitoral": "Não eleito — assumiu como presidente do Senado após crise sucessória.",
+
+  "aprovacao_pos_mandato": "Visto como presidente de transição estável, geralmente avaliado de forma positiva por historiadores."
+}
+,
+    {
+  "id": "juscelino_kubitschek",
+  "numero": 21,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Juscelino.jpg",
+  "nome": "Juscelino Kubitschek de Oliveira",
+  "inicio_mandato": "31/01/1956",
+  "final_mandato": "31/01/1961",
+  "partido": "Partido Social Democrático",
+  "vice_presidente": ["João Belchior Marques Goulart"],
+  "nascimento": "12/09/1902",
+  "morte": "22/08/1976",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Médico", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/8/84/Juscelino_Kubitschek_Signature.svg",
+
+  "pib_mandato": "+8,1% a.a. (um dos maiores crescimentos da história do Brasil)",
+  "inflacao": "Alta e crescente ao final do mandato (estimada entre 20% e 30% ao ano)",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+
+  "aprovacao": "Não disponível em pesquisas formais, mas amplamente popular durante e após o mandato.",
+
+  "sucessos": [
+    "Plano de Metas ('50 anos em 5')",
+    "Construção de Brasília",
+    "Industrialização acelerada",
+    "Fortalecimento da indústria automobilística",
+    "Expansão de infraestrutura (rodovias, energia, siderurgia)"
+  ],
+
+  "polemicas": [
+    "Forte endividamento externo",
+    "Aumento expressivo da inflação",
+    "Críticas sobre favorecimento de grandes empresas estrangeiras",
+    "Acusações de irregularidades administrativas (não comprovadas)"
+  ],
+
+  "votacao_eleitoral": "36,31% dos votos (eleito em 1955)",
+
+  "aprovacao_pos_mandato": "Amplamente positivo — considerado um dos presidentes mais populares e desenvolvimentistas da história."
+}
+,
+    {
+  "id": "janio_quadros",
+  "numero": 22,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/9/93/Janio_Quadros.png",
+  "nome": "Jânio da Silva Quadros",
+  "inicio_mandato": "31/01/1961",
+  "final_mandato": "25/08/1961",
+  "partido": "Partido Trabalhista Nacional",
+  "vice_presidente": ["João Belchior Marques Goulart"],
+  "nascimento": "25/01/1917",
+  "morte": "16/02/1992",
+  "nacionalidade": "Brasileiro",
+  "estado": "Mato Grosso do Sul",
+  "profissao": ["Advogado", "Professor", "Literato"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jânio_Quadros_signature.svg",
+
+  "pib_mandato": "Crescimento moderado (mandato curto, sem implementação plena de políticas)",
+  "inflacao": "Alta e crescente — herança fiscal do período anterior",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+
+  "aprovacao": "Caiu fortemente durante a crise política que levou à renúncia",
+
+  "sucessos": [
+    "Política externa independente",
+    "Aproximação diplomática com países socialistas e não alinhados",
+    "Início de medidas anticorrupção e moralização administrativa"
+  ],
+
+  "polemicas": [
+    "Renúncia inesperada após apenas 7 meses",
+    "Crise institucional gerada pela tentativa de retorno com 'apoio popular'",
+    "Concessão da Ordem do Cruzeiro do Sul a Che Guevara",
+    "Políticas internas confusas e impopulares (proibição do lança-perfume, rinhas, etc.)"
+  ],
+
+  "votacao_eleitoral": "48,27% dos votos (eleição de 1960 — vitória por ampla margem)",
+
+  "aprovacao_pos_mandato": "Majoritariamente negativa devido ao colapso político causado pela renúncia"
+}
+,
+    {
+  "id": "ranieri_mazzilli_1",
+  "numero": 23,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Ranieri_Mazzilli_%281961%29.jpg",
+  "nome": "Paschoal Ranieri Mazzilli",
+  "inicio_mandato": "25/08/1961",
+  "final_mandato": "07/09/1961",
+  "partido": "Partido Social Democrático",
+  "vice_presidente": [],
+  "nascimento": "27/04/1910",
+  "morte": "21/04/1975",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Advogado", "Jornalista"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/55/Ranieri_Mazzilli_signature.svg",
+
+  "pib_mandato": "Sem impacto mensurável (mandato interino e curtíssimo)",
+  "inflacao": "Não aplicável ao período tão curto",
+  "desemprego": "Não disponível",
+  "dolar": "Não disponível",
+
+  "aprovacao": "Não registrada devido ao mandato interino",
+
+  "sucessos": [
+    "Garantiu continuidade institucional após a renúncia de Jânio Quadros",
+    "Manteve estabilidade mínima até a solução da crise sobre a posse de João Goulart"
+  ],
+
+  "polemicas": [
+    "Mandato de apenas 13 dias",
+    "Período marcado por forte crise política e risco de ruptura institucional"
+  ],
+
+  "votacao_eleitoral": "Não aplicável (assumiu como presidente da Câmara)",
+
+  "aprovacao_pos_mandato": "Neutra — visto como figura administrativa durante crise"
+}
+,
+    {
+  "id": "joao_goulart",
+  "numero": 24,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Jango.jpg",
+  "nome": "João Belchior Marques Goulart",
+  "inicio_mandato": "07/09/1961",
+  "final_mandato": "02/04/1964",
+  "partido": "Partido Trabalhista Brasileiro",
+  "vice_presidente": [],
+  "nascimento": "01/03/1919",
+  "morte": "06/12/1976",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Advogado"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/4/44/João_Goulart_signature.svg",
+
+  "pib_mandato": "Crescimento moderado com forte pressão inflacionária",
+  "inflacao": "Inflação alta e crescente (chegando a mais de 90% em 1963 — séries históricas aproximadas)",
+  "desemprego": "Dados incompletos, porém com aumento em regiões urbanas",
+  "dolar": "Sem paridade comparável (controle cambial rígido)",
+
+  "aprovacao": "Dividida — apoio popular forte entre trabalhadores, rejeição alta entre elites e militares",
+
+  "sucessos": [
+    "Proposta e início das Reformas de Base (agrária, urbana, fiscal e educacional)",
+    "Ampliação de direitos trabalhistas e políticas sociais",
+    "Retorno do presidencialismo via plebiscito de 1963"
+  ],
+
+  "polemicas": [
+    "Alta inflação e crise econômica",
+    "Polarização política extrema",
+    "Reformas de Base vistas como radicais por opositores",
+    "Conflitos com militares e setores conservadores",
+    "Golpe militar de 1964 que resultou em sua deposição"
+  ],
+
+  "votacao_eleitoral": "Não aplicável — assumiu por renúncia e sucessão constitucional",
+  
+  "aprovacao_pos_mandato": "Vista como controversa, porém historicamente ganha reconhecimento como tentativa de reforma democrática"
+}
+,
+    {
+  "id": "ranieri_mazzilli_2",
+  "numero": 25,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Ranieri_Mazzilli_%281961%29.jpg",
+  "nome": "Paschoal Ranieri Mazzilli",
+  "inicio_mandato": "02/04/1964",
+  "final_mandato": "15/04/1964",
+  "partido": "Partido Social Democrático",
+  "vice_presidente": [],
+  "nascimento": "27/04/1910",
+  "morte": "21/04/1975",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Advogado", "Jornalista"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/5/55/Ranieri_Mazzilli_signature.svg",
+
+  "pib_mandato": "Período irrelevante para séries econômicas (apenas 13 dias)",
+  "inflacao": "Não aplicável",
+  "desemprego": "Não aplicável",
+  "dolar": "Não aplicável",
+
+  "aprovacao": "Não disponível — mandato técnico e extremamente curto",
+
+  "sucessos": [
+    "Garantiu formalidade institucional após o golpe militar de 1964",
+    "Transição imediata para o governo militar (Castelo Branco)"
+  ],
+
+  "polemicas": [
+    "Figura simbólica durante o golpe militar de 1964",
+    "Governo praticamente controlado pelos militares"
+  ],
+
+  "votacao_eleitoral": "Não aplicável — assumiu como presidente da Câmara",
+  "aprovacao_pos_mandato": "Considerado figura de transição sem impacto próprio"
+}
+,
+    {
+  "id": "castelo_branco",
+  "numero": 26,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/d/df/Castelobranco.jpg",
+  "nome": "Humberto de Alencar Castello Branco",
+  "inicio_mandato": "15/04/1964",
+  "final_mandato": "15/03/1967",
+  "partido": "Aliança Renovadora Nacional (ARENA)",
+  "vice_presidente": ["José Maria Alkmin"],
+  "nascimento": "20/09/1897",
+  "morte": "18/07/1967",
+  "nacionalidade": "Brasileiro",
+  "estado": "Ceará",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/0/05/Castelo_Branco_signature.svg",
+  "pib_mandato": "Crescimento moderado com início do ciclo de reformas estruturais",
+  "inflacao": "Alta no primeiro ano, desaceleração posterior",
+  "desemprego": "Não disponível padronizado",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (regime militar não realizava pesquisas públicas confiáveis)",
+  "sucessos": [
+    "Reformas econômicas estruturais",
+    "Criação do PAEG (Plano de Ação Econômica do Governo)",
+    "Estabilização inicial da economia",
+    "Investimentos em infraestrutura"
+  ],
+  "polemicas": [
+    "Instituição do AI-2",
+    "Censura e repressão a opositores",
+    "Fortalecimento do regime militar"
+  ]
+}
+,
+    {
+  "id": "costa_e_silva",
+  "numero": 27,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/6/66/Costa_e_Silva.jpg",
+  "nome": "Artur da Costa e Silva",
+  "inicio_mandato": "15/03/1967",
+  "final_mandato": "31/08/1969",
+  "partido": "Aliança Renovadora Nacional (ARENA)",
+  "vice_presidente": ["Pedro Aleixo"],
+  "nascimento": "03/10/1899",
+  "morte": "17/12/1969",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Artur_da_Costa_e_Silva_signature.svg",
+  "pib_mandato": "Crescimento dentro das bases iniciais do 'milagre econômico'",
+  "inflacao": "Baixa e relativamente controlada no período",
+  "desemprego": "Não disponível padronizado",
+  "dolar": "Não disponível",
+  "aprovacao": "Não disponível (regime militar não divulgava pesquisas públicas confiáveis)",
+  "sucessos": [
+    "Marco inicial do 'milagre econômico'",
+    "Criação de políticas de incentivo industrial e de infraestrutura",
+    "Expansão do crédito e investimentos estatais"
+  ],
+  "polemicas": [
+    "Crescimento da repressão política",
+    "Censura mais rígida",
+    "Decretação do Ato Institucional nº 5 (AI-5)",
+    "Fechamento do Congresso Nacional"
+  ]
+}
+,
+    {
+  "id": "garrastazu_medici",
+  "numero": 28,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Garrastazu_médici.jpg",
+  "nome": "Emílio Garrastazu Médici",
+  "inicio_mandato": "30/10/1969",
+  "final_mandato": "15/03/1974",
+  "partido": "Aliança Renovadora Nacional (ARENA)",
+  "vice_presidente": ["Augusto Hamann Rademaker Grünewald"],
+  "nascimento": "04/12/1905",
+  "morte": "09/10/1985",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/2/24/Assinatura-Emilio-Garrastazu.svg",
+  "pib_mandato": "Crescimento médio de aproximadamente +11,9% ao ano (auge do 'milagre econômico')",
+  "inflacao": "Baixa e relativamente controlada",
+  "desemprego": "Baixo (cenário econômico aquecido)",
+  "dolar": "Não disponível padronizado",
+  "aprovacao": "Alta (regime não registrava pesquisas livres, mas propaganda oficial indicava forte apoio)",
+  "sucessos": [
+    "Auge do 'milagre econômico'",
+    "Crescimento anual recorde do PIB",
+    "Grandes projetos de infraestrutura (Transamazônica, telecomunicações, energia)",
+    "Expansão do crédito e do investimento estatal"
+  ],
+  "polemicas": [
+    "Repressão política intensa",
+    "Tortura e desaparecimentos durante a ditadura",
+    "Censura abrangente",
+    "Concentração de renda e aumento das desigualdades",
+    "Endividamento público crescente para sustentar o crescimento"
+  ]
+}
+,
+    {
+  "id": "ernesto_geisel",
+  "numero": 29,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/4/46/Foto_oficial_do_presidente_Ernesto_Geisel.png",
+  "nome": "Ernesto Beckmann Geisel",
+  "inicio_mandato": "15/03/1974",
+  "final_mandato": "15/03/1979",
+  "partido": "Aliança Renovadora Nacional (ARENA)",
+  "vice_presidente": ["Adalberto Pereira dos Santos"],
+  "nascimento": "03/08/1907",
+  "morte": "12/09/1996",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio Grande do Sul",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Assinatura_de_Esnesto_Geisel.jpg",
+  "pib_mandato": "Crescimento médio de aproximadamente +6,37% ao ano",
+  "inflacao": "Alta e crescente (impactos dos choques do petróleo)",
+  "desemprego": "Aumentando no final do mandato",
+  "dolar": "Pressões cambiais fortes",
+  "aprovacao": "Queda progressiva",
+  "sucessos": [
+    "Programa Nuclear Brasileiro",
+    "Criação da Petrobras Distribuidora",
+    "Investimentos em energia e infraestrutura",
+    "Início da abertura política lenta e gradual",
+    "Crescimento econômico apesar do choque internacional"
+  ],
+  "polemicas": [
+    "Inflação crescente",
+    "Aumento expressivo da dívida externa",
+    "Repressão ainda presente (caso Herzog durante o período)",
+    "Modelo econômico começando a se esgotar",
+    "Censura ainda vigente"
+  ]
+}
+,
+    {
+  "id": "joao_figueiredo",
+  "numero": 30,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/a/af/Figueiredo_%28colour%29.jpg",
+  "nome": "João Baptista de Oliveira Figueiredo",
+  "inicio_mandato": "15/03/1979",
+  "final_mandato": "15/03/1985",
+  "partido": "Aliança Renovadora Nacional (ARENA) / PDS",
+  "vice_presidente": ["Antônio Aureliano Chaves de Mendonça"],
+  "nascimento": "15/01/1918",
+  "morte": "24/12/1999",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio de Janeiro",
+  "profissao": ["Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Signatures_of_presidents_of_Brazil_%28João_B_de_O_Figueredo%29.png",
+  "pib_mandato": "Desaceleração econômica com recessão em parte do período",
+  "inflacao": "Muito elevada, chegando a níveis de hiperinflação",
+  "desemprego": "Crescente",
+  "dolar": "Pressões cambiais severas e crise da dívida",
+  "aprovacao": "Muito baixa",
+  "sucessos": [
+    "Lei da Anistia",
+    "Fim da censura prévia",
+    "Avanço decisivo do processo de redemocratização",
+    "Diretas Já (embora rejeitadas, marcaram a transição)",
+    "Transição para governo civil (Tancredo/Sarney)"
+  ],
+  "polemicas": [
+    "Crise econômica profunda",
+    "Inflação explosiva",
+    "Dívida externa em níveis inéditos",
+    "Instabilidade política",
+    "Resistência ao processo de redemocratização em alguns momentos"
+  ]
+}
+,
+    {
+  "id": "tancredo_neves",
+  "numero": 31,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/3/37/Tancredo_Neves_%28cropped%29.jpg",
+  "nome": "Tancredo de Almeida Neves",
+  "inicio_mandato": "15/03/1985",
+  "final_mandato": "21/04/1985",
+  "partido": "Movimento Democrático Brasileiro (MDB)",
+  "vice_presidente": ["José Sarney"],
+  "nascimento": "04/03/1910",
+  "morte": "21/04/1985",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Advogado", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Tancredo_Neves_signature.jpg",
+  "pib_mandato": "Transição democrática; sem dados econômicos consolidados",
+  "inflacao": "Alta (hiperinflação se aproximando)",
+  "desemprego": "Elevado",
+  "dolar": "Pressões cambiais significativas",
+  "aprovacao": "Muito alta (símbolo da esperança nacional)",
+  "sucessos": [
+    "Eleito presidente que encerraria o regime militar",
+    "Símbolo máximo da redemocratização",
+    "Articulador político da Nova República",
+    "Condução da transição pactuada para o governo civil"
+  ],
+  "polemicas": [
+    "Doença súbita antes da posse",
+    "Nunca chegou a governar de fato",
+    "Controvérsias sobre diagnóstico e tratamentos",
+    "Criação de um vácuo político inesperado"
+  ]
+}
+,
+    {
+  "id": "jose_sarney",
+  "numero": 32,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Foto_Oficial_Sarney_EBC.jpg",
+  "nome": "José Sarney de Araújo Costa",
+  "inicio_mandato": "21/04/1985",
+  "final_mandato": "15/03/1990",
+  "partido": "Movimento Democrático Brasileiro (MDB)",
+  "vice_presidente": [],
+  "nascimento": "24/04/1930",
+  "morte": "Ainda vivo",
+  "nacionalidade": "Brasileiro",
+  "estado": "Maranhão",
+  "profissao": ["Advogado", "Jornalista", "Escritor", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Presidente_José_Sarney_assinatura.jpg",
+  "pib_mandato": "+4,5% a.a. (crescimento com instabilidade)",
+  "inflacao": "Hiperinflação crescente, chegando a mais de 1.000% ao ano",
+  "desemprego": "Elevado e instável",
+  "dolar": "Volatilidade extrema durante crise econômica",
+  "aprovacao": "Queda progressiva, baixa no final",
+  "sucessos": [
+    "Primeiro governo civil após o regime militar",
+    "Consolidação da redemocratização",
+    "Promulgação da Constituição de 1988",
+    "Reestabelecimento de liberdades civis e fortalecimento das instituições democráticas"
+  ],
+  "polemicas": [
+    "Hiperinflação severa e crise econômica contínua",
+    "Fracasso do Plano Cruzado e posteriores planos econômicos",
+    "Desorganização fiscal e monetária",
+    "Queda abrupta de popularidade",
+    "Acusações de fisiologismo e formação de base política controversa"
+  ]
+}
+,
+    {
+  "id": "fernando_collor",
+  "numero": 33,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/3/34/Fernandocolloroficial_%282%29.jpg",
+  "nome": "Fernando Affonso Collor de Mello",
+  "inicio_mandato": "15/03/1990",
+  "final_mandato": "29/12/1992",
+  "partido": "Partido da Reconstrução Nacional (PRN)",
+  "vice_presidente": ["Itamar Augusto Cautiero Franco"],
+  "nascimento": "12/08/1949",
+  "morte": "Ainda vivo",
+  "nacionalidade": "Brasileiro",
+  "estado": "Alagoas",
+  "profissao": ["Político", "Administrador"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Fernando_Collor_de_Mello_presidential_signature.svg",
+  "pib_mandato": "-1,2% (recessão ligada ao Plano Collor)",
+  "inflacao": "Extremamente alta no início (hiperinflação), queda temporária com o Plano Collor, depois volta a subir",
+  "desemprego": "Elevado e crescente durante a crise",
+  "dolar": "Alta volatilidade cambial",
+  "aprovacao": "Muito alta no início, queda drástica até níveis mínimos",
+  "sucessos": [
+    "Abertura comercial do Brasil",
+    "Redução de tarifas de importação",
+    "Primeiras medidas de modernização econômica e competição internacional"
+  ],
+  "polemicas": [
+    "Confisco das poupanças (Plano Collor I)",
+    "Crise econômica severa",
+    "Aumento da pobreza e desemprego",
+    "Escândalos de corrupção envolvendo PC Farias",
+    "Impeachment em 1992"
+  ]
+}
+,
+    {
+  "id": "itamar_franco",
+  "numero": 34,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/6/61/Itamar_Franco_Faixa_Presidencial.jpg",
+  "nome": "Itamar Augusto Cautiero Franco",
+  "inicio_mandato": "29/12/1992",
+  "final_mandato": "01/01/1995",
+  "partido": "Movimento Democrático Brasileiro (MDB)",
+  "vice_presidente": [],
+  "nascimento": "28/06/1930",
+  "morte": "02/07/2011",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Engenheiro", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/8/89/Itamar_Franco_signature.svg",
+  "pib_mandato": "Recuperação progressiva com estabilização em 1994",
+  "inflacao": "Queda abrupta após o Plano Real (1994)",
+  "desemprego": "Em declínio gradual após estabilização",
+  "dolar": "Estabilização cambial com a criação do Real",
+  "aprovacao": "Crescente, especialmente após o sucesso do Plano Real",
+  "sucessos": [
+    "Estabilização econômica com o Plano Real (liderado por sua equipe econômica)",
+    "Fim da hiperinflação",
+    "Recuperação da credibilidade internacional",
+    "Transição política tranquila após o impeachment de Collor"
+  ],
+  "polemicas": [
+    "Governo inicialmente instável politicamente",
+    "Dependência de amplo apoio do Congresso para governabilidade",
+    "Tensões internas na coalizão"
+  ]
+}
+,
+    {
+  "id": "fernando_henrique_cardoso",
+  "numero": 35,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/4/46/Fernando_Henrique_Cardoso_%281999%29.jpg",
+  "nome": "Fernando Henrique Cardoso",
+  "inicio_mandato": "01/01/1995",
+  "final_mandato": "01/01/2003",
+  "partido": "Partido da Social Democracia Brasileira",
+  "vice_presidente": ["Marco Antônio de Oliveira Maciel"],
+  "nascimento": "18/06/1931",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "Rio de Janeiro",
+  "profissao": ["Sociólogo", "Escritor", "Professor", "Universitário", "Político"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/4/42/Assinatura_de_Fernando_Henrique_Cardoso_-_versão_3.svg",
+  "pib_mandato": "+2,42% a.a. (crescimento total aproximado de 19,4%)",
+  "inflacao": "Inflação controlada após o Plano Real (média anual baixa comparada às décadas anteriores)",
+  "desemprego": "Oscilante (aumento no fim dos anos 1990, queda gradual no início dos anos 2000)",
+  "dolar": "Estável até 1998; forte desvalorização em 1999; estabilização posterior",
+  "aprovacao": "Variável, com altos picos na reeleição e queda após crises externas",
+  "sucessos": [
+    "Consolidação do Plano Real",
+    "Controle da inflação",
+    "Privatizações de grandes estatais",
+    "Lei de Responsabilidade Fiscal",
+    "Fortalecimento institucional"
+  ],
+  "polemicas": [
+    "Crise cambial de 1999",
+    "Alta taxa de juros",
+    "Crescimento econômico considerado baixo",
+    "Desigualdade social ainda elevada",
+    "Críticas às privatizações"
+  ]
+}
+,
+    {
+  "id": "lula",
+  "numero": 36,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lula_%282023%29_%28cropped%29.jpg",
+  "nome": "Luiz Inácio Lula da Silva",
+  "inicio_mandato": "01/01/2003",
+  "final_mandato": "01/01/2011",
+  "partido": "Partido dos Trabalhadores",
+  "vice_presidente": ["José Alencar Gomes da Silva"],
+  "nascimento": "27/09/1945",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "Pernambuco",
+  "profissao": ["Metalúrgico", "Sindicalista"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Signature_of_Luiz_Inácio_Lula_da_Silva.svg",
+  "pib_mandato": "+4,0% a.a. (média aproximada, com forte pico pré-2008)",
+  "inflacao": "Controlada (IPCA dentro ou próximo da meta na maior parte do período)",
+  "desemprego": "Queda acentuada ao longo do mandato, com expansão do emprego formal",
+  "dolar": "Apreciação cambial significativa ao longo dos anos 2000",
+  "aprovacao": "Muito alta e estável, chegando aos maiores índices desde a redemocratização",
+  "sucessos": [
+    "Forte redução da pobreza",
+    "Redução da desigualdade (medida pelo Gini)",
+    "Criação e expansão do Bolsa Família",
+    "Crescimento robusto do emprego formal",
+    "Expansão do crédito",
+    "Aumento do consumo interno",
+    "Benefício do boom das commodities",
+    "Ampliação de universidades e institutos federais"
+  ],
+  "polemicas": [
+    "Mensalão (crise política envolvendo aliados, 2005)",
+    "Críticas sobre baixa execução de obras de infraestrutura",
+    "Dependência do ciclo das commodities",
+    "Acusações envolvendo o partido e figuras próximas (posteriormente investigadas após o mandato)"
+  ]
+}
+,
+    {
+  "id": "dilma_rousseff",
+  "numero": 37,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg",
+  "nome": "Dilma Vana Rousseff",
+  "inicio_mandato": "01/01/2011",
+  "final_mandato": "31/08/2016",
+  "partido": "Partido dos Trabalhadores",
+  "vice_presidente": ["Michel Miguel Elias Temer Lulia"],
+  "nascimento": "14/12/1947",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "Minas Gerais",
+  "profissao": ["Economista", "Política"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Signature_of_Dilma_Rousseff.svg",
+  "pib_mandato": "Desaceleração entre 2011-2014 e recessão em 2015-2016",
+  "inflacao": "Períodos de inflação elevada, especialmente 2015-2016",
+  "desemprego": "Crescimento do desemprego durante a crise econômica",
+  "dolar": "Depreciação significativa do Real frente ao dólar",
+  "aprovacao": "Alta no início, queda drástica antes do impeachment",
+  "sucessos": [
+    "Continuidade de programas sociais implementados nos governos anteriores",
+    "Expansão do acesso à educação e políticas de inclusão social",
+    "Investimentos em infraestrutura (PAC)"
+  ],
+  "polemicas": [
+    "Crise econômica profunda com recessão e baixo crescimento",
+    "Escândalos de corrupção (Operação Lava Jato envolvendo aliados e governo)",
+    "Processo de impeachment (2016) considerado político-jurídico",
+    "Gestão fiscal criticada e desequilíbrios macroeconômicos"
+  ]
+}
+,
+   {
+  "id": "michel_temer",
+  "numero": 38,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Presidente_Michel_Temer_%28foto_oficial%29_-_cortada_%28cropped_2%29.jpg",
+  "nome": "Michel Miguel Elias Temer Lulia",
+  "inicio_mandato": "31/08/2016",
+  "final_mandato": "01/01/2019",
+  "partido": "Movimento Democrático Brasileiro",
+  "vice_presidente": [],
+  "nascimento": "23/09/1940",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Político", "Advogado", "Professor", "Escritor"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Assinatura_Temer_OK.jpg",
+  "pib_mandato": "Pequena recuperação econômica após recessão, crescimento fraco",
+  "inflacao": "Controlada em níveis baixos",
+  "desemprego": "Ainda elevado, mas estável",
+  "dolar": "Relativamente estável",
+  "aprovacao": "Muito baixa, com impopularidade acentuada",
+  "sucessos": [
+    "Aprovação da PEC do Teto de Gastos",
+    "Medidas de ajuste fiscal e tentativa de reequilibrar contas públicas"
+  ],
+  "polemicas": [
+    "Impopularidade extrema",
+    "Denúncias de corrupção envolvendo aliados e governo",
+    "Base política frágil e dificuldades para aprovar reformas",
+    "Crescimento econômico quase nulo"
+  ]
+}
+,
+    {
+  "id": "jair_bolsonaro",
+  "numero": 39,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/7/70/2022-09-07_Desfile_Cívico-Militar_por_ocasião_das_Comemorações_do_Bicentenário_da_Independência_do_Brasil_-_52341366768_%28cropped%29.jpg",
+  "nome": "Jair Messias Bolsonaro",
+  "inicio_mandato": "01/01/2019",
+  "final_mandato": "01/01/2023",
+  "partido": ["Partido Social Liberal", "Partido Liberal"],
+  "vice_presidente": ["Antônio Hamilton Martins Mourão"],
+  "nascimento": "21/03/1955",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "São Paulo",
+  "profissao": ["Político", "Militar"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/3/38/Signature_of_Jair_Bolsonaro.svg",
+  "pib_mandato": "+1,4% a.a. (impacto da pandemia em 2020 e recuperação em 2021)",
+  "inflacao": "Oscilante, com pico em 2021-2022",
+  "desemprego": "Pico em 2020 devido à pandemia, depois oscilante",
+  "dolar": "Volatilidade elevada",
+  "aprovacao": "Polarizada e oscilante (Ibope/Datafolha)",
+  "sucessos": [
+    "Reforma da previdência aprovada",
+    "Lei da Liberdade Econômica sancionada",
+    "Implementação de plataforma digital gov.br para serviços públicos",
+    "Auxílio emergencial durante pandemia de COVID-19",
+    "Recuperação parcial da economia pós-pandemia"
+  ],
+  "polemicas": [
+    "Minimização da COVID-19 e gestão criticada da pandemia",
+    "Polarização política intensa e conflitos com outros poderes",
+    "Desmatamento da Amazônia e críticas internacionais",
+    "Investigações e crises institucionais (ex: CPI da COVID, ataques a ministros e imprensa)",
+    "Crescimento econômico modesto e inflação elevada em 2021-2022"
+  ]
+}
+,
+    {
+  "id": "lula_2",
+  "numero": 40,
+  "foto": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lula_%282023%29_%28cropped%29.jpg",
+  "nome": "Luiz Inácio Lula da Silva",
+  "inicio_mandato": "01/01/2023",
+  "final_mandato": "Atualidade",
+  "partido": "Partido dos Trabalhadores",
+  "vice_presidente": ["Geraldo José Rodrigues Alckmin Filho"],
+  "nascimento": "27/09/1945",
+  "morte": "",
+  "nacionalidade": "Brasileiro",
+  "estado": "Pernambuco",
+  "profissao": ["Metalúrgico", "Sindicalista"],
+  "assinatura": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Signature_of_Luiz_Inácio_Lula_da_Silva.svg",
+  "pib_mandato": "Crescimento moderado em 2023-2024",
+  "inflacao": "Controlada com meta convergente",
+  "desemprego": "Baixo e estável",
+  "dolar": "Volatilidade",
+  "aprovacao": "Moderada a boa (Datafolha/Ibope)",
+  "sucessos": [
+    "Retorno à agenda social",
+    "Investimentos em infraestrutura",
+    "Crescimento do emprego"
+  ],
+  "polemicas": [
+    "Pressões inflacionárias iniciais",
+    "Desafios fiscais herdados",
+    "Questões políticas polarizadas"
+  ]
+}
+
   ]
 }

@@ -39,9 +39,20 @@ class AnimationManager {
     }
 
     
-    animatePresidentSelection(presidente, isFirstSearch, callback) {
+    animatePresidentSelection(selection, isFirstSearch, callback) {
+        const presidentes = Array.isArray(selection)
+            ? selection.filter(Boolean)
+            : [selection].filter(Boolean);
+
+        if (presidentes.length === 0) {
+            console.warn('⚠️ Nenhum presidente válido para animar');
+            return;
+        }
+
+        const primeiroPresidente = presidentes[0];
+
         this.isAnimating = true;
-        console.log('🔒 Iniciando animação - bloqueando novas execuções');
+        console.log('🔒 Iniciando animação para', primeiroPresidente.nome, '- bloqueando novas execuções');
         
         const resultsArea = document.getElementById('area-resultados');
         
@@ -85,14 +96,16 @@ class AnimationManager {
 
             mainTimeline.call(() => {
                 if (resultsArea) {
-                    resultsArea.style.display = 'block';
                     resultsArea.innerHTML = '';
-                    callback(presidente);
+                    callback(presidentes);
                 }
             }, null, "+=0.5");
             
             mainTimeline.call(() => {
                 this.isAnimating = false;
+                if (container) {
+                    container.style.minHeight = 'auto';
+                }
                 console.log('🔓 Animação finalizada - liberando novas execuções');
             });
             
@@ -100,10 +113,13 @@ class AnimationManager {
             console.log('⚡ PESQUISAS SEGUINTES - Só trocando presidente');
             
             if (resultsArea) {
-                resultsArea.style.display = 'block';
-                callback(presidente);
+                callback(presidentes);
             }
-            
+
+            if (container) {
+                container.style.minHeight = 'auto';
+            }
+
             this.isAnimating = false;
             console.log('🔓 Pesquisa seguinte finalizada - liberando novas execuções');
         }
@@ -166,5 +182,12 @@ class AnimationManager {
     isCurrentlyAnimating() {
         return this.isAnimating;
     }
+
+    captureContainerTop() {
+        const container = document.querySelector('.container');
+        if (!container) return;
+        this.lastContainerTop = container.getBoundingClientRect().top;
+    }
+
 }
 

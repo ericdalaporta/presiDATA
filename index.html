@@ -16,12 +16,30 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <svg height="0" width="0">
+        <filter id="handDrawnNoise">
+            <feTurbulence
+                result="noise"
+                numOctaves="5"
+                baseFrequency="0.0065"
+                type="fractalNoise"
+            ></feTurbulence>
+            <feDisplacementMap
+                yChannelSelector="G"
+                xChannelSelector="R"
+                scale="900"
+                in2="noise"
+                in="SourceGraphic"
+            ></feDisplacementMap>
+        </filter>
+    </svg>
+
     <div class="container">
         <div class="search-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="icon-container">
                 <img src="assets/icons/brasil.png" alt="Brasil" class="brasil-logo">
             </div>
-            <h1 class="main-title">PresiData BR</h1>
+            <h1 class="main-title">Presidômetro</h1>
             <p class="description">Explore dados detalhados dos presidentes brasileiros, biografias, indicadores e compare mandatos históricos.</p>
             
             <div class="search-wrapper">
@@ -37,11 +55,9 @@
             </div>
         </div>
 
-        <div id="area-resultados" class="results-area" style="display: none;">
-        </div>
+        <div id="area-resultados" class="results-area is-empty"></div>
 
         <div class="instructions-section" id="tutorial-cards">
-            <h2 class="instructions-title" data-aos="fade-up">Como usar o PresiData BR</h2>
             <div class="instructions-grid">
                 <div class="instruction-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="instruction-icon">

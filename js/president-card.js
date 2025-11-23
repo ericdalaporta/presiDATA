@@ -1,41 +1,128 @@
 class PresidentCardManager {
     constructor() {
-        this.currentPresidentCard = null;
+        this.currentCards = [];
     }
 
     /**
-     * Cria um card de presidente na área de resultados
-     * @param {Object} presidente - Dados do presidente
+     * Renderiza um ou mais cards de presidente na área de resultados
+     * @param {Object[]|Object} presidentes - Lista de presidentes a exibir
      */
-    createPresidentCardInResults(presidente) {
+    createPresidentCardInResults(presidentes) {
+        const listaPresidentes = Array.isArray(presidentes)
+            ? presidentes.filter(Boolean)
+            : [presidentes].filter(Boolean);
+
         const resultsArea = document.getElementById('area-resultados');
         if (!resultsArea) {
             console.error('Área de resultados não encontrada');
             return;
         }
 
-        console.log('🎯 Criando card para:', presidente.nome);
-        console.log('🎯 GSAP disponível:', typeof gsap !== 'undefined');
+        console.log('🎯 Renderizando', listaPresidentes.length, 'card(s) de presidente');
 
-        const existingCard = this.currentPresidentCard;
+        const useHeightAnimation = typeof gsap !== 'undefined';
+        const wasEmpty = resultsArea.classList.contains('is-empty');
+        const previousHeight = wasEmpty ? 0 : resultsArea.offsetHeight;
 
+        const leavingCards = [...this.currentCards];
+        if (leavingCards.length) {
+            leavingCards.forEach(card => {
+                card.classList.add('card-leaving');
+                setTimeout(() => card.remove(), 250);
+            });
+        }
+
+        this.currentCards = [];
+
+        const mountDelay = leavingCards.length ? 220 : 0;
+
+        if (listaPresidentes.length === 0) {
+            if (useHeightAnimation && previousHeight > 0) {
+                this.lockResultsAreaHeight(resultsArea, previousHeight);
+            }
+
+            setTimeout(() => {
+                resultsArea.innerHTML = '';
+
+                if (useHeightAnimation && previousHeight > 0) {
+                    this.animateResultsAreaHeight(resultsArea, 0, () => {
+                        resultsArea.classList.add('is-empty');
+                        this.clearResultsAreaHeight(resultsArea);
+                    });
+                } else {
+                    resultsArea.classList.add('is-empty');
+                    this.clearResultsAreaHeight(resultsArea);
+                }
+            }, mountDelay);
+
+            return;
+        }
+
+        if (wasEmpty) {
+            resultsArea.classList.remove('is-empty');
+        }
+
+        if (useHeightAnimation) {
+            this.lockResultsAreaHeight(resultsArea, previousHeight);
+        }
+
+        const fragment = document.createDocumentFragment();
+        const newCards = [];
+        listaPresidentes.forEach((presidente, index) => {
+            const cardContainer = this.buildPresidentCard(presidente, index, listaPresidentes.length);
+            cardContainer.classList.add('card-entering');
+            fragment.appendChild(cardContainer);
+            newCards.push(cardContainer);
+        });
+
+        setTimeout(() => {
+            resultsArea.innerHTML = '';
+            resultsArea.appendChild(fragment);
+            this.currentCards = newCards;
+
+            if (useHeightAnimation) {
+                const targetHeight = resultsArea.scrollHeight;
+                this.animateResultsAreaHeight(resultsArea, targetHeight, () => {
+                    this.clearResultsAreaHeight(resultsArea);
+                });
+            } else {
+                this.clearResultsAreaHeight(resultsArea);
+            }
+
+            requestAnimationFrame(() => {
+                newCards.forEach((card, idx) => {
+                    setTimeout(() => {
+                        card.classList.remove('card-entering');
+                        card.classList.add('card-visible');
+                    }, 80 + idx * 40);
+                });
+            });
+        }, mountDelay);
+    }
+
+    buildPresidentCard(presidente, order = 0, total = 1) {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'president-result-card';
-        
-        const approvalClass = presidente.aprovacao.media < 50 ? 'approval-low' : 'approval-value';
+
+        const partyDisplay = Array.isArray(presidente.partido) ? presidente.partido.join(', ') : (presidente.partido || 'Sem partido');
+        const professionDisplay = Array.isArray(presidente.profissao) ? presidente.profissao.join(', ') : (presidente.profissao || 'Não informado');
+        const showMandateLabel = total > 1;
+        const mandatoLabel = showMandateLabel ? `<span class="mandate-order">Mandato ${order + 1}</span>` : '';
 
         cardContainer.innerHTML = `
             <div class="president-info">
                 <div class="president-header">
                     <h1 class="president-name-elegant">${presidente.nome}</h1>
-                    <span class="mandate-period">${presidente.mandato}</span>
+                    <div class="mandate-wrapper">
+                        ${mandatoLabel}
+                        <span class="mandate-period">${presidente.inicio_mandato} a ${presidente.final_mandato}</span>
+                    </div>
                 </div>
                 <div class="president-details-stack">
-                    <div class="president-party">Partido: ${presidente.partido}</div>
-                    <div class="president-republica">Período: ${presidente.periodo}</div>
                     <div class="details-bottom-row">
-                        <div class="president-approval">
-                            Aprovação de <span class="${approvalClass}">${presidente.aprovacao.media}%</span>
+                        <div class="president-meta">
+                            <div class="president-party">Partido: ${partyDisplay}</div>
+                            <div class="president-profession">Profissão: <span class="profissao-value">${professionDisplay}</span></div>
                         </div>
                         <div class="president-compact-info">
                             <button class="gradient-btn" onclick="window.open('presidente.html?id=${presidente.id}', '_blank')">
@@ -45,77 +132,60 @@ class PresidentCardManager {
                     </div>
                 </div>
             </div>`;
-
-        if (existingCard) {
-            console.log('🔄 TROCANDO PRESIDENTE - Animando troca');
-            
-            cardContainer.classList.add('card-entering');
-            resultsArea.appendChild(cardContainer);
-            console.log('🎬 Classes do novo card:', cardContainer.className);
-            
-            existingCard.classList.add('card-leaving');
-            console.log('🎬 Classes do card anterior:', existingCard.className);
-            
-            setTimeout(() => {
-                if (existingCard.parentNode) {
-                    existingCard.remove();
-                }
-                
-                cardContainer.classList.remove('card-entering');
-                cardContainer.classList.add('card-visible');
-                
-                console.log('✅ Troca de card animada concluída');
-            }, 300);
-            
-        } else {
-            console.log('🆕 PRIMEIRO PRESIDENTE - Animando entrada');
-            
-            cardContainer.classList.add('card-entering');
-            resultsArea.appendChild(cardContainer);
-            console.log('🎬 Classes do primeiro card:', cardContainer.className);
-            
-            setTimeout(() => {
-                cardContainer.classList.remove('card-entering');
-                cardContainer.classList.add('card-visible');
-                console.log('🎬 Classes após animação:', cardContainer.className);
-                console.log('✅ Primeiro card animado');
-            }, 100);
-        }
-        
-        this.currentPresidentCard = cardContainer;
+        return cardContainer;
     }
 
     /**
      * @param {Object} presidente - Dados do presidente
      */
     createPresidentCard(presidente) {
-        if (this.currentPresidentCard) {
-            this.currentPresidentCard.remove();
+        this.createPresidentCardInResults(presidente);
+    }
+
+    lockResultsAreaHeight(element, fallbackHeight = 0) {
+        if (!element) {
+            return;
         }
 
-        const cardContainer = document.createElement('div');
-        cardContainer.className = 'president-result-card';
-        cardContainer.innerHTML = `
-            <div class="president-card-header">
-                <img class="president-photo" src="${presidente.foto}" alt="${presidente.nome}" 
-                     onerror="this.src='assets/images/presidentes/placeholder.svg'">
-                <div class="president-info">
-                    <h2 class="president-name">${presidente.nome}</h2>
-                    <p class="president-full-name">${presidente.nomeCompleto}</p>
-                    <div class="president-compact-info">
-                        <span class="president-period">${presidente.periodo}</span>
-                    </div>
-                </div>
-            </div>
-            <button class="view-details-btn" onclick="window.open('presidente.html?id=${presidente.id}', '_blank')">
-                Ver Detalhes
-            </button>
-        `;
+        const safeHeight = Math.max(0, Number.isFinite(fallbackHeight) ? fallbackHeight : element.offsetHeight);
+        element.style.height = `${safeHeight}px`;
+        element.style.willChange = 'height';
+    }
 
-        const searchCard = document.querySelector('.search-card');
-        searchCard.parentNode.insertBefore(cardContainer, searchCard.nextSibling);
-        
-        this.currentPresidentCard = cardContainer;
+    animateResultsAreaHeight(element, targetHeight, onComplete) {
+        if (!element) {
+            return;
+        }
+
+        if (typeof gsap === 'undefined') {
+            element.style.height = targetHeight === 0 ? '0px' : 'auto';
+            if (typeof onComplete === 'function') {
+                onComplete();
+            }
+            return;
+        }
+
+        gsap.killTweensOf(element);
+
+        gsap.to(element, {
+            height: targetHeight,
+            duration: 0.55,
+            ease: 'power3.out',
+            onComplete: () => {
+                if (typeof onComplete === 'function') {
+                    onComplete();
+                }
+            }
+        });
+    }
+
+    clearResultsAreaHeight(element) {
+        if (!element) {
+            return;
+        }
+
+        element.style.removeProperty('height');
+        element.style.removeProperty('will-change');
     }
 
     /**
@@ -158,9 +228,15 @@ class PresidentCardManager {
      * Remove o card atual
      */
     clearCurrentCard() {
-        if (this.currentPresidentCard) {
-            this.currentPresidentCard.remove();
-            this.currentPresidentCard = null;
+        if (this.currentCards.length) {
+            this.currentCards.forEach(card => card.remove());
+            this.currentCards = [];
+        }
+
+        const resultsArea = document.getElementById('area-resultados');
+        if (resultsArea) {
+            resultsArea.classList.add('is-empty');
+            resultsArea.innerHTML = '';
         }
     }
 }
