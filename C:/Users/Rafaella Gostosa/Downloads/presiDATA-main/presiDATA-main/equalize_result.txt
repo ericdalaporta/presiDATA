@@ -1,0 +1,29 @@
+Updated: 26 presidents
+Still unequal:
+Manoel Ferraz de Campos Salles: 4s / 5p
+Francisco de Paula Rodrigues Alves: 6s / 4p
+Afonso Augusto Moreira Pena: 6s / 4p
+Hermes Rodrigues da Fonseca: 3s / 7p
+Delfim Moreira da Costa Ribeiro: 2s / 6p
+Epitácio Lindolfo da Silva Pessoa: 4s / 6p
+Artur da Silva Bernardes: 3s / 9p
+Washington Luís Pereira de Sousa: 3s / 7p
+José Linhares: 5s / 3p
+Eurico Gaspar Dutra: 4s / 6p
+João Fernandes Campos Café Filho: 4s / 5p
+Carlos Coimbra da Luz: 2s / 5p
+Juscelino Kubitschek de Oliveira: 9s / 7p
+Jânio da Silva Quadros: 4s / 6p
+Paschoal Ranieri Mazzilli: 2s / 5p
+João Belchior Marques Goulart: 5s / 7p
+Paschoal Ranieri Mazzilli: 2s / 5p
+Artur da Costa e Silva: 4s / 6p
+Emílio Garrastazu Médici: 5s / 7p
+João Baptista de Oliveira Figueiredo: 5s / 7p
+José Sarney de Araújo Costa: 4s / 8p
+Fernando Affonso Collor de Mello: 5s / 7p
+Itamar Augusto Cautiero Franco: 4s / 6p
+Luiz Inácio Lula da Silva: 9s / 7p
+Dilma Vana Rousseff: 6s / 10p
+Michel Miguel Elias Temer Lulia: 4s / 8p
+Jair Messias Bolsonaro: 6s / 10p
