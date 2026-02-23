@@ -1,29 +1,7 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --primary: #3D95FF;
-    --primary-hover: #2A7FE0;
-    --secondary: #64748b;
-    --accent: #0052a3;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #64748b;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-gradient: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-    --border: #e2e8f0;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --radius: 8px;
-    --radius-lg: 12px;
-    --radius-xl: 16px;
-    --bg-pattern-url: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
-    --bg-pattern-size: 50px;
 }
 
 @keyframes bg-scrolling-reverse {
@@ -55,10 +33,9 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 32px 0;
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: var(--text-primary);
@@ -78,8 +55,7 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    height: auto;
-    padding: 20px;
+    padding: 48px 20px;
 }
 
 .search-card {
@@ -174,7 +150,6 @@ body {
 
 .search-container:hover {
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 20px 40px -10px rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
 }
 
 .search-input-container {
@@ -198,6 +173,13 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    caret-color: var(--primary);
+}
+
+.search-input-container input::selection {
+    background: rgba(61, 149, 255, 0.18);
+    color: var(--text-primary);
 }
 
 .search-input-container input::placeholder {
@@ -272,8 +254,8 @@ body {
     background: var(--bg-primary);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    transition: border-color 0.2s, background 0.2s, transform 0.2s; /* não inclui box-shadow */
-    box-shadow: 0 16px 48px rgba(0,0,0,0.28), 0 4px 16px rgba(0,0,0,0.14); /* sombra fixa */
+    transition: border-color 0.2s, background 0.2s, transform 0.2s; 
+    box-shadow: 0 16px 48px rgba(0,0,0,0.28), 0 4px 16px rgba(0,0,0,0.14); 
 }
 
 .instruction-item:hover {
@@ -320,16 +302,6 @@ body {
     font-size: 0.8rem;
     color: var(--text-secondary);
     line-height: 1.4;
-}
-
-.results-area {
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    margin-bottom: 8px;
-    width: 100%;
 }
 
 .results-area.is-empty {
@@ -383,114 +355,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
-}
-
-.results-area .deputado-card {
-    margin-bottom: 12px;
-    background: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 2px solid rgba(226, 232, 240, 0.8) !important;
-    border-radius: var(--radius-xl) !important;
-    padding: 28px !important;
-    margin-bottom: 24px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 12px 48px rgba(0,102,204,0.3), 0 4px 16px rgba(0,0,0,0.10);
-    position: relative;
-    overflow: hidden;
-}
-
-.results-area .deputado-card:hover {
-    background: rgba(255, 255, 255, 0.85) !important;
-    border-color: rgba(0, 102, 204, 0.3) !important;
-    box-shadow: 0 8px 40px rgba(0, 102, 204, 0.25) !important;
-    transform: translateY(-4px);
-}
-
-.results-area .deputado-header {
-    display: flex !important;
-    align-items: center !important;
-    gap: 20px !important;
-    margin-bottom: 24px !important;
-    padding-bottom: 18px;
-    border-bottom: 2px solid rgba(226, 232, 240, 0.7);
-}
-
-.results-area .deputado-foto {
-    width: 64px !important;
-    height: 64px !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-    border: 3px solid rgba(0, 102, 204, 0.2) !important;
-    flex-shrink: 0 !important;
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 102, 204, 0.2));
-    box-shadow: 0 4px 16px rgba(0, 102, 204, 0.15);
-}
-
-.results-area .deputado-foto img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block;
-}
-
-.results-area .deputado-info {
-    flex: 1 !important;
-    min-width: 0 !important;
-}
-
-.results-area .deputado-nome {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-    color: var(--text-primary) !important;
-    margin: 0 0 4px 0 !important;
-    word-wrap: break-word !important;
-    line-height: 1.3;
-}
-
-.results-area .deputado-details {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2px !important;
-}
-
-.results-area .deputado-partido {
-    font-size: 0.875rem !important;
-    color: var(--primary) !important;
-    font-weight: 500 !important;
-    margin: 0 !important;
-}
-
-.results-area .deputado-situacao {
-    font-size: 0.8rem !important;
-    color: var(--text-muted) !important;
-    margin: 0 !important;
-}
-
-.results-area .deputado-stats {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 16px !important;
-    margin-bottom: 24px !important;
-}
-
-.results-area .stat-item {
-    display: flex !important;
-    align-items: center !important;
-    gap: 14px !important;
-    padding: 18px !important;
-    background: rgba(255, 255, 255, 0.5) !important;
-    color: var(--primary) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.25), inset 0 1px 0 rgba(255, 255, 255, 1);
-}
-
-.results-area .btn-transparency:hover::before {
-    left: 100%;
-}
-
-.results-area .btn-transparency:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .loading-container {
@@ -626,6 +490,29 @@ body {
     color: var(--text-muted);
 }
 
+.swap-panel {
+    display: grid;
+    width: 100%;
+}
+
+.swap-panel > * {
+    grid-area: 1 / 1;
+}
+
+.instructions-section {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.instructions-section.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
 #area-resultados {
     position: relative;
     display: flex;
@@ -637,49 +524,40 @@ body {
     border-radius: 0 !important;
     padding: 0 !important;
     box-shadow: none !important;
-    margin-bottom: 16px;
     width: 100%;
     gap: 8px;
+    opacity: 1;
+    transition: opacity 0.22s ease;
+    visibility: visible;
+}
+
+#area-resultados.is-empty {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .president-result-card {
     background: var(--bg-primary);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
-    padding: 10px 16px;
+    padding: 18px 22px 16px;
     margin: 0;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
-    transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
     opacity: 1;
     transform: translateY(0) scale(1);
-    will-change: transform, opacity; 
 }
 
 .president-result-card:hover {
     box-shadow: 0 16px 48px rgba(0,0,0,0.28), 0 4px 16px rgba(0,0,0,0.14);
     transform: translateY(-4px) scale(1.02);
-}
-
-.president-result-card.card-entering {
-    opacity: 0 !important;
-    transform: translateY(-30px) scale(0.95) !important; /* Começa acima */
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.president-result-card.card-visible {
-    opacity: 1 !important;
-    transform: translateY(0) scale(1) !important;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.president-result-card.card-leaving {
-    opacity: 0 !important;
-    transform: translateY(30px) scale(0.95) !important; /* Sai para baixo */
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .president-card-header {
@@ -936,243 +814,6 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-@media (max-width: 768px) {
-    body {
-        min-height: auto;
-        height: auto;
-        padding: 24px 16px 48px;
-        justify-content: flex-start;
-        align-items: stretch;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .container {
-        margin-top: 24px;
-        gap: 18px;
-        max-width: 100%;
-        padding: 0;
-        max-height: none;
-    }
-    
-    .search-card {
-        padding: 26px 20px;
-        gap: 16px;
-        box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12);
-    }
-    
-    .main-title {
-        font-size: 2rem;
-    }
-    
-    .search-wrapper {
-        max-width: none;
-        width: 100%;
-    }
-    
-    .search-container {
-        flex-direction: row;
-        align-items: stretch;
-    }
-
-    .search-input-container input {
-        font-size: 1rem;
-        padding: 14px 16px;
-    }
-    
-    .search-button {
-        border-left: 1px solid rgba(255, 255, 255, 0.2);
-        border-top: none;
-        border-radius: 0;
-        min-width: 64px;
-    }
-    
-    .instructions-section {
-        margin-top: 12px;
-    }
-
-    .instructions-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 14px;
-    }
-    
-    .instructions-title {
-        font-size: 1.25rem;
-        margin-bottom: 20px;
-    }
-    
-    .instruction-item {
-        padding: 20px 16px;
-    }
-
-    #area-resultados {
-        gap: 12px;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    
-    .president-result-card {
-        padding: 16px 18px;
-    }
-    
-    .president-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-    
-    .mandate-wrapper {
-        justify-content: flex-start;
-    }
-    
-    .president-compact-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        width: 100%;
-    }
-    
-    .gradient-btn {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .results-header {
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
-    }
-    
-    .deputado-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-    }
-    
-    .deputado-foto {
-        width: 64px;
-        height: 64px;
-        margin: 0 auto;
-    }
-    
-    .deputado-stats {
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
-    }
-    
-    .btn-transparency {
-        min-width: auto !important;
-        padding: 12px 20px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 28px 12px 36px;
-        justify-content: flex-start;
-    }
-
-    .container {
-        margin-top: 20px;
-    }
-    
-    .search-card {
-        padding: 24px 16px;
-    }
-    
-    .main-title {
-        font-size: 1.5rem;
-    }
-    
-    .description {
-        font-size: 0.9rem;
-        margin-bottom: 24px;
-    }
-    
-    .icon-container {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .icon-container i {
-        font-size: 18px;
-    }
-    
-    .instruction-icon {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .instruction-icon i {
-        font-size: 14px;
-    }
-    
-    .instruction-item h3 {
-        font-size: 0.85rem;
-    }
-    
-    .instruction-item p {
-        font-size: 0.75rem;
-    }
-    
-    .stat-item {
-        padding: 12px !important;
-    }
-    
-    .stat-icon {
-        width: 32px !important;
-        height: 32px !important;
-    }
-    
-    .stat-icon i {
-        font-size: 14px !important;
-    }
-    
-    .deputado-nome {
-        font-size: 1rem !important;
-    }
-    
-    .btn-transparency {
-        padding: 10px 16px !important;
-        font-size: 0.85rem !important;
-        min-width: 140px !important;
-    }
-    
-    .deputado-stats {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .instructions-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 800px;
-    }
-    
-    .instructions-grid {
-        gap: 28px;
-    }
-    
-    .search-card {
-        padding: 44px 36px;
-    }
-    
-    .results-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .deputado-stats {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Partículas animadas */
 #particle-container {
     position: fixed;
     inset: 0;

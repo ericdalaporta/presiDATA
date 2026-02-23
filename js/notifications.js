@@ -1,26 +1,15 @@
-/**
- * Sistema de Notificações
- * Gerencia notificações dinâmicas da aplicação
- */
-class NotificationManager {
+﻿class NotificationManager {
     constructor() {
-        this.container = this.createContainer();
+        this.container = this._createContainer();
     }
 
-    createContainer() {
+    _createContainer() {
         let container = document.getElementById('notification-container');
         if (!container) {
             container = document.createElement('div');
             container.id = 'notification-container';
-            container.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                z-index: 9999;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            `;
+            container.setAttribute('role', 'status');
+            container.setAttribute('aria-live', 'polite');
             document.body.appendChild(container);
         }
         return container;
@@ -29,54 +18,25 @@ class NotificationManager {
     show(message, type = 'info', duration = 3000) {
         const notification = document.createElement('div');
         notification.className = `notification notification-${type}`;
-        notification.style.cssText = `
-            padding: 12px 16px;
-            border-radius: 6px;
-            background-color: ${this.getBackgroundColor(type)};
-            color: white;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            animation: slideIn 0.3s ease-out;
-            font-size: 14px;
-            font-weight: 500;
-        `;
-        
         notification.textContent = message;
         this.container.appendChild(notification);
 
+        
+        requestAnimationFrame(() => notification.classList.add('notification-visible'));
+
         if (duration > 0) {
             setTimeout(() => {
-                notification.style.animation = 'slideOut 0.3s ease-out';
-                setTimeout(() => notification.remove(), 300);
+                notification.classList.remove('notification-visible');
+                notification.classList.add('notification-hiding');
+                notification.addEventListener('transitionend', () => notification.remove(), { once: true });
             }, duration);
         }
     }
 
-    getBackgroundColor(type) {
-        const colors = {
-            success: '#10b981',
-            error: '#ef4444',
-            warning: '#f59e0b',
-            info: '#3b82f6'
-        };
-        return colors[type] || colors.info;
-    }
-
-    success(message, duration = 3000) {
-        this.show(message, 'success', duration);
-    }
-
-    error(message, duration = 3000) {
-        this.show(message, 'error', duration);
-    }
-
-    warning(message, duration = 3000) {
-        this.show(message, 'warning', duration);
-    }
-
-    info(message, duration = 3000) {
-        this.show(message, 'info', duration);
-    }
+    success(message, duration = 3000) { this.show(message, 'success', duration); }
+    error(message, duration = 3000)   { this.show(message, 'error', duration); }
+    warning(message, duration = 3000) { this.show(message, 'warning', duration); }
+    info(message, duration = 3000)    { this.show(message, 'info', duration); }
 }
 
-// Inicializar gerenciador de notificações
 const notificationManager = new NotificationManager();

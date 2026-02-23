@@ -1,4 +1,4 @@
-class PresiDATAApp {
+﻿class PresiDATAApp {
     constructor() {
         this.searchInput = document.getElementById('busca-candidato');
         this.searchButton = document.getElementById('btn-buscar');
@@ -33,9 +33,26 @@ class PresiDATAApp {
         this.initSearch();
         this.initScrollAnimations();
         this.animateStats();
+        this.renderCatalog();
+
+        
+        
+        if (window.location.hash === '#presidentes') {
+            const el = document.getElementById('presidentes');
+            if (el) {
+                const headerH = document.getElementById('page-header')?.offsetHeight || 52;
+                const top = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+                
+                if (window.scrollY < 50) {
+                    window.scrollTo({ top: top, behavior: 'instant' });
+                }
+            }
+        }
         
         setTimeout(() => {
-            this.searchInput?.focus();
+            if (!window.matchMedia('(max-width: 768px)').matches) {
+                this.searchInput?.focus();
+            }
         }, 1500);
     }
     
@@ -100,6 +117,7 @@ class PresiDATAApp {
 
     initSearch() {
         this.searchInput.addEventListener('input', (e) => {
+            if (this._settingValueProgrammatically) return;
             const query = e.target.value.trim().toLowerCase();
             if (query.length >= 1) {
                 this.showSuggestions(query);
@@ -134,11 +152,9 @@ class PresiDATAApp {
         });
     }
 
-    /**
-     * Mostra sugestões de busca
-     * @param {string} query - Termo de busca
-     */
+    
     showSuggestions(query) {
+        if (window.innerWidth <= 900) return;
         const matches = this.findBestMatches(query, 8);
 
         if (matches.length === 0) {
@@ -168,15 +184,14 @@ class PresiDATAApp {
         });
     }
 
-
     hideSuggestions() {
         this.suggestionsDropdown.classList.remove('active');
+        this.suggestionsDropdown.style.top = '';
+        this.suggestionsDropdown.style.left = '';
+        this.suggestionsDropdown.style.width = '';
     }
 
-    /**
-     * Busca presidentes
-     * @param {string} query - Termo de busca
-     */
+    
     searchPresidentes(query) {
         if (this.animationManager.isCurrentlyAnimating()) {
             console.log('⚠️ Animação em andamento, ignorando busca...');
@@ -363,10 +378,7 @@ class PresiDATAApp {
         return matrix[rows - 1][cols - 1];
     }
 
-    /**
-     * Seleciona um presidente
-     * @param {Object} presidente 
-     */
+    
     selectPresident(presidente) {
         if (!presidente) {
             return;
@@ -385,7 +397,11 @@ class PresiDATAApp {
         }
         
         this.hideSuggestions();
+        
+        
+        this._settingValueProgrammatically = true;
         this.searchInput.value = primaryPresident.nome;
+        this._settingValueProgrammatically = false;
         
         this.animationManager.animatePresidentSelection(presidentList, this.isFirstSearch, (lista) => {
             console.log('🎯 Callback executado para:', Array.isArray(lista) ? lista.length : 0, 'cards');
@@ -434,6 +450,43 @@ class PresiDATAApp {
         return new Date(year, month - 1, day);
     }
    
+    renderCatalog() {
+        const body = document.getElementById('catalog-body');
+        if (!body) return;
+
+        const meses = ['jan.','fev.','mar.','abr.','maio','jun.','jul.','ago.','set.','out.','nov.','dez.'];
+        const fmtDate = (str) => {
+            if (!str || str === 'Atualidade') return str || 'Atual';
+            const p = str.split('/');
+            if (p.length !== 3) return str;
+            return `${parseInt(p[0])} ${meses[parseInt(p[1])-1]} ${p[2]}`;
+        };
+        const derivarRegime = (n) => {
+            if (!n) return '--';
+            if (n <= 12) return 'República Velha';
+            if (n <= 16) return 'Era Vargas';
+            if (n <= 18) return 'República Nova';
+            if (n <= 20) return 'Democracia Populista';
+            if (n <= 25) return 'Regime Militar';
+            return 'Nova República';
+        };
+
+        
+        const sorted = [...this.presidentes].sort((a, b) => (b.numero || 0) - (a.numero || 0));
+
+        body.innerHTML = sorted.map(p => `
+            <a href="presidente.html?id=${p.id}" class="catalog-row">
+                <span class="col-num row-num">${p.numero || '—'}</span>
+                <span class="col-name row-name catalog-name-cell">
+                    <img src="${p.foto}" alt="" class="catalog-thumb">
+                    <span>${p.nome}</span>
+                </span>
+                <span class="col-mandate row-mandate">${fmtDate(p.inicio_mandato)} — ${fmtDate(p.final_mandato)}</span>
+                <span class="col-regime row-regime">${derivarRegime(p.numero)}</span>
+            </a>
+        `).join('');
+    }
+
     initScrollAnimations() {
         this.animationManager.initScrollAnimations();
     }
@@ -442,16 +495,8 @@ class PresiDATAApp {
         this.animationManager.animateStats();
     }
 
-    /**
-     * Mostra comparação rápida (placeholder)
-     * @param {string} presidentId - ID do presidente
-     */
-    showQuickComparison(presidentId) {
-    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     window.presidata = new PresiDATAApp();
 });
-
-window.presidata = null;

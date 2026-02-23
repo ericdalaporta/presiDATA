@@ -1,0 +1,37 @@
+﻿:root {
+    
+    --primary:       #3D95FF;
+    --primary-hover: #2A7FE0;
+    --secondary:     #64748b;
+    --accent:        #0052a3;
+
+    
+    --text-primary:   #0f172a;
+    --text-secondary: #475569;
+    --text-muted:     #64748b;
+
+    
+    --bg-primary:   #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-gradient:  linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+
+    
+    --border:  #e2e8f0;
+    --divider: rgba(148, 163, 184, 0.35);
+
+    
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow:    0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --card-shadow-soft:   0 18px 40px rgba(15, 23, 42, 0.12);
+    --card-shadow-strong: 0 30px 70px rgba(15, 23, 42, 0.2), 0 18px 32px rgba(15, 23, 42, 0.14);
+
+    
+    --radius:    8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    
+    --bg-pattern-url:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+    --bg-pattern-size: 50px;
+}

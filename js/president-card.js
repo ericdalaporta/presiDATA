@@ -1,12 +1,9 @@
-class PresidentCardManager {
+﻿class PresidentCardManager {
     constructor() {
         this.currentCards = [];
     }
 
-    /**
-     * Renderiza um ou mais cards de presidente na área de resultados
-     * @param {Object[]|Object} presidentes - Lista de presidentes a exibir
-     */
+    
     createPresidentCardInResults(presidentes) {
         const listaPresidentes = Array.isArray(presidentes)
             ? presidentes.filter(Boolean)
@@ -18,61 +15,61 @@ class PresidentCardManager {
             return;
         }
 
-        console.log('🎯 Renderizando', listaPresidentes.length, 'card(s) de presidente');
-
-        const useHeightAnimation = typeof gsap !== 'undefined';
-        const wasEmpty = resultsArea.classList.contains('is-empty');
-        const previousHeight = wasEmpty ? 0 : resultsArea.offsetHeight;
-
+        
         const leavingCards = [...this.currentCards];
+        const mountDelay = leavingCards.length ? 180 : 0;
+
         if (leavingCards.length) {
-            leavingCards.forEach(card => {
-                card.classList.add('card-leaving');
-                setTimeout(() => card.remove(), 250);
-            });
+            if (typeof gsap !== 'undefined') {
+                gsap.to(leavingCards, {
+                    opacity: 0,
+                    y: -20,
+                    scale: 0.95,
+                    filter: 'blur(4px)',
+                    duration: 0.18,
+                    ease: 'power3.in',
+                    stagger: 0.04,
+                    onComplete: () => leavingCards.forEach(c => c.remove())
+                });
+            } else {
+                leavingCards.forEach(card => {
+                    card.style.transition = 'opacity 0.15s ease';
+                    card.style.opacity = '0';
+                });
+                setTimeout(() => leavingCards.forEach(c => c.remove()), 150);
+            }
         }
 
         this.currentCards = [];
 
-        const mountDelay = leavingCards.length ? 220 : 0;
-
         if (listaPresidentes.length === 0) {
-            if (useHeightAnimation && previousHeight > 0) {
-                this.lockResultsAreaHeight(resultsArea, previousHeight);
-            }
-
             setTimeout(() => {
                 resultsArea.innerHTML = '';
-
-                if (useHeightAnimation && previousHeight > 0) {
-                    this.animateResultsAreaHeight(resultsArea, 0, () => {
-                        resultsArea.classList.add('is-empty');
-                        this.clearResultsAreaHeight(resultsArea);
-                    });
-                } else {
-                    resultsArea.classList.add('is-empty');
-                    this.clearResultsAreaHeight(resultsArea);
+                resultsArea.classList.add('is-empty');
+                const tutorial = document.querySelector('.instructions-section');
+                if (tutorial) {
+                    tutorial.classList.remove('is-hidden');
+                    if (typeof gsap !== 'undefined') {
+                        gsap.fromTo(tutorial,
+                            { opacity: 0, y: 16, scale: 0.97 },
+                            { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: 'power3.out',
+                              onComplete: () => gsap.set(tutorial, { clearProps: 'all' }) }
+                        );
+                    }
                 }
             }, mountDelay);
-
             return;
         }
 
-        if (wasEmpty) {
-            resultsArea.classList.remove('is-empty');
-        }
-
-        if (useHeightAnimation) {
-            this.lockResultsAreaHeight(resultsArea, previousHeight);
-        }
+        
+        resultsArea.classList.remove('is-empty');
 
         const fragment = document.createDocumentFragment();
         const newCards = [];
         listaPresidentes.forEach((presidente, index) => {
-            const cardContainer = this.buildPresidentCard(presidente, index, listaPresidentes.length);
-            cardContainer.classList.add('card-entering');
-            fragment.appendChild(cardContainer);
-            newCards.push(cardContainer);
+            const card = this.buildPresidentCard(presidente, index, listaPresidentes.length);
+            fragment.appendChild(card);
+            newCards.push(card);
         });
 
         setTimeout(() => {
@@ -80,23 +77,39 @@ class PresidentCardManager {
             resultsArea.appendChild(fragment);
             this.currentCards = newCards;
 
-            if (useHeightAnimation) {
-                const targetHeight = resultsArea.scrollHeight;
-                this.animateResultsAreaHeight(resultsArea, targetHeight, () => {
-                    this.clearResultsAreaHeight(resultsArea);
-                });
+            if (typeof gsap !== 'undefined') {
+                
+                gsap.fromTo(newCards,
+                    {
+                        opacity: 0,
+                        y: 40,
+                        scale: 0.92,
+                        filter: 'blur(8px)',
+                        rotationX: 6
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        filter: 'blur(0px)',
+                        rotationX: 0,
+                        duration: 0.45,
+                        ease: 'expo.out',
+                        stagger: 0.07,
+                        transformOrigin: 'center bottom',
+                        onComplete: () => gsap.set(newCards, { clearProps: 'all' })
+                    }
+                );
             } else {
-                this.clearResultsAreaHeight(resultsArea);
-            }
-
-            requestAnimationFrame(() => {
-                newCards.forEach((card, idx) => {
-                    setTimeout(() => {
-                        card.classList.remove('card-entering');
-                        card.classList.add('card-visible');
-                    }, 80 + idx * 40);
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        newCards.forEach(card => {
+                            card.style.transition = 'opacity 0.22s ease';
+                            card.style.opacity = '1';
+                        });
+                    });
                 });
-            });
+            }
         }, mountDelay);
     }
 
@@ -110,34 +123,30 @@ class PresidentCardManager {
         const mandatoLabel = showMandateLabel ? `<span class="mandate-order">Mandato ${order + 1}</span>` : '';
 
         cardContainer.innerHTML = `
-            <div class="president-info">
-                <div class="president-header">
-                    <h1 class="president-name-elegant">${presidente.nome}</h1>
-                    <div class="mandate-wrapper">
-                        ${mandatoLabel}
-                        <span class="mandate-period">${presidente.inicio_mandato} a ${presidente.final_mandato}</span>
-                    </div>
+            <div class="president-header">
+                <h1 class="president-name-elegant">${presidente.nome}</h1>
+                <div class="mandate-wrapper">
+                    ${mandatoLabel}
+                    <span class="mandate-period">${presidente.inicio_mandato} a ${presidente.final_mandato}</span>
                 </div>
-                <div class="president-details-stack">
-                    <div class="details-bottom-row">
-                        <div class="president-meta">
-                            <div class="president-party">Partido: ${partyDisplay}</div>
-                            <div class="president-profession">Profissão: <span class="profissao-value">${professionDisplay}</span></div>
-                        </div>
-                        <div class="president-compact-info">
-                            <button class="gradient-btn" onclick="window.open('presidente.html?id=${presidente.id}', '_blank')">
-                                ABRIR
-                            </button>
-                        </div>
+            </div>
+            <div class="president-details-stack">
+                <div class="details-bottom-row">
+                    <div class="president-meta">
+                        <div class="president-party">Partido: ${partyDisplay}</div>
+                        <div class="president-profession">Profissão: <span class="profissao-value">${professionDisplay}</span></div>
+                    </div>
+                    <div class="president-compact-info">
+                        <button class="gradient-btn" onclick="window.open('presidente.html?id=${presidente.id}', '_blank')">
+                            ABRIR
+                        </button>
                     </div>
                 </div>
             </div>`;
         return cardContainer;
     }
 
-    /**
-     * @param {Object} presidente - Dados do presidente
-     */
+    
     createPresidentCard(presidente) {
         this.createPresidentCardInResults(presidente);
     }
@@ -188,10 +197,7 @@ class PresidentCardManager {
         element.style.removeProperty('will-change');
     }
 
-    /**
-     * @param {string} periodo - Período do presidente
-     * @returns {string} Classe CSS do badge
-     */
+    
     getBadgeClass(periodo) {
         switch(periodo.toLowerCase()) {
             case 'república velha':
@@ -211,11 +217,7 @@ class PresidentCardManager {
         }
     }
 
-    /**
-     * Calcula anos no cargo baseado no mandato
-     * @param {string} mandato - Período do mandato
-     * @returns {number} Total de anos no cargo
-     */
+    
     calculateYearsInOffice(mandato) {
         const years = mandato.split(',').map(period => {
             const [start, end] = period.trim().split('-');
@@ -224,9 +226,7 @@ class PresidentCardManager {
         return years.reduce((total, year) => total + year, 0);
     }
 
-    /**
-     * Remove o card atual
-     */
+    
     clearCurrentCard() {
         if (this.currentCards.length) {
             this.currentCards.forEach(card => card.remove());

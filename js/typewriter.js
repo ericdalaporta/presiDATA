@@ -1,4 +1,4 @@
-class TypewriterEffect {
+﻿class TypewriterEffect {
     constructor(element) {
         this.element = element;
         this.phrases = [

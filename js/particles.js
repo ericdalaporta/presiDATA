@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     const containers = document.querySelectorAll('#particle-container');
     if (!containers.length) {
         return;
     }
 
-    const colors = ['#009639', '#ffdf00', '#002776'];
+    const colors = ['#009c3b', '#ffdf00', '#1351B4'];
 
     containers.forEach((container) => {
         const densityAttribute = parseInt(container.getAttribute('data-density') || '', 10);
