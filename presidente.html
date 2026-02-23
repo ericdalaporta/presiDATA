@@ -1,283 +1,244 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presidente - PresiDATA</title>
     <link rel="stylesheet" href="css/presidente.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script>document.documentElement.style.opacity='0';</script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div id="particle-container" data-density="120"></div>
-    
+
     <div class="page-wrapper">
-        <header class="page-header">
+
+        <!-- HEADER -->
+        <header class="page-header" id="page-header">
             <div class="header-content">
-                <div class="logo-section">
-                    <a href="index.html" class="header-title-link">
-                        <img src="assets/icons/brasil.png" alt="Brasil" class="brasil-icon">
-                        <h1 class="header-title">PresiDATA</h1>
+                <div class="header-left">
+                    <a href="index.html" class="header-logo">
+                        <span class="header-logo-text">Presi<span class="logo-accent">DATA</span></span>
                     </a>
+                    <div class="header-divider"></div>
+                    <nav class="header-nav">
+                        <a href="index.html#presidentes" class="header-link" id="nav-presidentes">Presidentes</a>
+                        <a href="#timeline-section" class="header-link" id="nav-timeline">Linha do Tempo</a>
+                        <a href="comparar.html" class="header-link">Comparar</a>
+                    </nav>
                 </div>
-                <nav class="nav-links">
-                    <button class="button type1 compare-btn">
-                        <span class="btn-txt">Comparar</span>
+                <div class="header-right">
+                    <span class="header-tagline">Dados Históricos · Brasil</span>
+                    <button class="btn-apoiar" onclick="document.getElementById('pix-modal').classList.add('is-open')" aria-label="Apoiar o projeto">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        Apoiar
                     </button>
-                </nav>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu" aria-controls="mobile-menu-panel" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
+            <nav class="mobile-menu-panel" id="mobile-menu-panel" aria-hidden="true">
+                <a href="index.html#presidentes" class="mobile-menu-link">Presidentes</a>
+                <a href="#timeline-section" class="mobile-menu-link">Linha do Tempo</a>
+                <a href="comparar.html" class="mobile-menu-link">Comparar</a>
+            </nav>
         </header>
 
-        <div class="content-wrapper">
-            <!-- Hero -->
-            <section class="president-hero" id="hero-section">
-                <div class="hero-content">
-                    <div class="president-card-hero">
-                        <div class="hero-photo-wrapper">
-                            <div class="cardBox">
-                                <div class="card">
-                                    <img id="president-photo" src="" alt="Foto do Presidente" class="president-photo">
-                                </div>
-                            </div>
+        <main class="content-wrapper">
+
+            <!-- HERO -->
+            <section class="hero-section" id="hero-section">
+                <div class="hero-card">
+
+                    <!-- Esquerda: info -->
+                    <div class="hero-info-col">
+                        <div class="hero-top-meta">
+                            <span class="hero-republic">República do Brasil</span>
+                            <span class="hero-top-line"></span>
+                            <span id="president-order-display" class="hero-order"></span>
                         </div>
-                        <div class="hero-info">
-                            <h1 id="president-name-display" class="president-name-display"></h1>
-                            <p class="hero-subtitle">Perfil e legado do mandato</p>
-                            <p id="president-party-display" class="president-party-display"></p>
-                            <div class="mandate-period-display">
-                                <span id="president-mandate-display"></span>
+                        <h1 id="president-name-display" class="hero-name"></h1>
+                        <div class="hero-dates-row">
+                            <span class="hero-dates-bar"></span>
+                            <span id="president-mandate-display" class="hero-mandate"></span>
+                        </div>
+
+                        <!-- Mini bio grid abaixo do nome -->
+                        <div class="hero-bio-grid" id="hero-bio-grid">
+                            <div class="hero-bio-cell">
+                                <span class="hero-bio-label">Período</span>
+                                <span class="hero-bio-value" id="hero-periodo-display">--</span>
                             </div>
-                            <div id="president-signature-wrapper" class="president-signature-wrapper is-hidden">
-                                <span class="signature-label">Assinatura oficial</span>
-                                <img id="president-signature" alt="Assinatura do presidente">
+                            <div class="hero-bio-cell">
+                                <span class="hero-bio-label">Regime</span>
+                                <span class="hero-bio-value" id="hero-regime-display">--</span>
+                            </div>
+                            <div class="hero-bio-cell">
+                                <span class="hero-bio-label">Partido</span>
+                                <span class="hero-bio-value" id="president-party-display">--</span>
+                            </div>
+                            <div class="hero-bio-cell">
+                                <span class="hero-bio-label">Vice-presidente</span>
+                                <span class="hero-bio-value" id="vice-display">--</span>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- Direita: foto + dados pessoais -->
+                    <div class="hero-photo-col">
+                        <div class="photo-frame">
+                            <img id="president-photo" src="" alt="Foto do Presidente" class="president-photo">
+                        </div>
+                        <div class="hero-sidebar-bio">
+                            <div class="sidebar-bio-row">
+                                <span class="sidebar-bio-label">Nascimento</span>
+                                <span class="sidebar-bio-value" id="nascimento-display">--</span>
+                            </div>
+                            <div class="sidebar-bio-row">
+                                <span class="sidebar-bio-label">Falecimento</span>
+                                <span class="sidebar-bio-value" id="morte-display">--</span>
+                            </div>
+                            <div class="sidebar-bio-row">
+                                <span class="sidebar-bio-label">Formação</span>
+                                <span class="sidebar-bio-value" id="profissao-display">--</span>
+                            </div>
+                        </div>
+                        <div id="president-signature-wrapper" class="signature-wrapper is-hidden">
+                            <img id="president-signature" alt="Assinatura do presidente" class="signature-img">
+                            <span id="president-signature-none" class="signature-none" style="display:none">Sem assinatura</span>
+                        </div>
+                    </div>
+
+                </div><!-- /.hero-card -->
             </section>
 
-            <!-- Indicadores Econômicos -->
-            <section class="indicators-section" id="indicators-section">
-                <h2 class="section-title">Indicadores Econômicos</h2>
+            <hr class="section-divider">
+
+            <section class="section" id="indicators-section">
+                <div class="section-header">
+                    <span class="section-eyebrow">Dados do Governo</span>
+                    <h2 class="section-heading">Indicadores do Mandato</h2>
+                </div>
                 <div class="indicators-grid">
-                    <div class="indicator-box" tabindex="0">
-                        <div class="indicator-card">
-                            <div class="indicator-face indicator-front">
-                                <h3 class="indicator-title">PIB</h3>
-                                <p class="indicator-subtitle">Passe ou toque</p>
-                            </div>
-                            <div class="indicator-face indicator-back">
-                                <div class="indicator-value" id="pib-display">--</div>
-                            </div>
+                    <div class="indicator-card">
+                        <div class="indicator-top">
+                            <span class="indicator-label">PIB (média anual)</span>
                         </div>
+                        <div class="indicator-value" id="pib-display">--</div>
                     </div>
-                    <div class="indicator-box" tabindex="0">
-                        <div class="indicator-card">
-                            <div class="indicator-face indicator-front">
-                                <h3 class="indicator-title">Inflação</h3>
-                                <p class="indicator-subtitle">Passe ou toque</p>
-                            </div>
-                            <div class="indicator-face indicator-back">
-                                <div class="indicator-value" id="inflacao-display">--</div>
-                            </div>
+                    <div class="indicator-card">
+                        <div class="indicator-top">
+                            <span class="indicator-label">Inflação</span>
+                            <span class="indicator-tag" id="inflacao-tag"></span>
                         </div>
+                        <div class="indicator-value" id="inflacao-display">--</div>
                     </div>
-                    <div class="indicator-box" tabindex="0">
-                        <div class="indicator-card">
-                            <div class="indicator-face indicator-front">
-                                <h3 class="indicator-title">Desemprego</h3>
-                                <p class="indicator-subtitle">Passe ou toque</p>
-                            </div>
-                            <div class="indicator-face indicator-back">
-                                <div class="indicator-value" id="desemprego-display">--</div>
-                            </div>
+                    <div class="indicator-card">
+                        <div class="indicator-top">
+                            <span class="indicator-label">Desemprego</span>
+                            <span class="indicator-tag" id="desemprego-tag"></span>
                         </div>
+                        <div class="indicator-value" id="desemprego-display">--</div>
                     </div>
-                    <div class="indicator-box" tabindex="0">
-                        <div class="indicator-card">
-                            <div class="indicator-face indicator-front">
-                                <h3 class="indicator-title">Dólar</h3>
-                                <p class="indicator-subtitle">Passe ou toque</p>
-                            </div>
-                            <div class="indicator-face indicator-back">
-                                <div class="indicator-value" id="dolar-display">--</div>
-                            </div>
+                    <div class="indicator-card">
+                        <div class="indicator-top">
+                            <span class="indicator-label">Câmbio</span>
+                            <span class="indicator-tag" id="dolar-tag"></span>
                         </div>
+                        <div class="indicator-value" id="dolar-display">--</div>
                     </div>
-                    <div class="indicator-box" tabindex="0">
-                        <div class="indicator-card">
-                            <div class="indicator-face indicator-front">
-                                <h3 class="indicator-title">Aprovação</h3>
-                                <p class="indicator-subtitle">Passe ou toque</p>
-                            </div>
-                            <div class="indicator-face indicator-back">
-                                <div class="indicator-value" id="aprovacao-display">--</div>
-                            </div>
+                    <div class="indicator-card">
+                        <div class="indicator-top">
+                            <span class="indicator-label">Aprovação</span>
+                            <span class="indicator-tag" id="aprovacao-tag"></span>
                         </div>
+                        <div class="indicator-value" id="aprovacao-display">--</div>
                     </div>
                 </div>
             </section>
 
-            <!-- Sucessos e Polêmicas -->
-            <section class="results-section" id="results-section">
-                <h2 class="section-title">Sucessos e Polêmicas do Governo</h2>
-                <div class="results-grid">
-                    <div class="result-card success-card">
-                        <div class="result-header success">
-                            <i class="fas fa-check-circle"></i>
-                            <h3>Sucessos</h3>
+            <hr class="section-divider">
+
+            <!-- REALIZAÇÕES E CONTROVÉRSIAS -->
+            <section class="section" id="results-section">
+                <div class="section-header">
+                    <span class="section-eyebrow">Legado Histórico</span>
+                    <h2 class="section-heading">Realizações e Controvérsias</h2>
+                </div>
+                <div class="legacy-table">
+                    <div class="legacy-table-header">
+                        <div class="legacy-col-header legacy-col-header--success">
+                            <span class="legacy-col-bar legacy-col-bar--success"></span>
+                            <span class="legacy-col-title">Realizações</span>
+                            <span class="legacy-col-count" id="sucessos-count"></span>
                         </div>
-                        <ul id="sucessos-list" class="result-list"></ul>
-                    </div>
-                    <div class="result-card polemic-card">
-                        <div class="result-header polemic">
-                            <i class="fas fa-exclamation-circle"></i>
-                            <h3>Polêmicas</h3>
+                        <div class="legacy-col-header legacy-col-header--polemic">
+                            <span class="legacy-col-bar legacy-col-bar--polemic"></span>
+                            <span class="legacy-col-title">Controvérsias</span>
+                            <span class="legacy-col-count" id="polemicas-count"></span>
                         </div>
-                        <ul id="polemicas-list" class="result-list"></ul>
                     </div>
+                    <div class="legacy-table-body" id="legacy-table-body">
+                        <!-- Linhas geradas por JS -->
+                    </div>
+                </div>
+                <!-- Abas mobile: geradas por JS, visíveis só em mobile via CSS -->
+                <div class="legacy-tabs" id="legacy-tabs"></div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- LINHA DO TEMPO -->
+            <section class="section" id="timeline-section">
+                <div class="section-header">
+                    <span class="section-eyebrow">Cronologia</span>
+                    <h2 class="section-heading">Linha do Tempo</h2>
+                </div>
+                <div class="timeline-table" id="timeline-table">
+                    <!-- Linhas geradas por JS -->
                 </div>
             </section>
 
-            <!-- Informações Pessoais -->
-            <section class="bio-section" id="bio-section">
-                <h2 class="section-title">Informações Pessoais</h2>
-                <div class="bio-grid">
-                    <div class="bio-card">
-                        <div class="bio-card-icon">
-                            <svg class="bio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="bio-card-title">Nascimento</h3>
-                        <p class="bio-card-value" id="nascimento-display">--</p>
-                    </div>
 
-                    <div class="bio-card">
-                        <div class="bio-card-icon">
-                            <svg class="bio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="bio-card-title">Local de Origem</h3>
-                        <p class="bio-card-value" id="estado-display">--</p>
-                    </div>
-
-                    <div class="bio-card">
-                        <div class="bio-card-icon">
-                            <svg class="bio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
-                                <path d="M12 6v6l4.25 2.52"></path>
-                            </svg>
-                        </div>
-                        <h3 class="bio-card-title">Falecimento</h3>
-                        <p class="bio-card-value" id="morte-display">--</p>
-                    </div>
-
-                    <div class="bio-card">
-                        <div class="bio-card-icon">
-                            <svg class="bio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="bio-card-title">Profissão</h3>
-                        <p class="bio-card-value" id="profissao-display">--</p>
-                    </div>
-
-                    <div class="bio-card">
-                        <div class="bio-card-icon">
-                            <svg class="bio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                        </div>
-                        <h3 class="bio-card-title">Vice-presidente</h3>
-                        <p class="bio-card-value" id="vice-display">--</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Modal de Comparação -->
-        <div id="compare-modal" class="compare-modal">
-            <div class="compare-modal-content">
-                <button class="compare-close" aria-label="Fechar comparação">&times;</button>
-
-                <div class="compare-header">
-                    <div class="compare-header-text">
-                        <h2>Comparar Presidentes</h2>
-                        <p class="compare-subtitle">Escolha dois presidentes para visualizar indicadores, perfil e legado lado a lado.</p>
-                    </div>
-                    <div class="compare-controls">
-                        <div class="compare-select-group">
-                            <label for="compare-select-a">Presidente A</label>
-                            <select id="compare-select-a" class="compare-select"></select>
-                        </div>
-                        <div class="compare-select-group">
-                            <label for="compare-select-b">Presidente B</label>
-                            <select id="compare-select-b" class="compare-select"></select>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="comparison-results" class="comparison-results hidden">
-                    <div id="comparison-summary" class="comparison-summary"></div>
-                    <div id="comparison-groups" class="comparison-groups"></div>
-                    <div class="comparison-legacies">
-                        <div class="comparison-list successes">
-                            <h3>Sucessos</h3>
-                            <div class="comparison-list-columns" id="comparison-successes"></div>
-                        </div>
-                        <div class="comparison-list polemics">
-                            <h3>Polêmicas</h3>
-                            <div class="comparison-list-columns" id="comparison-polemics"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="comparison-empty" class="comparison-empty">
-                    <p>Selecione dois presidentes para iniciar a comparação.</p>
-                </div>
-            </div>
-        </div>
+        </main>
 
         <footer class="page-footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">PresiDATA</h3>
-                    <p class="footer-description">Explore dados históricos e vários indicadores econômicos dos inúmeros presidentes brasileiros, além de poder compará-los.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-heading">Material</h4>
-                    <ul class="footer-links">
-                        <li><span>Pesquisas Econômicas</span></li>
-                        <li><span>Dados Acadêmicos</span></li>
-                        <li><span>Instituições do Governo</span></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-heading">Contato</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://github.com/ericdalaporta" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/ericdalaporta" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://wa.me/555599344334" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 PresiDATA. Todos os direitos reservados.</p>
+            <div class="footer-inner">
+                <span class="footer-brand">Presi<span class="logo-accent">DATA</span></span>
+                <span class="footer-tagline">Dados Históricos do Governo Brasileiro</span>
             </div>
         </footer>
+
     </div>
-    
+
+    <!-- MODAL PIX -->
+    <div id="pix-modal" class="pix-overlay" onclick="if(event.target===this)this.classList.remove('is-open')">
+        <div class="pix-modal">
+            <button class="pix-close" onclick="document.getElementById('pix-modal').classList.remove('is-open')" aria-label="Fechar">&times;</button>
+            <div class="pix-modal-header">
+                <span class="pix-eyebrow">Apoiar o Projeto</span>
+                <h2 class="pix-title">PresiDATA</h2>
+                <p class="pix-desc">Este projeto é gratuito e independente. Se ele foi útil para você, considere contribuir com qualquer valor via PIX.</p>
+            </div>
+            <div class="pix-modal-body">
+                <div class="pix-key-wrap">
+                    <span class="pix-key-label">Chave PIX</span>
+                    <div class="pix-key-row">
+                        <span class="pix-key" id="pix-key-text">78ce4b4a-8a0c-4643-9bcb-9617a9185511</span>
+                        <button class="pix-copy" onclick="navigator.clipboard.writeText(document.getElementById('pix-key-text').textContent).then(()=>{this.textContent='Copiado!';setTimeout(()=>this.textContent='Copiar',2000)})">Copiar</button>
+                    </div>
+                </div>
+                <div class="pix-divider"></div>
+                <p class="pix-thanks">Obrigado pelo apoio!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" referrerpolicy="no-referrer"></script>
-    <script src="js/particles.js"></script>
     <script src="js/presidente.js"></script>
     <script src="js/compare.js"></script>
 </body>
