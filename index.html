@@ -1,96 +1,196 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PresiDATA - Dados dos Presidentes Brasileiros</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/presidata.css">
+    <title>PresiDATA  Dados Históricos do Governo Brasileiro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/4.4.0/chart.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>if(window.location.hash){document.documentElement.style.opacity='0';}</script>
 </head>
 <body>
-    <div id="particle-container" data-density="90"></div>
-    <svg height="0" width="0">
-        <filter id="handDrawnNoise">
-            <feTurbulence
-                result="noise"
-                numOctaves="5"
-                baseFrequency="0.0065"
-                type="fractalNoise"
-            ></feTurbulence>
-            <feDisplacementMap
-                yChannelSelector="G"
-                xChannelSelector="R"
-                scale="900"
-                in2="noise"
-                in="SourceGraphic"
-            ></feDisplacementMap>
-        </filter>
-    </svg>
 
-    <div class="container">
-        <div class="search-card" data-aos="fade-up" data-aos-duration="1000">
-            <div class="icon-container">
-                <img src="assets/icons/brasil.png" alt="Brasil" class="brasil-logo">
+    <!-- HEADER -->
+    <header class="page-header" id="page-header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="index.html" class="header-logo">
+                    <span class="header-logo-text">Presi<span class="logo-accent">DATA</span></span>
+                </a>
+                <div class="header-divider"></div>
+                <nav class="header-nav">
+                    <a href="#presidentes" class="header-link header-link--active" id="nav-presidentes">Presidentes</a>
+                    <a href="comparar.html" class="header-link">Comparar</a>
+                </nav>
             </div>
-            <h1 class="main-title">PresiDATA</h1>
-            <p class="description">Explore dados detalhados dos presidentes brasileiros, biografias, indicadores e compare mandatos históricos.</p>
-            
-            <div class="search-wrapper">
-                <div class="search-container">
-                    <div class="search-input-container">
-                    <input type="text" id="busca-candidato" placeholder="" autocomplete="off">
-                    <div class="suggestions-dropdown" id="suggestions-dropdown"></div>
+            <div class="header-right">
+                <span class="header-tagline">Dados Históricos · Brasil</span>
+                <button class="btn-apoiar" onclick="document.getElementById('pix-modal').classList.add('is-open')" aria-label="Apoiar o projeto">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    Apoiar
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu" aria-controls="mobile-menu-panel" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu-panel" id="mobile-menu-panel" aria-hidden="true">
+            <a href="#presidentes" class="mobile-menu-link">Presidentes</a>
+            <a href="comparar.html" class="mobile-menu-link">Comparar</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="page-main">
+        <div class="content-wrapper">
+
+            <!-- HERO -->
+            <section class="hero-section">
+                <div class="hero-card">
+
+                    <!-- Coluna esquerda: titulo + busca -->
+                    <div class="hero-body">
+                        <div class="hero-top-meta">
+                            <span class="hero-eyebrow">Base de Dados</span>
+                            <div class="hero-top-line"></div>
+                            <span class="hero-republic">República Federativa do Brasil</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span class="hero-title-line hero-title-line--dark">Presi</span>
+                            <span class="hero-title-line hero-title-line--muted">DATA</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Arquivo histórico dos presidentes do Brasil. Dados biográficos, indicadores econômicos, realizações e controvérsias de cada mandato desde 1889.
+                        </p>
+
+                        <div class="search-wrapper">
+                            <div class="search-box" id="search-box">
+                                <input
+                                    type="text"
+                                    id="search-input"
+                                    class="search-input"
+                                    placeholder="Buscar presidente, período ou evento..."
+                                    autocomplete="off"
+                                    spellcheck="false"
+                                >
+                                <button class="search-btn" id="search-btn" aria-label="Buscar">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="suggestions-dropdown" id="suggestions-dropdown"></div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna direita: stat cards -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-value" id="stat-presidentes">41</span>
+                            <span class="stat-label">Presidentes<br>Catalogados</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">135</span>
+                            <span class="stat-label">Anos de<br>República</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">6</span>
+                            <span class="stat-label">Constituições</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Regimes de<br>Governo</span>
+                        </div>
+                    </div>
+
                 </div>
-                    <button class="search-button" id="btn-buscar">
-                        <i class="fas fa-search"></i>
-                    </button>
+            </section>
+
+            <!-- FUNCIONALIDADES -->
+            <section class="section features-section">
+                <div class="section-header">
+                    <span class="section-eyebrow">Funcionalidades</span>
+                    <h2 class="section-heading">O que você encontra aqui</h2>
                 </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-num">01</span>
+                        <h3 class="feature-title">Perfis presidenciais</h3>
+                        <p class="feature-desc">Dados biográficos completos, fotografia, mandatos, filiação partidária e cargos anteriores de cada presidente.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">02</span>
+                        <h3 class="feature-title">Indicadores do mandato</h3>
+                        <p class="feature-desc">PIB, inflação, desemprego, câmbio e aprovação popular &mdash; com contexto histórico para períodos sem dados.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-num">03</span>
+                        <h3 class="feature-title">Legado e controvérsias</h3>
+                        <p class="feature-desc">Realizações e controvérsias de cada governo, organizadas cronologicamente com fontes históricas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CATALOGO -->
+            <section class="section catalog-section" id="presidentes">
+                <div class="catalog-header">
+                    <div class="catalog-header-left">
+                        <span class="section-eyebrow">Catálogo</span>
+                        <h2 class="section-heading">Presidentes</h2>
+                    </div>
+                    <a href="#" class="catalog-ver-todos" id="btn-ver-todos">Ver todos &rarr;</a>
+                </div>
+                <div class="catalog-table">
+                    <div class="catalog-table-header">
+                        <span class="col-num">N&ordm;</span>
+                        <span class="col-name">Nome</span>
+                        <span class="col-mandate">Mandato</span>
+                        <span class="col-regime">Regime</span>
+                    </div>
+                    <div class="catalog-table-body" id="catalog-body">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="footer-inner">
+            <span class="footer-brand">Presi<span class="logo-accent">DATA</span></span>
+                <span class="footer-tagline">Dados Históricos do Governo Brasileiro</span>
+        </div>
+    </footer>
+
+    <!-- MODAL PIX -->
+    <div id="pix-modal" class="pix-overlay" onclick="if(event.target===this)this.classList.remove('is-open')">
+        <div class="pix-modal">
+            <button class="pix-close" onclick="document.getElementById('pix-modal').classList.remove('is-open')" aria-label="Fechar">&times;</button>
+            <div class="pix-modal-header">
+                <span class="pix-eyebrow">Apoiar o Projeto</span>
+                <h2 class="pix-title">PresiDATA</h2>
+                <p class="pix-desc">Este projeto é gratuito e independente. Se ele foi útil para você, considere contribuir com qualquer valor via PIX.</p>
+            </div>
+            <div class="pix-modal-body">
+                <div class="pix-key-wrap">
+                    <span class="pix-key-label">Chave PIX</span>
+                    <div class="pix-key-row">
+                        <span class="pix-key" id="pix-key-text">78ce4b4a-8a0c-4643-9bcb-9617a9185511</span>
+                        <button class="pix-copy" onclick="navigator.clipboard.writeText(document.getElementById('pix-key-text').textContent).then(()=>{this.textContent='Copiado!';setTimeout(()=>this.textContent='Copiar',2000)})">Copiar</button>
+                    </div>
+                </div>
+                <div class="pix-divider"></div>
+                <p class="pix-thanks">Obrigado pelo apoio!</p>
             </div>
         </div>
-
-        <div id="area-resultados" class="results-area is-empty"></div>
-
-        <div class="instructions-section" id="tutorial-cards">
-            <div class="instructions-grid">
-                <div class="instruction-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="instruction-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>1. Pesquise</h3>
-                    <p>Digite o nome de qualquer presidente brasileiro da história.</p>
-                </div>
-                <div class="instruction-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="instruction-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>2. Explore</h3>
-                    <p>Veja biografia, mandatos, realizações e dados históricos completos.</p>
-                </div>
-                <div class="instruction-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="instruction-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>3. Compare</h3>
-                    <p>Compare indicadores econômicos e sociais entre diferentes presidentes.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
-    
-    <script src="js/particles.js"></script>
-    <script src="js/typewriter.js"></script>
-    <script src="js/notifications.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/president-card.js"></script>
-    <script src="js/presimain.js"></script>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
