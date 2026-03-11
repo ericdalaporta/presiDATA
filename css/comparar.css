@@ -754,20 +754,6 @@ html { overflow-y: scroll; overflow-x: hidden; }
 .cs-ind-b .cs-ind-desc { text-align: left; }
 
 .cs-ind--winner .cs-ind-num { color: #1a1a18; }
-.cs-ind-a.cs-ind--winner .cs-ind-num::after {
-    content: ' ◀';
-    font-size: 0.55rem;
-    vertical-align: middle;
-    color: #c8972a;
-    font-family: 'Inter', sans-serif;
-}
-.cs-ind-b.cs-ind--winner .cs-ind-num::before {
-    content: '▶ ';
-    font-size: 0.55rem;
-    vertical-align: middle;
-    color: #c8972a;
-    font-family: 'Inter', sans-serif;
-}
 
 .cs-ind-center {
     display: flex;
